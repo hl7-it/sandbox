@@ -1,0 +1,50 @@
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../../__FHIRr4Tools/R4_fhir-all-xsd/structuredefinition.xsd">
+	<id value="legale-Address-it"/>
+	<url value="http://fhir.nl/fhir/StructureDefinition/legale-Address-it"/>
+	<version value="2.0.0"/>
+	<name value="IndirizzoLegale"/>
+	<title value="Indirizzo Legale (residenza, sede legale)"/>
+	<status value="draft"/>
+	<publisher value="HL7 Italia"/>
+	<contact>
+		<name value="HL7 Italia"/>
+		<telecom>
+			<system value="email"/>
+			<value value="info@hl7italia.it"/>
+			<use value="work"/>
+		</telecom>
+	</contact>
+	<description value="Identifica l'indirizzo ufficiale di una persona fisica o giuridica. Nel contesto Italiano può essere quindi la residenza per eprsone fisiche o la sede legale per perosne giuridiche."/>
+	<copyright value="CC0"/>
+	<fhirVersion value="4.0.0"/>
+	<kind value="complex-type"/>
+	<abstract value="false"/>
+	<context>
+		<type value="element"/>
+		<expression value="Address"/>
+	</context>
+	<type value="Extension"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Extension.url">
+			<path value="Extension.url"/>
+			<fixedUri value="http://hl7.it/fhir/StructureDefinition/legale-Address-it"/>
+		</element>
+		<element id="Extension.value[x]:valueBoolean">
+			<path value="Extension.valueBoolean"/>
+			<sliceName value="valueBoolean"/>
+			<short value="true se è un indirizzo ufficiale. false negli altri casi"/>
+			<definition value="Quando il valore è vero questo indirizzo è una residenza od una sede legale. Quando è false, questo indirizzo è esplicitamente marcato non come indirizzo ufficiale."/>			
+			<min value="1"/>
+			<type>
+				<code value="boolean"/>
+			</type>
+			<meaningWhenMissing value="Quando l'indirizzo non è marcato esplicitaente come leagle=true|false allora non è possibile inferire nessuna informazione da questo."/>
+			<mapping>
+				<identity value="rim"/>
+				<map value="AD/@use[.='OR']"/>
+			</mapping>
+		</element>
+	</differential>
+</StructureDefinition>

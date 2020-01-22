@@ -1,0 +1,41 @@
+<Patient xmlns="http://hl7.org/fhir">
+	<id value="ex-TSTPSN80A01D612A"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<div class="hapiHeaderText">Marie 
+            <b>Paziente di Esempio</b>
+			</div>
+			<table class="hapiPropertyTable">
+				<tbody>
+					<tr>
+						<td>Codice Fiscale</td>
+						<td>TSTPSN80A01D612A</td>
+					</tr>
+					<tr>
+						<td>Data di Nascita</td>
+						<td>
+							<span>1 Gennaio 1980</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</text>
+	<extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+		<valueAddress>
+			<city value="Firenze"/>
+			<country value="Italia"/>
+		</valueAddress>
+	</extension>
+	<identifier>
+		<system value="urn:oid:2.16.840.1.113883.2.9.4.3.2"/>
+		<value value="TSTPSN80A01D612A"/>
+	</identifier>
+	<name>
+		<family value="TEST"/>
+		<given value="PERSON"/>
+	</name>
+	<gender value="male"/>
+	<birthDate value="1980-01-01"/>
+</Patient>

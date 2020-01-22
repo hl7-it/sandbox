@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Consent xmlns="http://hl7.org/fhir">
+	<id value="consent-example-donazioneOrgani-1"/>
+	<meta>
+		<profile value="http://hl7.it/fhir/StructureDefinition/Consent-it-donor"/>
+	</meta>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h2 style="text-align: center;">
+				<strong>DICHIARAZIONE DI VOLONTA' ALLA DONAZIONE DI ORGANI E TESSUTI</strong>
+			</h2>
+			<p style="text-align: justify;"> </p>
+			<p style="text-align: justify;">Il sottoscritto (cognome) <strong>Test</strong>(nome) <strong>Person</strong>,</p>
+			<p style="text-align: justify;">nato il <strong>1 gennaio 1980</strong>,  <strong>Firenze (FI), Italia</strong>
+			</p>
+			<p style="text-align: justify;">Codice Fiscale <strong>TSTPSN80A01D612A</strong>
+			</p>
+			<p style="text-align: justify;">Residente a <strong>Firenze</strong> (<strong>FI</strong>), in <strong>Piazza della Signoria 1 </strong>CAP<strong> 50122</strong>
+			</p>
+			<p style="text-align: justify;">AUSL di appartenenza: <strong>AZIENDA USL TOSCANA CENTRO (090.201)</strong>
+			</p>
+			<p> </p>
+			<h3 style="text-align: center;">DICHIARA di <span style="background-color: #ffff00;">
+					<strong>NON CONSENTIRE</strong>
+				</span>
+			</h3>
+			<p> </p>
+			<p style="text-align: center;">alla donazione di organi e tessuti dopo la morte a scopo di trapianto</p>
+			<p style="text-align: center;"> </p>
+			<p style="text-align: center;"> </p>
+			<p style="text-align: right;">Firenze, 15 gennaio 2017</p>
+			<p style="text-align: right;">Firmato digitalmente da Test Person</p>
+		</div>
+	</text>
+	<status value="inactive"/>
+	<scope>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+			<code value="adr"/>
+		</coding>
+	</scope>
+	<category>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/consentcategorycodes"/>
+			<code value="acd"/>
+		</coding>
+	</category>
+	<patient>
+		<reference value="Patient/ex-TSTPSN80A01D612A"/>
+		<identifier>
+			<system value="urn:oid:2.16.840.1.113883.2.9.4.3.2"/>
+			<value value="TSTPSN80A01D612A"/>
+		</identifier>
+		<display value="Person Test"/>
+	</patient>
+	<dateTime value="2018-01-15"/>
+	<policyRule>
+		<coding>
+			<system value="http://example.hl7.it/CodeSystem/policyRules"/>
+			<code value="donazione-organi"/>
+		</coding>
+	</policyRule>
+	<provision>
+		<type value="deny"/>
+		<purpose>
+			<system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+			<code value="DONAT"/>
+		</purpose>
+	</provision>
+</Consent>

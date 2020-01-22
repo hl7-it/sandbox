@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ConsensoDonazioneOrgani" />
+  <url value="http://hl7.it/fhir/StructureDefinition/ConsensoDonazioneOrgani" />
+  <name value="ConsensoDonazioneOrgani" />
+  <title value="Consenso alla donazione degli Organi" />
+  <status value="draft" />
+  <experimental value="true" />
+  <description value="Modello Logico che definisce il set di dati che caratterizzano il consenso alla donazione degli organi&#xD;&#xA;Questa versione è a scopo dimostrativo." />
+  <fhirVersion value="4.0.0" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="http://example.org/fhir/StructureDefinition/ConsensoDonazioneOrgani" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="ConsensoDonazioneOrgani">
+      <path value="ConsensoDonazioneOrgani" />
+      <short value="Consenso alla donazione degli organi" />
+      <definition value="Consenso alla donazione degli organi" />
+      <min value="0" />
+      <max value="*" />
+      <!--
+      <type>
+        <code value="Element" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Element" />
+      </type>
+-->
+    </element>
+    <element id="ConsensoDonazioneOrgani.donatore">
+      <path value="ConsensoDonazioneOrgani.donatore" />
+      <short value="Soggetto Donatore" />
+      <definition value="Soggetto Donatore" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Person" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient" />
+      </type>
+    </element>
+    <element id="ConsensoDonazioneOrgani.data">
+      <path value="ConsensoDonazioneOrgani.data" />
+      <short value="Data di espressione della volontà alla donazione" />
+      <definition value="Data di espressione della volontà alla donazione" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="ConsensoDonazioneOrgani.stato">
+      <path value="ConsensoDonazioneOrgani.stato" />
+      <short value="attivo|inattivo|entrato per errore|rifiutato" />
+      <definition value="Stato del consenso (attivo|inattivo|entrato per errore|rifiutato)" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
+    <element id="ConsensoDonazioneOrgani.espressioneVolonta">
+      <path value="ConsensoDonazioneOrgani.espressioneVolonta" />
+      <short value="consenso | diniego" />
+      <definition value="Consenso o rifiuto alla donazione degli organi" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="ConsensoDonazioneOrgani.dichiarazione">
+      <path value="ConsensoDonazioneOrgani.dichiarazione" />
+      <short value="Dichiarazione di volontà" />
+      <definition value="Documento che attesta l'espressione di volontà" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+      <condition value="ref-or-att" />
+      <constraint>
+        <key value="ref-or-att" />
+        <severity value="error" />
+        <human value="Riferimento o Allegato" />
+        <expression value="riferimento or allegato" />
+      </constraint>
+    </element>
+    <element id="ConsensoDonazioneOrgani.dichiarazione.riferimento">
+      <path value="ConsensoDonazioneOrgani.dichiarazione.riferimento" />
+      <short value="riferimento alla dichiarazione" />
+      <definition value="riferimento alla dichiarazione" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.it/fhir/StructureDefinition/DichiarazioneDonazioneOrgani" />
+      </type>
+    </element>
+    <element id="ConsensoDonazioneOrgani.dichiarazione.allegato">
+      <path value="ConsensoDonazioneOrgani.dichiarazione.allegato" />
+      <short value="dichiarazione allegata" />
+      <definition value="dichiarazione allegata" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Attachment" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Attachment" />        
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

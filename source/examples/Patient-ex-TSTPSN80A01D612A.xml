@@ -1,0 +1,58 @@
+<Patient xmlns="http://hl7.org/fhir">
+	<id value="ex-TSTPSN80A01D612A"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h2 style="text-align: center;">
+				<strong>Test Person (esempio Donatore Organi)</strong>
+			</h2>
+			<p style="text-align: justify;">Cognome: <strong>Test </strong>Nome: <strong>Person</strong> Genere: <strong>Maschio</strong>
+			</p>
+			<p style="text-align: justify;">nato il <strong>1 gennaio 1980</strong>, a <strong>Firenze (FI), Italia</strong>
+			</p>
+			<p style="text-align: justify;">Codice Fiscale <strong>TSTPSN80A01D612A</strong>
+			</p>
+			<p style="text-align: justify;">Residente a <strong>Firenze</strong> (<strong>FI</strong>), in <strong>Piazza della Signoria 1 </strong>CAP<strong> 50122</strong>
+			</p>
+			<p style="text-align: justify;">AUSL di appartenenza: <strong>AZIENDA USL TOSCANA CENTRO (090.201)</strong>
+			</p>
+			<p style="text-align: justify;">Donatore di Organi: <span style="background-color: #ccffcc;">
+					<strong>SI</strong>
+				</span>
+			</p>
+		</div>
+	</text>
+	<extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+		<valueAddress>
+			<city value="Firenze"/>
+			<district value="FI"/>
+			<country value="Italia"/>
+		</valueAddress>
+	</extension>
+	<extension url="http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor">
+		<valueBoolean value="true"/>
+	</extension>
+	<identifier>
+		<system value="urn:oid:2.16.840.1.113883.2.9.4.3.2"/>
+		<value value="TSTPSN80A01D612A"/>
+	</identifier>
+	<name>
+		<family value="TEST"/>
+		<given value="PERSON"/>
+	</name>
+	<gender value="male"/>
+	<birthDate value="1980-01-01"/>
+	<address>
+		<extension url="http://hl7.it/fhir/StructureDefinition/legale-Address-it">
+			<valueBoolean value="true"/>
+		</extension>
+		<use value="home"/>
+		<type value="both"/>
+		<line value="Piazza della Signoria 1"/>
+		<city value="Firenze"/>
+		<district value="FI"/>
+		<postalCode value="50122"/>
+		<country value="Italia"/>
+	</address>
+	<!-- NB LA ASL DI APPARTENENZA NON E' INCLUSA IN QUESTO ESEMPIO -->
+</Patient>

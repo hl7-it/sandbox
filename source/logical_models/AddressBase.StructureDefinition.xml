@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="AddressBase"/>
+	<url value="http://hl7.it/fhir/StructureDefinition/AddressBase"/>
+	<version value="0.0.1"/>
+	<name value="AddressBase"/>
+	<title value="Indirizzo (base) - Modello Logico"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<description value="Modello Logico che definisce il set minimo dii dati che caratterizzano un indirizzo nella giurisdizione italiana.&#xD;&#xA;Questa versione è a scopo dimostrativo."/>
+	<fhirVersion value="4.0.0"/>
+	<kind value="logical"/>
+	<abstract value="true"/>
+	<type value="http://hl7.it/fhir/StructureDefinition/AddressBase"/>
+	<baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+	<derivation value="specialization"/>
+	<differential>
+		<element id="AddressBase">
+			<path value="AddressBase"/>
+			<short value="Indirizzo (base)"/>
+			<definition value="Modello Logico che definisce il set minimo dii dati che caratterizzano un indirizzo nella giurisdizione italiano."/>
+			<min value="0"/>
+			<max value="*"/>
+		</element>
+		<element id="AddressBase.stringaIndirizzo">
+			<path value="AddressBase.stringaIndirizzo"/>
+			<short value="Indirizzo completo o parziale testuale"/>
+			<definition value="Indirizzo completo o parziale testuale"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+			</type>
+		</element>
+		<element id="AddressBase.tipo">
+			<path value="AddressBase.tipo"/>
+			<short value="residenza|domicilio|temporaneo|lavoro|reperibilità"/>
+			<definition value="residenza|domicilio|temporaneo|lavoro|reperibilità"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+			</type>
+		</element>
+		<element id="AddressBase.strutturaIndirizzo">
+			<path value="AddressBase.strutturaIndirizzo"/>
+			<short value="Struttura Indirizzo"/>
+			<definition value="Struttura Indirizzo"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="BackboneElement"/>
+			</type>
+		</element>
+		<element id="AddressBase.strutturaIndirizzo.codiceComune">
+			<path value="AddressBase.strutturaIndirizzo.codiceComune"/>
+			<short value="Codice comune (e.g. ISTAT; Catasto)"/>
+			<definition value="Codice comune (e.g. ISTAT; Catasto)"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+			</type>
+			<example>
+				<label value="codiceComune"/>
+				<valueCodeableConcept>
+					<coding>
+						<code value="005005"/>
+						<display value="Asti"/>
+					</coding>
+					<coding>
+						<code value="A479"/>
+						<display value="Asti"/>
+					</coding>
+				</valueCodeableConcept>
+			</example>
+		</element>
+		<element id="AddressBase.strutturaIndirizzo.codiceStato">
+			<path value="AddressBase.strutturaIndirizzo.codiceStato"/>
+			<short value="Codice Stato"/>
+			<definition value="Codice Stato"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+			</type>
+		</element>
+		<element id="AddressBase.strutturaIndirizzo.codiceProvincia">
+			<path value="AddressBase.strutturaIndirizzo.codiceProvincia"/>
+			<short value="Codice Provincia"/>
+			<definition value="Codice Provincia"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+			</type>
+			<example>
+				<label value="codiceProvincia"/>
+				<valueCodeableConcept>
+					<coding>
+						<code value="TV"/>
+						<display value="Treviso"/>
+					</coding>
+				</valueCodeableConcept>
+			</example>
+		</element>
+		<element id="AddressBase.strutturaIndirizzo.codiceRegione">
+			<path value="AddressBase.strutturaIndirizzo.codiceRegione"/>
+			<short value="Codice Regione"/>
+			<definition value="Codice Regione"/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="CodeableConcept"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
+			</type>
+		</element>
+		<element id="AddressBase.strutturaIndirizzo.localita">
+			<path value="AddressBase.strutturaIndirizzo.localita"/>
+			<short value="Nome Località"/>
+			<definition value="Nome Località"/>
+			<alias value="Frazione"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+			</type>
+			<example>
+				<label value="localita"/>
+				<valueString value="Il Poggetto"/>
+			</example>
+		</element>
+		<element id="AddressBase.strutturaIndirizzo.comune">
+			<path value="AddressBase.strutturaIndirizzo.comune"/>
+			<short value="Nome comune"/>
+			<definition value="Nome comune"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+			</type>
+		</element>
+		<element id="AddressBase.strutturaIndirizzo.provincia">
+			<path value="AddressBase.strutturaIndirizzo.provincia"/>
+			<short value="Nome Provincia"/>
+			<definition value="Nome Provincia"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+			</type>
+		</element>
+		<element id="AddressBase.strutturaIndirizzo.regione">
+			<path value="AddressBase.strutturaIndirizzo.regione"/>
+			<short value="Nome Regione"/>
+			<definition value="Nome Regione"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+			</type>
+		</element>
+		<element id="AddressBase.strutturaIndirizzo.stato">
+			<path value="AddressBase.strutturaIndirizzo.stato"/>
+			<short value="Nome Stato"/>
+			<definition value="Nome Stato"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+			</type>
+		</element>
+		<element id="AddressBase.strutturaIndirizzo.odonimo">
+			<path value="AddressBase.strutturaIndirizzo.odonimo"/>
+			<short value="Toponimo stradale (e.g. Via Carso)"/>
+			<definition value="Toponimo stradale (e.g. Via Carso)"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+			</type>
+			<example>
+				<label value="odonimo"/>
+				<valueString value="Vicolo Alberti"/>
+			</example>
+		</element>
+		<element id="AddressBase.strutturaIndirizzo.numeroCivico">
+			<path value="AddressBase.strutturaIndirizzo.numeroCivico"/>
+			<short value="Numero Civico"/>
+			<definition value="Numero Civico"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+			</type>
+			<example>
+				<label value="numeroCivico"/>
+				<valueString value="37"/>
+			</example>
+		</element>
+		<element id="AddressBase.strutturaIndirizzo.cap">
+			<path value="AddressBase.strutturaIndirizzo.cap"/>
+			<short value="Codice Avviamento Postale"/>
+			<definition value="Codice Avviamento Postale"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="string"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/string"/>
+			</type>
+		</element>
+	</differential>
+</StructureDefinition>

@@ -1,0 +1,12 @@
+{
+  "package-id": "hl7.fhir.uv.ips.cen.lm",
+  "title": "CEN International Patient Summary Logical Model",
+  "canonical": "http://estandards.it/fhir/17269",
+  "list": [{
+    "version": "current",
+    "desc": "Continuous Integration Build (latest in version control)",
+    "path": "http://estandards.it/fhir/17269",
+    "status": "ci-build",
+    "current": true
+  }]
+}
