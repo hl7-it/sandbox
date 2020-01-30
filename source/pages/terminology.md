@@ -15,3 +15,7 @@ active: terminology
 # Value Sets
 
 {% include table-valuesets.xhtml %}
+
+# Concept Maps
+
+{% include table-conceptmaps.xhtml %}

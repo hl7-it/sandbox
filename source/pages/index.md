@@ -1,5 +1,5 @@
 ---
-title: IT Core FHIR
+title: HL7 IT FHIR Sandbox
 layout: default
 active: home
 ---
@@ -41,29 +41,13 @@ These are the site variables defined [here](http://wiki.hl7.org/index.php?title=
 
 <blockquote class="stu-note"> 
 
-<p>Questa è una <b>versione sperimentale</b> <!-- Current officially released version --> di {{site.data.fhir.igName}}, basato sulla versione FHIR <a href="{{ site.data.fhir.path }}"> {{ site.data.fhir.version }}</a>, pubblicata per supportare lo sviluppo. Vedi <a href="history.html">la Directory delle versioni pubblicate<img src="external.png"/></a>. Questa guida è soggetta a cambiamenti anche significativi, come parte del processo di sviluppo.</p>
+<p>Questa è un  <b>ambiente di prova</b> <!-- Current officially released version --> di {{site.data.fhir.igName}}, basato sulla versione FHIR <a href="{{ site.data.fhir.path }}"> {{ site.data.fhir.version }}</a>, pubblicata per condividere prodotti prototipali e supportare lo sviluppo dui nuove Implementaion Guides . Vedi <a href="history.html">la Directory delle versioni pubblicate<img src="external.png"/></a>.</p>
 </blockquote>
 
 
 <blockquote class="stu-note-en"> 
-<p>This is an <b>experimental version </b> <!-- Current officially released version --> of the {{site.data.fhir.igName}}, based on <a href="{{ site.data.fhir.path }}">FHIR Version {{ site.data.fhir.version }}</a>, published for development purposes. See the <a href="history.html">Directory of published versions<img src="external.png"/></a>. It is subject to change, which may be significant, as part of that process.</p>
+<p>This is a <b>proof of concept environment</b> <!-- Current officially released version --> of the {{site.data.fhir.igName}}, based on <a href="{{ site.data.fhir.path }}">FHIR Version {{ site.data.fhir.version }}</a>, published for sharing prototypes and supporting the development of new IGS. See the <a href="history.html">Directory of published versions<img src="external.png"/></a>. It is subject to change, which may be significant, as part of that process.</p>
 </blockquote>
-
-
-## Scopo della guida / Purpose of this guide
-
-<p>Lo scopo di questa Guida ... ..<i>completare</i></p>
-
-<p>The scope of this Guide ..  <i>to do</i> </p>
-
-
-##  FHIR IT core
-
-### Obiettivo e scopo / Goal and scope
-
-<p><i>da completare</i></p>
-<p><i>to be done</i></p>
-
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->
 

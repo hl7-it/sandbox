@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patient xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/codesystem.xsd">
+	<id value="test"/>
+	<extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+		<valueAddress>
+			<country value="Italia">
+				<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding">
+					<valueCoding>
+						<system value="urn:oid:2.16.840.1.113883.2.9.4.3"/>
+						<code value="F979"/>
+						<display value="NUORO"/>
+					</valueCoding>
+				</extension>
+			</country>
+		</valueAddress>
+	</extension>
+	<extension url="http://it.insiel.sanita/fhir/StructureDefinition/certificazioneAnagrafica">
+		<extension url="tipo-certificazione">
+			<valueString value="RADICE_ANAGRAFICA"/>
+		</extension>
+		<extension url="ente-certificazione">
+			<valueString value="MEF"/>
+		</extension>
+		<extension url="data-inizio-certificazione">
+			<valueDate value="2008-09-21"/>
+		</extension>
+	</extension>
+	<identifier>
+		<extension url="http://it.insiel.sanita/fhir/StructureDefinition/certificazioneAnagrafica">
+			<extension url="tipo-certificazione">
+				<valueString value="CODICE_FISCALE"/>
+			</extension>
+			<extension url="ente-certificazione">
+				<valueString value="MEF"/>
+			</extension>
+			<extension url="data-inizio-certificazione">
+				<valueDate value="2008-09-21"/>
+			</extension>
+		</extension>
+		<system value="urn:oid:2.16.840.1.113883.2.9.4.3"/>
+		<value value="TMNVCH71E01F979E"/>
+	</identifier>
+	<active value="true"/>
+	<name>
+		<use value="official"/>
+		<family value="TOMAINU"/>
+		<given value="IVANO"/>
+		<given value="CHRISTIAN"/>
+	</name>
+	<gender value="male"/>
+	<birthDate value="1971-05-01"/>
+	<address>
+		<extension url="http://insiel.it/fhir/StructureDefinition/ad-useV2">
+			<valueCode value="L"/>
+		</extension>
+		<extension url="http://it.insiel.sanita/fhir/StructureDefinition/certificazioneAnagrafica">
+			<extension url="tipo-certificazione">
+				<valueString value="INDIRIZZO_RESIDENZA"/>
+			</extension>
+			<extension url="ente-certificazione">
+				<valueString value="MEF"/>
+			</extension>
+			<extension url="data-inizio-certificazione">
+				<valueDate value="2008-09-21"/>
+			</extension>
+		</extension>
+		<use value="home"/>
+		<type value="postal"/>
+		<line>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+				<valueString value="DELLA REPUBBLICA"/>
+			</extension>
+		</line>
+		<line>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType">
+				<valueString value="VIALE"/>
+			</extension>
+		</line>
+		<line>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+				<valueString value="12"/>
+			</extension>
+		</line>
+		<city value="PANTIGLIATE"/>
+		<postalCode value="20090"/>
+		<country value="Italia"/>
+	</address>
+	<address>
+		<extension url="http://insiel.it/fhir/StructureDefinition/ad-useV2">
+			<valueCode value="H"/>
+		</extension>
+		<use value="home"/>
+		<type value="postal"/>
+		<line>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+				<valueString value="CAPITOLINA"/>
+			</extension>
+		</line>
+		<line>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType">
+				<valueString value="VIA"/>
+			</extension>
+		</line>
+		<line>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+				<valueString value="27"/>
+			</extension>
+		</line>
+		<line>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+				<valueString value="scala /2"/>
+			</extension>
+		</line>
+		<city value="TRIESTE"/>
+		<postalCode value="34131"/>
+		<country value="Italia"/>
+		<period>
+			<start value="2009-06-09T00:00:00+02:00"/>
+		</period>
+	</address>
+	<address>
+		<extension url="http://insiel.it/fhir/StructureDefinition/ad-useV2">
+			<valueCode value="C"/>
+		</extension>
+		<use value="home"/>
+		<type value="postal"/>
+		<line>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+				<valueString value="CAPITOLINA"/>
+			</extension>
+		</line>
+		<line>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType">
+				<valueString value="VIA"/>
+			</extension>
+		</line>
+		<line>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+				<valueString value="27"/>
+			</extension>
+		</line>
+		<line>
+			<extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix">
+				<valueString value="/2"/>
+			</extension>
+		</line>
+		<city value="TRIESTE"/>
+		<postalCode value="34131"/>
+		<country value="Italia"/>
+		<period>
+			<start value="2013-12-23T00:00:00+01:00"/>
+		</period>
+	</address>
+	<contact>
+		<telecom>
+			<system value="phone"/>
+			<value value="-3387501630"/>
+			<use value="home"/>
+		</telecom>
+		<telecom>
+			<system value="phone"/>
+			<value value="3387501630"/>
+		</telecom>
+	</contact>
+</Patient>

@@ -5,7 +5,7 @@
 	<url value="http://hl7.it/fhir/sandbox-it-0.0.0"/>
 	<version value="0.0.0"/>
 	<name value="IT_Base_Sandbox"/>
-	<title value="IT Base"/>
+	<title value="IT Sandbox"/>
 	<status value="draft"/>
 	<publisher value="Giorgio Cangioli"/>
 	<contact>
@@ -49,22 +49,24 @@
 		<!--  <groupingId value="[id]"/>  0..1 Grouping this is part of -->
 		<!-- insert resources -->
 		<!-- Terminologies -->
-		<!--
 		<resource>
 			<exampleBoolean value="false"/>
 			<reference>
-				<reference value="CodeSystem/certAna-it-fvg"/>
-			</reference>
-		</resource>		
-		
-				<resource>
-			<exampleBoolean value="false"/>
-			<reference>
-				<reference value="ValueSet/certAna-it-fvg"/>
+				<reference value="CodeSystem/CodeSystem-istat-statoCivile"/>
 			</reference>
 		</resource>
-	
--->
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ValueSet/ValueSet-statoCivile"/>
+			</reference>
+		</resource>
+		<resource>
+			<exampleBoolean value="false"/>
+			<reference>
+				<reference value="ConceptMap/ConceptMap-statoCivile"/>
+			</reference>
+		</resource>
 		<resource>
 			<reference>
 				<reference value="Bundle/NamingSystem-it-base"/>
@@ -203,19 +205,20 @@
 			</reference>
 			<exampleBoolean value="true"/>
 		</resource>
-		<!--
+	
 		<resource>
 			<reference>
-				<reference value="Patient/12345a"/>
+				<reference value="Patient/2718871"/>
 			</reference>
 			<exampleBoolean value="true"/>
 		</resource>
 		<resource>
 			<reference>
-				<reference value="Patient/12345b"/>
+				<reference value="Patient/test"/>
 			</reference>
 			<exampleBoolean value="true"/>
 		</resource>
+<!--
 		<resource>
 			<reference>
 				<reference value="Patient/12345c"/>
