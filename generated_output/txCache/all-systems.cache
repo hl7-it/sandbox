@@ -3098,3 +3098,41 @@ v: {
   "error" : "The code system \"\" is not known (encountered paired with code = \"EHIC\"); The code provided (#EHIC) is not  valid in the value set FHIRDefinedType"
 }
 -------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "ConsensoDonazioneOrgani"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"ConsensoDonazioneOrgani\"); The code provided (#ConsensoDonazioneOrgani) is not  valid in the value set FHIRDefinedType"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "code" : "DichiarazioneDonazioneOrgani"
+}, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/data-types"
+    },
+    {
+      "system" : "http://hl7.org/fhir/resource-types"
+    }]
+  }
+}, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"\" is not known (encountered paired with code = \"DichiarazioneDonazioneOrgani\"); The code provided (#DichiarazioneDonazioneOrgani) is not  valid in the value set FHIRDefinedType"
+}
+-------------------------------------------------------------------------------------

@@ -9,7 +9,7 @@
 		"output": "docs",
 		"history": "source/history",
 		"resources": [
-			"source/resources", "source/logical_models", "source/extensions", "source/examples", "source/systems"
+			"source", "source/resources", "source/logical_models", "source/extensions", "source/examples", "source/systems", "source/valuesets"
 		],
 		"txCache": "generated_output/txCache",
 		"qa": "generated_output/qa",
@@ -46,6 +46,15 @@
 		"NamingSystem/NamingSystem-it-sid-cf": {
 			"source": "NamingSystem-it-sid-cf.xml",
 			"template-base": "ex.html"
+		},
+		"CodeSystem/CodeSystem-istat-statoCivile": {
+			"source": "CodeSystem-istat-statoCivile.xml"
+		},
+		"ValueSet/ValueSet-statoCivile": {
+			"source": "ValueSet-statoCivile.xml"
+		},
+		"ConceptMap/ConceptMap-statoCivile": {
+			"source": "ConceptMap-statoCivile.xml"
 		},
 		"StructureDefinition/Patient-it-base": {
 			"defns": "StructureDefinition-Patient-it-base.structuredefinition-definitions.html",
@@ -139,6 +148,12 @@
 		},
 		"Patient/ex-TSTPSN80A01D612A": {
 			"source": "Patient-ex-TSTPSN80A01D612A.xml"
+		},
+		"Patient/2718871": {
+			"source": "FHIR_Patient_FVG.json"
+		},
+		"Patient/test": {
+			"source": "Patient-test.xml"
 		}
 	},
 	"npm-name": "hl7.fhir.it.sandbox",
