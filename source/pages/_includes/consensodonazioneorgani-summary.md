@@ -1,1 +1,0 @@
-# consensodonazioneorgani-summary.md file

@@ -1,1 +1,0 @@
-# ehic-summary.md file

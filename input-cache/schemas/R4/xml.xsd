@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta http-equiv="Expires" content="-1"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Cache-Control" content="no-cache"/>
+	<meta name="id" content="auth1" >
+	<link href="swl_login-5.0.0-391928886.css" rel="stylesheet" type="text/css">
+	<title>Guest Policy</title>
+	<script type="text/JavaScript" src="cookies-5.0.0-453054374.js"></script>
+	<script type="text/JavaScript" src="browserCheck-5.0.0-2410815703.js"></script>
+	<script type="text/JavaScript" src="zoneObj.js"></script>
+
+
+<script type="text/JavaScript">
+	<!--
+	var bw=new lib_bwcheck();
+
+	var peerZoneObj = new zoneObj("SkyTeam", '14', '0', '2', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '', '0', '1', 'X3:V225');
+peerZoneObj.guestServices = new guestServicesCfg(1,0,0,0,150);
+peerZoneObj.guestServices.smtpRedirect = new gsSmtpRedirectCfg(0,'');
+peerZoneObj.guestServices.policyPage = new gsPolicyPageCfg(1,'Welcome to SkyTeam',900);
+peerZoneObj.guestServices.customAuthPage = new gsCustomAuthPageCfg(0,0,'',0,'');
+peerZoneObj.guestServices.postAuthPage = new gsPostAuthPageCfg(1,'http://go.insites-consulting.com/wix/p1278631.aspx?&SI=2&LNG=3');
+peerZoneObj.guestServices.deny = new gsDenyCfg(0,'');
+peerZoneObj.guestServices.pass = new gsPassCfg(0,'');
+peerZoneObj.guestServices.bypass = new gsBypassAuthCfg(0,'');
+peerZoneObj.guestServices.externAAA = new externalAAAObj(0,1,'','',15);
+peerZoneObj.guestServices.externAAA.msgAuth.enable = 0;
+peerZoneObj.guestServices.externAAA.msgAuth.type = 0;
+peerZoneObj.guestServices.externAAA.msgAuth.secret = '';
+peerZoneObj.guestServices.externAAA.web.loginPage = '';
+peerZoneObj.guestServices.externAAA.web.idleTimeoutPage = '';
+peerZoneObj.guestServices.externAAA.web.sessionExpirationPage = '';
+peerZoneObj.guestServices.externAAA.web.guestLimitPage = '';
+peerZoneObj.guestServices.externAAA.web.trafficExceededPage = '';
+peerZoneObj.guestServices.externAAA.web.logoffCGI = '';
+peerZoneObj.guestServices.externAAA.web.statusCheckCGI = '';
+peerZoneObj.guestServices.externAAA.web.sessSyncCGI = '';
+peerZoneObj.guestServices.externAAA.redirect.msgType = 0;
+peerZoneObj.guestServices.externAAA.redirect.customMsg = '';
+peerZoneObj.guestServices.externAAA.statusCheck.enable = 0;
+peerZoneObj.guestServices.externAAA.statusCheck.interval = 300;
+peerZoneObj.guestServices.externAAA.statusCheck.msgType = 0;
+peerZoneObj.guestServices.externAAA.statusCheck.customMsg = '';
+peerZoneObj.guestServices.externAAA.sessSync.enable = 0;
+peerZoneObj.guestServices.externAAA.sessSync.interval = 600;
+peerZoneObj.guestServices.externAAA.autoLogout.enable = 0;
+peerZoneObj.guestServices.externAAA.autoLogout.interval = 60;
+
+	function displayPolicy(zoneObj) {
+
+		document.write(zoneObj.guestServices.policyPage.text);
+	}
+	function onCancel() {
+		self.close();
+	}
+// -->
+</script>
+</head>
+<body>
+
+
+	</br><font size="1">&nbsp;</font>
+	</br><font size="1">&nbsp;</font>
+	</br><font size="1">&nbsp;</font>
+
+	<div id="policy" align="center">
+		<table cellspacing="0" cellpadding="0" border="0" width="80%">
+			<tr>
+				<td>
+					<h2>Terms of Use Agreement</h2>
+				</td>
+			</tr>
+			<tr><td>&nbsp;</tr></td>
+			<tr>
+				<td>
+					By clicking the Accept button below, you agree to the following terms of usage:
+				</td>
+			</tr>
+			<tr><td>&nbsp;</tr></td>
+			<tr>
+				<td>
+					<script type="text/JavaScript">
+					<!--
+						displayPolicy(peerZoneObj);
+					-->
+					</script>
+				</td>
+			</tr>
+			<tr><td>&nbsp;</tr></td>
+			<tr>
+				<td>
+					Any means of circumventing this acceptance by scripts or any other means also holds you to the terms of use agreement.
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	</br><font size="1">&nbsp;</font>
+	</br><font size="1">&nbsp;</font>
+
+	<div  id="divButtons" align="center" style="position: relative; z-index: 10;">
+	<form name="guestPolicyAcceptance" action="guestPolicyAcceptance.cgi" method="POST" target="_self">
+		<table border="0" cellspacing="0" cellpadding="0" width="97%" summary="">
+			<tr align="center">
+				<td>
+
+					<input type="submit" name="accept" value="Accept" class="button">
+				</td>
+			</tr>
+		</table>
+	</form>
+	</div>
+
+	<noscript>
+		<center>
+			<font color="#FFFFFF"><font size="+1">Please turn on JavaScript to login.</font></font>
+		</center>
+	</noscript>
+
+</body>
+</html>

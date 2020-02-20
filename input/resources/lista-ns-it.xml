@@ -1,0 +1,18 @@
+<List xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/list.xsd">
+	<id value="list-sid"/>
+	<status value="current"/>
+	<mode value="snapshot"/>
+	<title value="Lista Naming Systems"/>
+	<entry>
+		<item>
+			<reference value="NamingSystem/it-sid-test"/>
+			<display value="test 1"/>
+		</item>
+	</entry>
+	<entry>
+		<item>
+			<reference value="NamingSystem/it-sid-cf"/>
+			<display value="Codice Fiscale"/>
+		</item>
+	</entry>
+</List>

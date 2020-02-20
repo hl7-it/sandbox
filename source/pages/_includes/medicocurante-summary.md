@@ -1,1 +1,0 @@
-# medicocurante-summary.md file

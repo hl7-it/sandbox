@@ -1,1 +1,0 @@
-# dichiarazionedonazioneorgani-summary.md file

@@ -1,1 +1,0 @@
-# aziendasanitaria-summary.md file
