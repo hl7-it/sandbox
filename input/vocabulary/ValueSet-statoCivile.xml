@@ -54,7 +54,7 @@
 			</concept>
 		</include>
 		<include>
-			<system value="http://hl7.it/fhir/CodeSystem/CodeSystem-istat-statoCivile"/>
+			<system value="http://terminology.hl7.it/fhir/CodeSystem-istat-statoCivile"/>
 			<concept>
 				<code value="6"/>
 				<display value="Unito civilmente"/>
