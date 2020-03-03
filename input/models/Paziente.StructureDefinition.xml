@@ -9,11 +9,13 @@
 	<experimental value="true"/>
 	<description value="Modello Logico che definisce il set minimo di dati che caratterizzano un paziente nella giurisdizione italiana.&#xD;&#xA;Questa versione è a scopo dimostrativo."/>
 	<fhirVersion value="4.0.0"/>
+	<!--
 	<mapping>
 		<identity value="fhir"/>
 		<uri value="http://hl7.org/fhir"/>
 		<name value="HL7 FHIR"/>
 	</mapping>
+-->
 	<mapping>
 		<identity value="fhir-it"/>
 		<uri value="http://hl7.it/fhir"/>
@@ -34,7 +36,7 @@
 			<max value="1"/>
 			<mustSupport value="true"/>
 			<mapping>
-				<identity value="fhir"/>
+				<identity value="fhir-it"/>
 				<map value="Patient"/>
 			</mapping>
 		</element>
@@ -49,7 +51,7 @@
 			</type>
 			<mustSupport value="true"/>
 			<mapping>
-				<identity value="fhir"/>
+				<identity value="fhir-it"/>
 				<map value="Patient.identifier"/>
 			</mapping>
 		</element>
@@ -66,18 +68,14 @@
 			</type>
 			<mustSupport value="true"/>
 			<mapping>
-				<identity value="fhir"/>
-				<map value="Patient.identifier"/>
-			</mapping>
-			<mapping>
 				<identity value="fhir-it"/>
 				<map value="Patient.identifier:codiceFiscale"/>
 			</mapping>
 		</element>
 		<element id="Paziente.identificatori.idRegionale">
 			<path value="Paziente.identificatori.idRegionale"/>
-			<short value="Identificatico Regionale"/>
-			<definition value="Identificatico Regionale"/>
+			<short value="Identificativo Regionale"/>
+			<definition value="Identificativo Regionale"/>
 			<min value="0"/>
 			<max value="1"/>
 			<type>
@@ -195,7 +193,7 @@
 			</type>
 			<mustSupport value="true"/>
 			<mapping>
-				<identity value="fhir"/>
+				<identity value="fhir-it"/>
 				<map value="Patient.name"/>
 			</mapping>
 		</element>
@@ -211,7 +209,7 @@
 			</type>
 			<mustSupport value="true"/>
 			<mapping>
-				<identity value="fhir"/>
+				<identity value="fhir-it"/>
 				<map value="Patient.gender"/>
 			</mapping>
 		</element>
@@ -226,7 +224,7 @@
 				<profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
 			</type>
 			<mapping>
-				<identity value="fhir"/>
+				<identity value="fhir-it"/>
 				<map value="Patient.gender"/>
 			</mapping>
 		</element>
@@ -246,11 +244,11 @@
 			</type>
 			<mustSupport value="true"/>
 			<mapping>
-				<identity value="fhir"/>
+				<identity value="fhir-it"/>
 				<map value="Patient.birthDate"/>
 			</mapping>
 			<mapping>
-				<identity value="fhir"/>
+				<identity value="fhir-it"/>
 				<map value="Patient.extension[@url='http://hl7.org/fhir/StructureDefinition/birthDateTime]"/>
 			</mapping>
 		</element>
@@ -266,7 +264,7 @@
 				<profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept"/>
 			</type>
 			<mapping>
-				<identity value="fhir"/>
+				<identity value="fhir-it"/>
 				<map value="Patient.extension[@url='http://hl7.org/fhir/StructureDefinition/birthPlace]"/>
 			</mapping>
 		</element>
@@ -281,7 +279,7 @@
 			</type>
 			<mustSupport value="true"/>
 			<mapping>
-				<identity value="fhir"/>
+				<identity value="fhir-it"/>
 				<map value="Patient.address"/>
 			</mapping>
 		</element>

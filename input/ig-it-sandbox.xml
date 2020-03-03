@@ -92,11 +92,23 @@
 		</parameter>
 		<parameter>
 			<code value="special-url"/>
-			<value value="http://hl7.it/fhir/administrative-gender"/>
+			<value value="http://terminology.hl7.it/CodeSystem/administrative-gender"/>
 		</parameter>
 		<parameter>
 			<code value="special-url"/>
-			<value value="http://terminology.hl7.it/fhir/CodeSystem-istat-statoCivile"/>
+			<value value="http://terminology.hl7.it/CodeSystem/istat-statoCivile"/>
+		</parameter>
+		<parameter>
+			<code value="special-url"/>
+			<value value="http://terminology.hl7.it/CodeSystem/v3-MaritalStatus"/>
+		</parameter>
+		<parameter>
+			<code value="special-url"/>
+			<value value="http://terminology.hl7.it/CodeSystem/istat-unitaTerritorialiEstero"/>
+		</parameter>
+		<parameter>
+			<code value="special-url"/>
+			<value value="http://hl7.org/fhir/StructureDefinition/official-Address"/>
 		</parameter>
 		<!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
     <parameter>

@@ -24,10 +24,10 @@
 	</jurisdiction>
 	<purpose value="Esempio di mapping fra value set."/>
 	<sourceUri value="http://hl7.it/fhir/ValueSet/ValueSet-statoCivile"/>
-	<targetUri value="http://terminology.hl7.it/fhir/CodeSystem-istat-statoCivile"/>
+	<targetUri value="http://terminology.hl7.it/CodeSystem/istat-statoCivile"/>
 	<group>
 		<source value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
-		<target value="http://terminology.hl7.it/fhir/CodeSystem-istat-statoCivile"/>
+		<target value="http://terminology.hl7.it/CodeSystem/istat-statoCivile"/>
 		<element>
 			<code value="S"/>
 			<display value="Never Married"/>
@@ -43,7 +43,7 @@
 			<target>
 				<code value="2"/>
 				<display value="Sposato"/>
-				<equivalence value="equal"/>
+				<equivalence value="equivalent"/>
 			</target>
 		</element>
 		<element>
@@ -67,7 +67,7 @@
 	</group>
 	<group>
 		<source value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
-		<target value="http://terminology.hl7.it/fhir/CodeSystem-istat-statoCivile"/>
+		<target value="http://terminology.hl7.it/CodeSystem/istat-statoCivile"/>
 		<element>
 			<code value="UNK"/>
 			<display value="Unknown"/>
@@ -75,19 +75,20 @@
 				<code value="9"/>
 				<display value="Non classificabile/ignoto/n.c"/>
 				<equivalence value="wider"/>
+				<comment value="Il target comprende concetti come 'non classificabile' che corrspondono a nullFlavor tipo UNC e/o OTH" />
 			</target>
 		</element>
 	</group>
 	<group>
-		<source value="http://terminology.hl7.it/fhir/CodeSystem-istat-statoCivile"/>
-		<target value="http://terminology.hl7.it/fhir/CodeSystem-istat-statoCivile"/>
+		<source value="http://terminology.hl7.it/CodeSystem/istat-statoCivile"/>
+		<target value="http://terminology.hl7.it/CodeSystem/istat-statoCivile"/>
 		<element>
 			<code value="6"/>
 			<display value="Unito civilmente"/>
 			<target>
 				<code value="6"/>
 				<display value="Unito civilmente"/>
-				<equivalence value="equal"/>
+				<equivalence value="equivalent"/>
 			</target>
 		</element>
 		<element>
@@ -96,7 +97,7 @@
 			<target>
 				<code value="7"/>
 				<display value="Stato libero a seguito di decesso della parte unita civilmente"/>
-				<equivalence value="equal"/>
+				<equivalence value="equivalent"/>
 			</target>
 		</element>
 		<element>
@@ -105,7 +106,7 @@
 			<target>
 				<code value="8"/>
 				<display value="Stato libero a seguito di scioglimento dell'unione"/>
-				<equivalence value="equal"/>
+				<equivalence value="equivalent"/>
 			</target>
 		</element>
 	</group>

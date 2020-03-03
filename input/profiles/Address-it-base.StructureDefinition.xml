@@ -3,10 +3,10 @@
 	<id value="Address-it-base"/>
 	<url value="http://hl7.it/fhir/StructureDefinition/Address-it-base"/>
 	<version value="0.0.1"/>
-	<name value="Address_it_extended"/>
-	<title value="Address Data Type : base"/>
+	<name value="Address_it"/>
+	<title value="Address Data Type: base"/>
 	<status value="draft"/>
-	<description value="Base StructureDefinition per il tipo Address with parti addizionali specifiche per gli indirizzi italiani. Questo profilo struttura l'elemento  Address.line in più parti, consente la codifica di alcune di queste parti e supporta la caratterizzazine degli indirizzi di tipo Residenza. Questa prima versione è ispirata al data type Address Olandese.">
+	<description value="Base StructureDefinition per il tipo Address con parti addizionali specifiche per gli indirizzi italiani. Questo profilo struttura l'elemento  Address.line in più parti, consente la codifica di alcune di queste parti e supporta la caratterizzazine degli indirizzi di tipo Residenza. Questa prima versione è ispirata al data type Address Olandese.">
 		<extension url="http://hl7.org/fhir/StructureDefinition/translation">
 			<extension url="lang">
 				<valueCode value="en"/>
@@ -91,7 +91,7 @@
 			<path value="Address.extension"/>
 			<sliceName value="residenza"/>
 			<short value="Indica se questo è l'indirizzo di residenza"/>
-			<definition value="Mark an address as an 'officially registered' address. In THE Italian context that means it is registered as the 'Residenza'"/>
+			<definition value="Mark an address as an 'officially registered' address. In the Italian context that means it is registered as the 'Residenza'"/>
 			<max value="1"/>
 			<type>
 				<code value="Extension"/>

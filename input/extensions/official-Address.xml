@@ -41,13 +41,16 @@
     </element>
     <element id="Extension.value[x]">
       <path value="Extension.value[x]" />
+      <!--
       <slicing>
         <discriminator>
           <type value="type" />
           <path value="$this" />
         </discriminator>
       </slicing>
-      <min value="1" />
+-->
+      <min value="1"/>
+      <max value="1"/>
       <type>
         <code value="boolean" />
       </type>
@@ -56,11 +59,14 @@
       </type>
       <meaningWhenMissing value="Nothing can be inferred when this extension is missing. I.e. the absence of this extension shall not be interpreted as non-official address." />
     </element>
+    <!--
     <element id="Extension.value[x]:valueBoolean">
       <path value="Extension.valueBoolean" />
       <sliceName value="valueBoolean" />
       <short value="Official address true/false" />
       <definition value="It specifies if this address is or it is not the official address." />
+      <min value="0"/>
+      <max value="1"/>
       <type>
         <code value="boolean" />
       </type>
@@ -70,6 +76,8 @@
       <sliceName value="valueCodeableConcept" />
       <short value="Official address for country X" />
       <definition value="It specifies that this address is the official address for the indicated country." />
+      <min value="0"/>
+      <max value="1"/>
       <type>
         <code value="CodeableConcept" />
       </type>
@@ -78,5 +86,6 @@
         <valueSet value="http://hl7.org/fhir/ValueSet/jurisdiction" />
       </binding>
     </element>
+-->
   </differential>
 </StructureDefinition>

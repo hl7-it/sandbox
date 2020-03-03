@@ -42,6 +42,13 @@
 			</fixedIdentifier>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Patient.identifier:anpr">
+			<path value="Patient.identifier"/>
+			<sliceName value="anpr"/>
+			<fixedIdentifier>
+				<system value="http://hl7.it/fhir/sid/anpr"/>
+			</fixedIdentifier>
+		</element>
 		<!--
 		<element id="Patient.identifier:codiceENI">
 			<path value="Patient.identifier"/>
@@ -58,13 +65,7 @@
 				<system value="http://example.org/sid/codiceSTP"/>
 			</fixedIdentifier>
 		</element>
-		<element id="Patient.identifier:anpr">
-			<path value="Patient.identifier"/>
-			<sliceName value="anpr"/>
-			<fixedIdentifier>
-				<system value="http://example.org/sid/anpr"/>
-			</fixedIdentifier>
-		</element>
+
 -->
 		<element id="Patient.name">
 			<path value="Patient.name"/>
@@ -157,7 +158,7 @@
 		<element id="Patient.address:residenza">
 			<path value="Patient.address"/>
 			<sliceName value="residenza"/>
-						<type>
+			<type>
 				<code value="Address"/>
 				<profile value="http://hl7.it/fhir/StructureDefinition/Address-it-base-residenza"/>
 			</type>
