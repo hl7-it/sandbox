@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<StructureDefinition xmlns="http://hl7.org/fhir">
+<StructureDefinition xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/structuredefinition.xsd">
 	<id value="Address-it-base"/>
 	<url value="http://hl7.it/fhir/StructureDefinition/Address-it-base"/>
 	<version value="0.0.1"/>
-	<name value="Address_it"/>
+	<name value="Address_IT_Base"/>
 	<title value="Address Data Type: base"/>
 	<status value="draft"/>
 	<description value="Base StructureDefinition per il tipo Address con parti addizionali specifiche per gli indirizzi italiani. Questo profilo struttura l'elemento  Address.line in più parti, consente la codifica di alcune di queste parti e supporta la caratterizzazine degli indirizzi di tipo Residenza. Questa prima versione è ispirata al data type Address Olandese.">
@@ -68,6 +68,7 @@
 				</valueAddress>
 			</example>
 			<!-- NOTA: CHIARIRE SE VOLGIAMO UN QUALCHE TIPO DI VINCOLO IN CASO DI RESIDENZA -->
+			<!--
 			<constraint>
 				<key value="nl-streetname-if-official-and-other-line-parts"/>
 				<requirements value="This constraint checks conformance against the Dutch BRP constraints on address parts. However: when you only send postalCode + houseNumber which is enough for certain cases this may still be a valid address"/>
@@ -77,15 +78,7 @@
 				<xpath value="not(.[f:extension[@url='http://hl7.org/fhir/StructureDefinition/official-Address'][f:valueBoolean/@value='true']][f:line[empty(f:extension[@url='http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName'])][f:extension[@url=('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber','http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix','http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator')]]])"/>
 				<source value="Address"/>
 			</constraint>
-		</element>
-		<element id="Address.extension:localita">
-			<path value="Address.extension"/>
-			<sliceName value="localita"/>
-			<short value="Località"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct"/>
-			</type>
+-->
 		</element>
 		<element id="Address.extension:residenza">
 			<path value="Address.extension"/>
@@ -98,6 +91,7 @@
 				<profile value="http://hl7.org/fhir/StructureDefinition/official-Address"/>
 			</type>
 		</element>
+		<!--
 		<element id="Address.extension:certificazioneIndirizzo">
 			<path value="Address.extension"/>
 			<sliceName value="certificazioneIndirizzo"/>
@@ -107,43 +101,34 @@
 				<profile value="http://hl7.it/fhir/StructureDefinition/certificazioneAnagrafica-Address"/>
 			</type>
 		</element>
+-->
 		<!--
 		<element id="Address.extension:certificazioneIndirizzo.extension:codiceCertificatore">
 			<path value="Address.extension.extension"/>
 			<sliceName value="codiceCertificatore"/>
+		</element><element id="Address.extension:localita">
+			<path value="Address.extension"/>
+			<sliceName value="localita"/>
+			<short value="Località"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct"/>
+			</type>
 		</element>
+		
 -->
-		<element id="Address.line.extension:DUG">
-			<path value="Address.line.extension"/>
-			<sliceName value="DUG"/>
-			<short value="Denominazione Urbanistica Generica"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType"/>
-			</type>
-		</element>
-		<element id="Address.line.extension:DUGCode">
-			<path value="Address.line.extension"/>
-			<sliceName value="DUGCode"/>
-			<short value="Codice DUG"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.it/fhir/StructureDefinition/dug-Address-it"/>
-			</type>
-		</element>
-		<element id="Address.line.extension:DUF">
-			<path value="Address.line.extension"/>
-			<sliceName value="DUF"/>
-			<short value="Denominazioe Urbanistica Ufficiale"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase"/>
-			</type>
+		<element id="Address.line">
+			<path value="Address.line"/>
+			<short value="Nome completo strada (e.g. Via Corta 1, interno 2)"/>
+			<example>
+				<label value="ex-1"/>
+				<valueString value="Via Corta 1, interno 2"/>
+			</example>
 		</element>
 		<element id="Address.line.extension:odonimo">
 			<path value="Address.line.extension"/>
 			<sliceName value="odonimo"/>
-			<short value="Odonimo"/>
+			<short value="Odonimo, Toponimo Stradale"/>
 			<requirements value="Nome della Strada"/>
 			<alias value="Toponimo Stradale"/>
 			<max value="1"/>
@@ -151,6 +136,59 @@
 				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"/>
 			</type>
+			<example>
+				<label value="ex-1"/>
+				<valueString value="Via Corta"/>
+			</example>
+		</element>
+		<element id="Address.line.extension:denominazioneUrbanisticaGenerica">
+			<path value="Address.line.extension"/>
+			<sliceName value="denominazioneUrbanisticaGenerica"/>
+			<short value="Denominazione Urbanistica Generica (DUG)"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType"/>
+			</type>
+			<example>
+				<label value="ex-1"/>
+				<valueString value="Via"/>
+			</example>
+		</element>
+		<element id="Address.line.extension:dugCode">
+			<path value="Address.line.extension"/>
+			<sliceName value="dugCode"/>
+			<short value="Codice Denominazione Urbanistica Generica (DUG)"/>
+			<alias value="specie"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.it/fhir/StructureDefinition/dug-Address-it"/>
+			</type>
+			<example>
+				<label value="ex-1"/>
+				<valueCodeableConcept>
+					<coding>
+						<system value="http://registry.geodati.gov.it/dug"/>
+						<code value="67"/>
+						<display value="via"/>
+					</coding>
+				</valueCodeableConcept>
+			</example>
+		</element>
+		<element id="Address.line.extension:denominazioneUrbanisticaUfficiale">
+			<path value="Address.line.extension"/>
+			<sliceName value="denominazioneUrbanisticaUfficiale"/>
+			<short value="Denominazione Urbanistica Ufficiale (DUF)"/>
+			<alias value="denominazione"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase"/>
+			</type>
+			<example>
+				<label value="ex-1"/>
+				<valueString value="Corta"/>
+			</example>
 		</element>
 		<element id="Address.line.extension:houseNumber">
 			<path value="Address.line.extension"/>
@@ -162,16 +200,22 @@
 				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"/>
 			</type>
+			<example>
+				<label value="ex-1"/>
+				<valueString value="1"/>
+			</example>
 		</element>
+		<!--
 		<element id="Address.line.extension:nomeStrada">
 			<path value="Address.line.extension"/>
 			<sliceName value="nomeStrada"/>
 			<short value="Nome completo strada (e.g. Via Corta 1)"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetAddressLine"/>
 			</type>
 		</element>
+-->
 		<element id="Address.city">
 			<path value="Address.city"/>
 			<definition value="The name of the city, town, village or other community or delivery center."/>
@@ -204,7 +248,7 @@
 		<element id="Address.district.extension:codiceProvincia">
 			<path value="Address.district.extension"/>
 			<sliceName value="codiceProvincia"/>
-			<short value="Codice Comune"/>
+			<short value="Codice Provincia"/>
 			<type>
 				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"/>
@@ -231,20 +275,20 @@
 		</element>
 		<element id="Address.postalCode">
 			<path value="Address.postalCode"/>
-			<comment value="Dutch postal codes have pattern '\d{4}[A-Z]{2}' so they do not have spaces. Systems can easily render postal codes with a space if necessary."/>
+			<comment value="I codici postali italiani hanno un pattern '[1,9]\d{4}'."/>
 			<alias value="CAP"/>
 			<alias value="postcode"/>
 			<example>
 				<label value="General"/>
 				<valueString value="50125"/>
 			</example>
-			<condition value="nl-postal-code-pattern"/>
+			<condition value="it-postal-code-pattern"/>
 			<constraint>
-				<key value="nl-postal-code-pattern"/>
+				<key value="it-postal-code-pattern"/>
 				<severity value="error"/>
-				<human value="Dutch postal code pattern 'nnnnAA'"/>
-				<expression value="(country in 'nl' | 'nld' | 'nederland').not() or matches('^\\d{4}[A-Z]{2}$')"/>
-				<xpath value="not(../f:country[lower-case(@value)=('nl','nld','nederland')]) or matches(@value,'^\d{4}[A-Z]{2}$')"/>
+				<human value="I codici postali italiani hanno un pattern 'nnnnn' (n intero)"/>
+				<expression value="(country in 'it' | 'ita' | 'italia' | 'italy).not() or matches('^[1,9]\\d{4}$')"/>
+				<xpath value="not(../f:country[lower-case(@value)=('it','ita','italia', 'italy')]) or matches(@value,'^[1,9]\d{4}$')"/>
 				<source value="Address"/>
 			</constraint>
 		</element>

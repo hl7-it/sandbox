@@ -39,6 +39,13 @@
 	<!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
 	<fhirVersion value="4.0.1"/>
 	<definition>
+		<resource>
+			<reference>
+				<reference value="Patient/Patient-CF-residenza"/>
+			</reference>
+			<name value="Patient.  Esempio con Codice Fiscale, Residenza e Domicilio"/>
+			<exampleCanonical value="http://hl7.it/fhir/StructureDefinition/Patient-it-base"/>
+		</resource>
 		<!-- You don't need to define any groupings.  The IGPublisher will define them for you.  You only need to do so if your IG is 'special' and it's
       inappropriate to use the defaults.  Feel free to provide feedback about the defaults... -->
 		<page>
@@ -110,6 +117,14 @@
 			<code value="special-url"/>
 			<value value="http://hl7.org/fhir/StructureDefinition/official-Address"/>
 		</parameter>
+		
+		<parameter>
+			<code value="special-url"/>
+			<value value="http://example.org/sid/it-identifier-type"/>
+		</parameter>
+	
+		
+		
 		<!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
     <parameter>
       <code value="excludexml"/>

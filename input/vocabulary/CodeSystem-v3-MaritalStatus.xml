@@ -7,8 +7,8 @@
 		<value value="urn:oid:2.16.840.1.113883.5.2"/>
 	</identifier>
 	<version value="2018-08-12"/>
-	<name value="v3.MaritalStatus"/>
-	<title value="v3 Code System MaritalStatus"/>
+	<name value="v3MaritalStatus_IT"/>
+	<title value="v3 Code System MaritalStatus - Italian Translation"/>
 	<status value="active"/>
 	<experimental value="false"/>
 	<description value=" * * * No description supplied * * *  Open Issue:&#xD;&#xA;The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency."/>

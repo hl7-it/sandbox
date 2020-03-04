@@ -7,8 +7,8 @@
 	</text>
 	<url value="http://hl7.it/fhir/StructureDefinition/Patient-it-base"/>
 	<version value="0.0.1"/>
-	<name value="Patiente"/>
-	<title value="Patiente (IT base)"/>
+	<name value="Paziente_IT_Base"/>
+	<title value="Paziente (profilo base IT Realm)"/>
 	<status value="draft"/>
 	<experimental value="true"/>
 	<date value="2018-03-20T16:43:56.519+01:00"/>
@@ -23,31 +23,85 @@
 			<path value="Patient"/>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Patient.extension:luogoNascita">
+			<path value="Patient.extension"/>
+			<sliceName value="luogoNascita"/>
+			<short value="Indica il luogo di nascita"/>
+			<definition value="Luogo di Nascita del paziente. In base al contesto può includere informazioni testuali e/o codificate, in forma strutturata o non strutturata'"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/patient-birthPlace"/>
+			</type>
+		</element>
 		<element id="Patient.identifier">
 			<path value="Patient.identifier"/>
 			<slicing>
 				<discriminator>
 					<type value="value"/>
-					<path value="system"/>
+					<path value="$this.system"/>
 				</discriminator>
+				<!--
+				<discriminator>
+					<type value="value"/>
+					<path value="type"/>
+				</discriminator>
+				-->
 				<rules value="open"/>
 			</slicing>
 			<mustSupport value="true"/>
 		</element>
+		<!--
+		<element id="Patient.identifier.type">
+			<path value="Patient.identifier.type"/>
+			<mustSupport value="false"/>
+			<binding>
+				<strength value="extensible"/>
+				<valueSet value="http://hl7.it/fhir/ValueSet/it-identifier-type"/>
+			</binding>
+		</element>
+		<element id="Patient.identifier.system">
+			<path value="Patient.identifier.system"/>
+			<definition value="URI che definisce lo spazio di identificazione, in cui l'identificativo usato è unico. &#13;&#10; Esempi di possibili sistemi di identificazione sono elencati in https://confluence.hl7.org/display/HI/Identificatori" />
+			<mustSupport value="true"/>
+		</element>
+
+		-->
 		<element id="Patient.identifier:codiceFiscale">
 			<path value="Patient.identifier"/>
 			<sliceName value="codiceFiscale"/>
-			<fixedIdentifier>
-				<system value="http://hl7.it/fhir/sid/codiceFiscale"/>
-			</fixedIdentifier>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Patient.identifier:codiceFiscale.system">
+			<path value="Patient.identifier.system"/>
+			<min value="1"/>
+			<fixedUri value="http://hl7.it/fhir/sid/codiceFiscale"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Patient.identifier:codiceFiscale.value">
+			<path value="Patient.identifier.value"/>
+			<min value="1"/>
+			<constraint>
+				<key value="pat-id-cf-1"/>
+				<severity value="error"/>
+				<human value="Codice Fiscale non validato dal regex"/>
+				<!-- <expression value="matches('^(?:[A-Z][AEIOU][AEIOUX]|[B-DF-HJ-NP-TV-Z]{2}[A-Z]){2}(?:[\\dLMNP-V]{2}(?:[A-EHLMPR-T](?:[04LQ][1-9MNP-V]|[15MR][\\dLMNP-V]|[26NS][0-8LMNP-U])|[DHPS][37PT][0L]|[ACELMRT][37PT][01LM]|[AC-EHLMPR-T][26NS][9V])|(?:[02468LNQSU][048LQU]|[13579MPRTV][26NS])B[26NS][9V])(?:[A-MZ][1-9MNP-V][\\dLMNP-V]{2}|[A-M][0L](?:[1-9MNP-V][\\dLMNP-V]|[0L][1-9MNP-V]))[A-Z]$')"/>
+-->
+				<expression value="matches('^[A-Za-z]{6}[0-9LMNPQRSTUV]{2}[A-Za-z]{1}[0-9LMNPQRSTUV]{2}[A-Za-z]{1}[0-9LMNPQRSTUV]{3}[A-Za-z]{1}$')"/>
+				<!--
+				<xpath value="matches(@value,'/^(?:[A-Z][AEIOU][AEIOUX]|[B-DF-HJ-NP-TV-Z]{2}[A-Z]){2}(?:[\dLMNP-V]{2}(?:[A-EHLMPR-T](?:[04LQ][1-9MNP-V]|[15MR][\dLMNP-V]|[26NS][0-8LMNP-U])|[DHPS][37PT][0L]|[ACELMRT][37PT][01LM]|[AC-EHLMPR-T][26NS][9V])|(?:[02468LNQSU][048LQU]|[13579MPRTV][26NS])B[26NS][9V])(?:[A-MZ][1-9MNP-V][\dLMNP-V]{2}|[A-M][0L](?:[1-9MNP-V][\dLMNP-V]|[0L][1-9MNP-V]))[A-Z]$/i') "/>
+-->
+			</constraint>
 			<mustSupport value="true"/>
 		</element>
 		<element id="Patient.identifier:anpr">
 			<path value="Patient.identifier"/>
 			<sliceName value="anpr"/>
-			<fixedIdentifier>
-				<system value="http://hl7.it/fhir/sid/anpr"/>
-			</fixedIdentifier>
+		</element>
+		<element id="Patient.identifier:anpr.system">
+			<path value="Patient.identifier.system"/>
+			<fixedUri value="http://hl7.it/fhir/sid/anpr"/>
+			<mustSupport value="true"/>
 		</element>
 		<!--
 		<element id="Patient.identifier:codiceENI">
@@ -55,18 +109,28 @@
 			<sliceName value="codiceENI"/>
 			<short value="Codice ENI"/>
 			<fixedIdentifier>
-				<system value="http://example.org/sid/codiceENI"/>
+				<type>
+					<coding>
+						<system value="http://example.org/sid/it-identifier-type"/>
+						<code value="ENI"/>
+					</coding>
+				</type>
 			</fixedIdentifier>
 		</element>
+		
 		<element id="Patient.identifier:codiceSTP">
 			<path value="Patient.identifier"/>
 			<sliceName value="codiceSTP"/>
 			<fixedIdentifier>
-				<system value="http://example.org/sid/codiceSTP"/>
+				<type>
+					<coding>
+						<system value="http://example.org/sid/it-identifier-type"/>
+						<code value="STP"/>
+					</coding>
+				</type>
 			</fixedIdentifier>
 		</element>
-
--->
+		-->
 		<element id="Patient.name">
 			<path value="Patient.name"/>
 			<requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name.&#xD;&#xA;The Alphabetic representation of the name SHALL be always provided"/>
@@ -113,6 +177,7 @@
 		</element>
 		<element id="Patient.address">
 			<path value="Patient.address"/>
+			<!-- Not yet supported
 			<slicing>
 				<discriminator>
 					<type value="profile"/>
@@ -120,6 +185,7 @@
 				</discriminator>
 				<rules value="open"/>
 			</slicing>
+-->
 			<type>
 				<code value="Address"/>
 				<profile value="http://hl7.it/fhir/StructureDefinition/Address-it-base"/>
@@ -155,6 +221,16 @@
 			<mustSupport value="true"/>
 		</element>
 		-->
+		<!-- Not yet supported
+		<element id="Patient.address:base">
+			<path value="Patient.address"/>
+			<sliceName value="base"/>
+			<type>
+				<code value="Address"/>
+				<profile value="http://hl7.it/fhir/StructureDefinition/Address-it-base"/>
+			</type>
+		</element>		
+		
 		<element id="Patient.address:residenza">
 			<path value="Patient.address"/>
 			<sliceName value="residenza"/>
@@ -163,6 +239,8 @@
 				<profile value="http://hl7.it/fhir/StructureDefinition/Address-it-base-residenza"/>
 			</type>
 		</element>
+
+-->
 		<!--
 		<element id="Patient.address:residenza.extension:localita">
 			<path value="Patient.address.extension"/>
