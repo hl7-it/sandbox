@@ -311,6 +311,26 @@
 				<map value="Patient.address:domicilio"/>
 			</mapping>
 		</element>
+		<element id="Paziente.indirizzi.domicilioSanitario">
+			<path value="Paziente.indirizzi.domicilioSanitario"/>
+			<short value="Domicilio Sanitario"/>
+			<definition value="Domicilio Sanitario"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="http://hl7.it/fhir/StructureDefinition/Indirizzo"/>
+			</type>
+		</element>
+		<element id="Paziente.indirizzi.reperibilita">
+			<path value="Paziente.indirizzi.reperibilita"/>
+			<short value="Reperibilità"/>
+			<definition value="Reperibilità"/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="http://hl7.it/fhir/StructureDefinition/Indirizzo"/>
+			</type>
+		</element>
 		<element id="Paziente.listaAUSL">
 			<path value="Paziente.listaAUSL"/>
 			<short value="Aziende Sanitarie (Assistenza, residenza)"/>

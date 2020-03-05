@@ -13,8 +13,8 @@
   </identifier>
   -->
 	<version value="4.0.1"/>
-	<name value="ValueSet_IdentifierType"/>
-	<title value="Stato Civile"/>
+	<name value="ValueSet_IdentifierType_IT"/>
+	<title value="Tipi di identificatori"/>
 	<status value="active"/>
 	<experimental value="false"/>
 	<date value="2019-11-01T09:29:23+11:00"/>
@@ -35,6 +35,7 @@
       </concept>
       <concept>
         <code value="PPN"/>
+        <display value="Numero Passaporto"/>
       </concept>
       <concept>
         <code value="BRN"/>

@@ -282,13 +282,14 @@
 				<label value="General"/>
 				<valueString value="50125"/>
 			</example>
+			
 			<condition value="it-postal-code-pattern"/>
 			<constraint>
 				<key value="it-postal-code-pattern"/>
 				<severity value="error"/>
 				<human value="I codici postali italiani hanno un pattern 'nnnnn' (n intero)"/>
-				<expression value="(country in 'it' | 'ita' | 'italia' | 'italy).not() or matches('^[1,9]\\d{4}$')"/>
-				<xpath value="not(../f:country[lower-case(@value)=('it','ita','italia', 'italy')]) or matches(@value,'^[1,9]\d{4}$')"/>
+				<expression value="(country in 'it' | 'ita' | 'italia' | 'italy').not() or matches('^[1-9]\\d{4}$')"/>
+				<xpath value="not(../f:country[lower-case(@value)=('it','ita','italia', 'italy')]) or matches(@value,'^[1-9]\d{4}$')"/>
 				<source value="Address"/>
 			</constraint>
 		</element>

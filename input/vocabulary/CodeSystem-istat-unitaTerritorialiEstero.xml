@@ -33,7 +33,83 @@ Nota: nell’ “Elenco codici e denominazioni delle unità territoriali estere�
 	</jurisdiction>
 	<versionNeeded value="true"/>
 	<content value="complete"/>
+	
+	<!-- Formato Vecchio
 	<property>
+		<extension url="http://hl7.org/fhir/StructureDefinition/rendered-value">
+			<valueString value="Stato(S)/Territorio(T)"/>
+		</extension>
+		<code value="SoT"/>
+		<uri value="http://terminology.hl7.it/CodeSystem/istat-unitaTerritorialiEstero#SoT"/>
+		<description value="(S) Stato: ente primario e originario, autonomo e indipendente da ogni altra entità politica la cui sovranità si estende al suo territorio. (T)Territorio: Area geografica dipendente da uno Stato. - 2019- Istat, Eurostat"/>
+		<type value="code"/>
+	</property>
+	<property>
+		<extension url="http://hl7.org/fhir/StructureDefinition/rendered-value">
+			<valueString value="Codice Ministeriale"/>
+		</extension>
+		<code value="codice-MIN"/>
+		<uri value="http://terminology.hl7.it/CodeSystem/istat-unitaTerritorialiEstero#codice-MIN"/>
+		<description value="Codice identificativo dello Stato/Territorio rilasciato dal Ministero dell'Interno ai fini dell'Anagrafe Nazionale della Popolazione Residente (ANPR) - 2019- Ministero dell'Interno"/>
+		<type value="code"/>
+	</property>
+	<property>
+		<extension url="http://hl7.org/fhir/StructureDefinition/rendered-value">
+			<valueString value="Codice AT"/>
+		</extension>
+		<code value="codice-AT">
+
+		</code>
+		<uri value="http://terminology.hl7.it/CodeSystem/istat-unitaTerritorialiEstero#codice-AT"/>
+		<description value="Codice assegnato dall'Agenzia delle Entrate allo Stato/Territorio, composto da quattro caratteri, il primo dei quali alfabetico (Z) e gli altri tre numerici. Per gli Stati e i territori per i quali il codice non è disponibile si riporta la dicitura 'n.d'. L'Agenzia non prevede un codice per lo Stato 'Italia'. - 2019 - Agenzia delle Entrate"/>
+		<type value="code"/>
+	</property>
+	<property>
+		<extension url="http://hl7.org/fhir/StructureDefinition/rendered-value">
+			<valueString value="Codice UNSD M49"/>
+		</extension>
+		<code value="codice-M49">
+
+		</code>
+		<uri value="http://terminology.hl7.it/CodeSystem/istat-unitaTerritorialiEstero#codice-M49"/>
+		<description value="Codice di tre caratteri in formato numerico, valido nel range 1-999.Il codice UNSD M49 (Standard country or area codes for statistical use) è assegnato dalla Divisione di Statistica del Segretariato delle Nazioni Unite. Per gli Stati per i quali il codice non è disponibile si riporta la dicitura 'n.d.' - 2019- Divisione di Statistica del Segretariato delle Nazioni Unite."/>
+		<type value="code"/>
+	</property>
+	<property>
+		<extension url="http://hl7.org/fhir/StructureDefinition/rendered-value">
+			<valueString value="Codice ISO alpha-2"/>
+		</extension>
+		<code value="codice-ISO-2">
+
+		</code>
+		<uri value="http://terminology.hl7.it/CodeSystem/istat-unitaTerritorialiEstero#codice-ISO-2"/>
+		<description value="Codice di due caratteri in formato alfanumerico. Per gli Stati e i territori il cui codice non è disponibile si riporta la dicitura 'n.d.'. L'ISO 3166 è una codifica geografica standard assegnata dall'Organizzazione Internazionale per le Standardizzazioni (ISO) agli Stati, ai Territori dipendenti e alle principali suddivisioni amministrative dei Paesi. - 2019 - International Organization for Standardization, classificazione ISO 3166-1 Alpha2"/>
+		<type value="code"/>
+	</property>
+	<property>
+		<extension url="http://hl7.org/fhir/StructureDefinition/rendered-value">
+			<valueString value="Codice ISO alpha-3"/>
+		</extension>
+		<code value="codice-ISO-3">
+
+		</code>
+		<uri value="http://terminology.hl7.it/CodeSystem/istat-unitaTerritorialiEstero#codice-ISO-2"/>
+		<description value="Codice di tre caratteri in formato alfanumerico. Per gli Stati e i territori il cui codice non è disponibile si riporta la dicitura 'n.d.'. L'ISO 3166 è una codifica geografica standard assegnata dall'Organizzazione Internazionale per le Standardizzazioni (ISO) agli Stati, ai Territori dipendenti e alle principali suddivisioni amministrative dei Paesi. - 2019 - International Organization for Standardization, classificazione ISO 3166-1 Alpha3"/>
+		<type value="code"/>
+	</property>
+	<property>
+		<extension url="http://hl7.org/fhir/StructureDefinition/rendered-value">
+			<valueString value="Codice ISO padre"/>
+		</extension>
+		<code value="parent-ISO-code">
+
+		</code>
+		<uri value="http://terminology.hl7.it/CodeSystem/istat-unitaTerritorialiEstero#parent-ISO-code"/>
+		<description value="Codice ISO 3166 alpha3 dello Stato (tre caratteri, formato alfanumerico) che estende la sua sovranità sul Territorio (T) - 2019 - International Organization for Standardization, classificazione ISO 3166-1 Alpha3"/>
+		<type value="code"/>
+	</property>
+	-->
+<property>
 		<code value="SoT">
 			<extension url="http://hl7.org/fhir/StructureDefinition/rendered-value">
 				<valueString value="Stato(S)/Territorio(T)"/>
@@ -103,6 +179,7 @@ Nota: nell’ “Elenco codici e denominazioni delle unità territoriali estere�
 		<description value="Codice ISO 3166 alpha3 dello Stato (tre caratteri, formato alfanumerico) che estende la sua sovranità sul Territorio (T) - 2019 - International Organization for Standardization, classificazione ISO 3166-1 Alpha3"/>
 		<type value="code"/>
 	</property>
+
 	<concept>
 		<code value="1"/>
 		<display value="Europa"/>
