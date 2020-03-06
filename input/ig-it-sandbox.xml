@@ -115,16 +115,20 @@
 		</parameter>
 		<parameter>
 			<code value="special-url"/>
-			<value value="http://hl7.org/fhir/StructureDefinition/official-Address"/>
+			<value value="http://terminology.hl7.it/CodeSystem/istat-unitaTerritoriali"/>
 		</parameter>
-		
 		<parameter>
 			<code value="special-url"/>
-			<value value="http://example.org/sid/it-identifier-type"/>
+			<value value="http://hl7.org/fhir/StructureDefinition/official-Address"/>
 		</parameter>
-	
-		
-		
+		<parameter>
+			<code value="special-url"/>
+			<value value="http://terminology.hl7.it/CodeSystem/it-identifier-type"/>
+		</parameter>
+		<parameter>
+			<code value="special-url"/>
+			<value value="http://terminology.hl7.it/CodeSystem/ae-codiciCatastali"/>
+		</parameter>
 		<!-- Uncomment one or more of these if you want to limit which syntaxes are supported or want to disable the display of mappings
     <parameter>
       <code value="excludexml"/>

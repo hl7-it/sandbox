@@ -84,7 +84,7 @@
       </concept>
 		</include>
 		<include>
-			<system value="http://example.org/sid/it-identifier-type"/>
+			<system value="http://terminology.hl7.it/CodeSystem/it-identifier-type"/>
 		</include>
 	</compose>
 </ValueSet>
