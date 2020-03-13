@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CapabilityStatement xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../../fhir-all-xsd/structuredefinition.xsd">
+	<id value="it-base-server"/>
+	<url value="http://hl7.it/fhir/CapabilityStatement/it-base-server"/>
+	<version value="3.1.0"/>
+	<name value="ItBaseServerCapabilityStatement"/>
+	<title value="CapabilityStatement: IT Base, Server"/>
+	<status value="active"/>
+	<experimental value="false"/>
+	<date value="2020-03-09"/>
+	<description value="Questa sezione descrive le capacità attese di un server conforme a questa Implemention Guide ( IT base ) e responsabile di rispondere aqlle richieste di un client conofmre a questa guida. L'elenco completo dei profili FHIR, delle operazioni RESTful e dei parametri di ricerca supportati sono presenti in questa guida."/>
+	<jurisdiction>
+		<coding>
+			<!-- This is the code for universal -->
+			<system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+			<code value="380"/>
+			<display value="Italia"/>
+		</coding>
+	</jurisdiction>
+	<kind value="requirements"/>
+	<fhirVersion value="4.0.1"/>
+	<format value="xml"/>
+	<format value="json"/>
+	<patchFormat value="application/json-patch+json"/>
+	<implementationGuide value="http://hl7.it/fhir/ImplementationGuide/hl7.fhir.it.sandbox-0.0.1"/>
+	<rest>
+		<mode value="server"/>
+		<documentation value="Un Server IT base *DEVE*: &#10;&#10; 1. Supportare IT Base Patient resource profile.&#10;&#10; 1. Implementare il RESTful behavior in accordo con le specifiche FHIR.&#10;&#10;  1. Restituire le seguenti calssi di risposte:&#10;&#10;  * (Status 400): invalid parameter &#10;&#10; *   (Status 401/4xx): unauthorized request&#10;&#10; *   (Status 403): insufficient scope&#10;&#10; *   (Status 404): unknown resource&#10;&#10; *   (Status 410): deleted resource.      &#10;&#10;  4. Support json source formats for all US Core interactions.&#10;&#10; The US Core Server **SHOULD**:&#10;&#10; 1. Support xml source formats for all US Core interactions."/>
+		<security>
+			<description value="1. See the [General Security Considerations](security.html) section for requirements and recommendations.&#xA;1. A server **SHALL** reject any unauthorized requests by returning an `HTTP 401` unauthorized response code."/>
+		</security>
+		<resource>
+			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+				<extension url="required">
+					<valueString value="gender"/>
+				</extension>
+				<extension url="required">
+					<valueString value="name"/>
+				</extension>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+				<extension url="required">
+					<valueString value="birthdate"/>
+				</extension>
+				<extension url="required">
+					<valueString value="family"/>
+				</extension>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+				<extension url="required">
+					<valueString value="birthdate"/>
+				</extension>
+				<extension url="required">
+					<valueString value="name"/>
+				</extension>
+			</extension>
+			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination">
+				<extension url="required">
+					<valueString value="family"/>
+				</extension>
+				<extension url="required">
+					<valueString value="gender"/>
+				</extension>
+			</extension>
+			<type value="Patient"/>
+			<supportedProfile value="http://hl7.it/fhir/StructureDefinition/Patient-it-base"/>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="create"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="update"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="patch"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="delete"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<code value="history-type"/>
+			</interaction>
+			<referencePolicy value="resolves"/>
+			<searchRevInclude value="Provenance:target"/>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="_id"/>
+				<definition value="http://hl7.it/fhir/SearchParameter/Patient-it-base-id"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="birthdate"/>
+				<definition value="http://hl7.it/fhir/SearchParameter/Patient-it-base-birthdate"/>
+				<type value="date"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="family"/>
+				<definition value="http://hl7.it/fhir/SearchParameter/Patient-it-base-family"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="gender"/>
+				<definition value="http://hl7.it/fhir/SearchParameter/Patient-it-base-gender"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="MAY"/>
+				</extension>
+				<name value="given"/>
+				<definition value="http://hl7.it/fhir/SearchParameter/Patient-it-base-given"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="identifier"/>
+				<definition value="http://hl7.it/fhir/SearchParameter/Patient-it-base-identifier"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="name"/>
+				<definition value="http://hl7.it/fhir/SearchParameter/Patient-it-base-name"/>
+				<type value="string"/>
+			</searchParam>
+		</resource>
+			<interaction>
+			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+				<valueCode value="MAY"/>
+			</extension>
+			<code value="transaction"/>
+		</interaction>
+		<interaction>
+			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+				<valueCode value="MAY"/>
+			</extension>
+			<code value="batch"/>
+		</interaction>
+		<interaction>
+			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+				<valueCode value="MAY"/>
+			</extension>
+			<code value="search-system"/>
+		</interaction>
+		<interaction>
+			<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+				<valueCode value="MAY"/>
+			</extension>
+			<code value="history-system"/>
+		</interaction>
+	</rest>
+</CapabilityStatement>

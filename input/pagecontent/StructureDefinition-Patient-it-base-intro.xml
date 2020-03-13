@@ -1,0 +1,80 @@
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!-- <h3> Guida introduttiva sul profilo del paziente</h3>
+	<p>Questo profilo descrive come le applicazioni recuperano la risorsa Patient per verificare l'identità del paziente e accedere ai dati demografici di base e ad altre informazioni amministrative sul paziente.</p>
+
+-->
+	<h3>Esempio di Scenari di uso</h3>
+	<p>L'applicazione client può accedere ai record Patient usando le seguenti API call:</p>
+	<table>
+		<thead>
+			<tr>
+				<th>Call</th>
+				<th>Parametri</th>
+				<th>Note</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>GET [url]/Patient/</td>
+				<td>nessuno</td>
+				<td>
+					<i>Aggiungere Note</i>
+				</td>
+			</tr>
+			<tr>
+				<td>GET [url]/Patient/[id]</td>
+				<td>[id] identificativo logico della risorsa (Patient.id)</td>
+				<td>
+					<i>Aggiungere Note</i>
+				</td>
+			</tr>
+			<tr>
+				<td>GET [url]/Patient?identifier=http://hl7.it/fhir/sid/codiceFiscale|[CF]</td>
+				<td>[CF] Codice Fiscale (Patient.identifier)</td>
+				<td>
+					<i>Aggiungere Note</i>
+				</td>
+			</tr>
+			<tr>
+				<td>GET [url]/Patient?name=[parte_nome]</td>
+				<td>[parte_nome] Una ricerca definita dal server che può riguardare  uno qualsiasi dei campi stringa in HumanName, tra cui family, given, prefix, suffix, and / or text(Patient.name)</td>
+				<td>
+					<i>Aggiungere Note</i>
+				</td>
+			</tr>
+			<tr>
+				<td>GET [url]/Patient?family=[parte_cognome]</td>
+				<td>[parte_cognome] Una parte del cognome del paziente (Patient.name.family)</td>
+				<td>
+					<i>Aggiungere Note</i>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<p>I server DEVONO supportare al minimo i parametri di ricerca indicati sopra.</p>
+	<p>I client NON DOVREBBERO aspettarsi che i server supportino parametri di ricerca aggiuntivi.</p>
+	<br>  </br>
+	<p>Ogni Patient DEVE avere:</p>
+	<ul>
+		<li>an active flag <i>(verificare)</i>
+		</li>
+		<li>un patient identifier (e.g. Codice Fiscale)<i>(verificare)</i>
+		</li>
+		<li>un patient name</li>
+		<li>un administrative gender (nota: questo è a fini amministrativi; vedere la nota relativa al genere e al sesso del paziente per la discussione)<i>(verificare)</i>
+		</li>
+	</ul>
+	<p>
+		<i>DA DISCUTERE</i>
+	</p>
+	<p>
+		<i>
+Applications must also support:
+<ul>
+				<li>Birth date</li>
+				<li>Patient Links</li>
+				<li>Servers may choose to provide additional information, or may be required to do so by national or other additional profiles on patient that apply in the servers context.</li>
+			</ul>
+		</i>
+	</p>
+</div>
