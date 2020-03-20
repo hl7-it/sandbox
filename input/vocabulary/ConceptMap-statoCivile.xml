@@ -64,6 +64,26 @@
 				<equivalence value="equivalent"/>
 			</target>
 		</element>
+		<element>
+			<code value="A"/>
+			<display value="Vedovo"/>
+			<target>
+				<code value="9"/>
+				<display value="Non classificabile/ignoto/n.c"/>
+				<equivalence value="inexact"/>
+				<comment value="Concetto non classificato nel target, quindi associato alla classe 9  'Non classificabile/ignoto/n.c'"/>
+			</target>
+		</element>
+		<element>
+			<code value="L"/>
+			<display value="Vedovo"/>
+			<target>
+				<code value="9"/>
+				<display value="Non classificabile/ignoto/n.c"/>
+				<equivalence value="inexact"/>
+				<comment value="Concetto non classificato nel target, quindi associato alla classe 9  'Non classificabile/ignoto/n.c'"/>
+			</target>
+		</element>
 	</group>
 	<group>
 		<source value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
@@ -75,7 +95,7 @@
 				<code value="9"/>
 				<display value="Non classificabile/ignoto/n.c"/>
 				<equivalence value="wider"/>
-				<comment value="Il target comprende concetti come 'non classificabile' che corrspondono a nullFlavor tipo UNC e/o OTH" />
+				<comment value="Il target comprende concetti come 'non classificabile' che corrspondono a nullFlavor tipo UNC e/o OTH"/>
 			</target>
 		</element>
 	</group>

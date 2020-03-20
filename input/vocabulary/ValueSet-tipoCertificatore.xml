@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
-    <id value="certAna-it-fvg"/>
-        <text>
-    <status value="generated"/>
-    <div xmlns="http://www.w3.org/1999/xhtml">Codice Entità di Certificazione</div>
-  </text>
-    <url value="http://hl7.it/sandbox/insiel/ValueSet/certAna-it-fvg"/>
+    <url value="http://hl7.it/fhir/ValueSet/tipoCertificatore"/>
     <identifier>
         <use value="official"/>
         <system value="http://art-decor.org/ns/oids/vs"/>
@@ -13,16 +8,15 @@
         <value value="2.16.840.1.113883.11.99.9.99"/>
     </identifier>
     <version value="2017-03-29T00:00:00"/>
-    <name value="VS_certAna_it_fvg"/>
+    <name value="ValueSetTipoCertificatore"/>
     <title value="Codice Entità di Certificazione"/>
     <status value="draft"/>
     <experimental value="true"/>
-    <publisher value="Insiel"/>
     <description value="Codice Entità di Certificazione"/>
     <immutable value="false"/>
     <compose>
         <include>
-            <system value="http://hl7.it/sandbox/insiel/CodeSystem/certAna-it-fvg"/>
+            <system value="http://terminology.hl7.it/CodeSystem/tipoEntita"/>
         </include>
     </compose>
 </ValueSet>

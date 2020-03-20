@@ -77,4 +77,6 @@ Applications must also support:
 			</ul>
 		</i>
 	</p>
+	
+	<blockquote class="stu-note"><b>Rappresentazione del codice comune/stato di nascita</b><br/>Questa versione del profilo include diverse opzioni di rappresentazione del codice comune/stato di nascita, descritte nella <a href="https://confluence.hl7.org/pages/viewpage.action?pageId=76162969#ITbaseIG-Codificacomune/statodinascita">pagina confluence</a><br/>I lettori sono invitati a valutare queste opzioni e suggerire quali di opzioni è la più adeguata.</blockquote>
 </div>

@@ -45,6 +45,14 @@
 				<code value="W"/>
 				<display value="Vedovo/a"/>
 			</concept>
+			<concept>
+				<code value="L"/>
+				<display value="Separato/a Legalmente"/>
+			</concept>
+			<concept>
+				<code value="A"/>
+				<display value="Annullato"/>
+			</concept>
 		</include>
 		<include>
 			<system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>

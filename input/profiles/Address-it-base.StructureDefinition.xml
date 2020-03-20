@@ -91,32 +91,16 @@
 				<profile value="http://hl7.org/fhir/StructureDefinition/official-Address"/>
 			</type>
 		</element>
-		<!--
 		<element id="Address.extension:certificazioneIndirizzo">
 			<path value="Address.extension"/>
 			<sliceName value="certificazioneIndirizzo"/>
 			<short value="Certificazione Indirizzo"/>
+			<definition value="Indica che i dati di questo indirizzo sono stati certificati da una specifica entità"/>
 			<type>
 				<code value="Extension"/>
-				<profile value="http://hl7.it/fhir/StructureDefinition/certificazioneAnagrafica-Address"/>
+				<profile value="http://hl7.it/fhir/StructureDefinition/certificazioneAnagrafica"/>
 			</type>
 		</element>
--->
-		<!--
-		<element id="Address.extension:certificazioneIndirizzo.extension:codiceCertificatore">
-			<path value="Address.extension.extension"/>
-			<sliceName value="codiceCertificatore"/>
-		</element><element id="Address.extension:localita">
-			<path value="Address.extension"/>
-			<sliceName value="localita"/>
-			<short value="Località"/>
-			<type>
-				<code value="Extension"/>
-				<profile value="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct"/>
-			</type>
-		</element>
-		
--->
 		<element id="Address.line">
 			<path value="Address.line"/>
 			<short value="Nome completo strada (e.g. Via Corta 1, interno 2)"/>
@@ -282,7 +266,6 @@
 				<label value="General"/>
 				<valueString value="50125"/>
 			</example>
-			
 			<condition value="it-postal-code-pattern"/>
 			<constraint>
 				<key value="it-postal-code-pattern"/>

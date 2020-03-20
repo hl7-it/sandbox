@@ -17,7 +17,7 @@
 	<identifier>
 		<type>
 			<coding>
-				<system value="http://example.org/sid/it-identifier-type"/>
+				<system value="http://terminology.hl7.it/CodeSystem/it-identifier-type"/>
 				<code value="STP"/>
 			</coding>
 		</type>
@@ -27,6 +27,8 @@
 	<active value="true"/>
 	<name>
 		<text value="Akuba Ackah"/>
+		<family value="Ackah"/>
+		<given value="Akuba"/>
 	</name>
 	<address>
 		<text value="Via dei Pini 123; Ronda"/>

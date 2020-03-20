@@ -23,6 +23,18 @@
 			<path value="Patient"/>
 			<mustSupport value="true"/>
 		</element>
+		<element id="Patient.extension:certificazione">
+			<path value="Patient.extension"/>
+			<sliceName value="certificazione"/>
+			<short value="Indica che i dati presenti nella risorsa sono stati certificati da uno specifico entità"/>
+			<definition value="Indica che i dati presenti nella risorsa (non quelli referenziati) sono stati certificati da uno specifico entità"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.it/fhir/StructureDefinition/certificazioneAnagrafica"/>
+			</type>
+		</element>
+		<!-- OPZIONE 1 -->
 		<element id="Patient.extension:luogoNascita">
 			<path value="Patient.extension"/>
 			<sliceName value="luogoNascita"/>
@@ -38,7 +50,6 @@
 			<path value="Patient.extension.valueAddress.city"/>
 			<short value="Città di nascita. Comune, se in Italia."/>
 			<definition value="Città di nascita. Per i nati in Italia indica il comune di nascita"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Patient.extension:luogoNascita.valueAddress.city.extension:codiceComune">
 			<path value="Patient.extension.valueAddress.city.extension"/>
@@ -57,7 +68,6 @@
 			<path value="Patient.extension.valueAddress.country"/>
 			<short value="Stato di nascita."/>
 			<definition value="Stato di nascita. Per i non nati in Italia è tipicamente richiesto al posto del comune di nascita"/>
-			<mustSupport value="true"/>
 		</element>
 		<element id="Patient.extension:luogoNascita.valueAddress.country.extension:codiceStato">
 			<path value="Patient.extension.valueAddress.country.extension"/>
@@ -67,10 +77,37 @@
 				<code value="Extension"/>
 				<profile value="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding"/>
 			</type>
-						<binding>
+			<binding>
 				<strength value="preferred"/>
 				<valueSet value="http://hl7.it/fhir/ValueSet/istat-stati"/>
 			</binding>
+		</element>
+		<!-- OPZIONE 2 -->
+		<element id="Patient.extension:luogoNascitaCodeable">
+			<path value="Patient.extension"/>
+			<sliceName value="luogoNascitaCodeable"/>
+			<short value="Codice del comune e/o dello stato di nascita"/>
+			<definition value="Codice del comune e/o dello stato di nascita del paziente. In via eccezionle, può essere usato per indicare comune e/o stato di nascita in forma testuale"/>
+			<max value="*"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.it/fhir/StructureDefinition/patientBirthPlace-codeable-it"/>
+			</type>
+			<binding>
+				<strength value="example"/>
+				<valueSet value="http://hl7.it/fhir/ValueSet/istat-comuni"/>
+			</binding>
+		</element>
+		<element id="Patient.extension:cittadinanza">
+			<path value="Patient.extension"/>
+			<sliceName value="cittadinanza"/>
+			<short value="Cittadinanza"/>
+			<definition value="Indica la cittadinanza del cittadino attraverso lo stato di provenienza"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.org/fhir/StructureDefinition/patient-citizenship"/>
+			</type>
 		</element>
 		<element id="Patient.identifier">
 			<path value="Patient.identifier"/>
@@ -112,6 +149,17 @@
 				<system value="http://hl7.it/fhir/sid/codiceFiscale"/>
 			</patternIdentifier>
 			<mustSupport value="true"/>
+		</element>
+		<element id="Patient.identifier:codiceFiscale.extension:certificazione">
+			<path value="Patient.identifier.extension"/>
+			<sliceName value="certificazioneCF"/>
+			<short value="Indica che il Codice Fiscale è stato certificato"/>
+			<definition value="Indica che il Codice Fiscale è stato certificato"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+				<profile value="http://hl7.it/fhir/StructureDefinition/certificazioneAnagrafica"/>
+			</type>
 		</element>
 		<element id="Patient.identifier:codiceFiscale.value">
 			<path value="Patient.identifier.value"/>
