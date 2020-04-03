@@ -1,0 +1,121 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance",
+  "code" : "AllergyorIntolerance"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance\" is not known (encountered paired with code = \"AllergyorIntolerance\"); The code provided (http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance#AllergyorIntolerance) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance",
+  "code" : "AllergyorIntolerance.EndDate"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance\" is not known (encountered paired with code = \"AllergyorIntolerance.EndDate\"); The code provided (http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance#AllergyorIntolerance.EndDate) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance",
+  "code" : "AllergyorIntolerance.ClinicalStatus"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance\" is not known (encountered paired with code = \"AllergyorIntolerance.ClinicalStatus\"); The code provided (http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance#AllergyorIntolerance.ClinicalStatus) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance",
+  "code" : "AllergyorIntolerance.Certainty"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance\" is not known (encountered paired with code = \"AllergyorIntolerance.Certainty\"); The code provided (http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance#AllergyorIntolerance.Certainty) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance",
+  "code" : "AllergyorIntolerance.TypeOfPropensity"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance\" is not known (encountered paired with code = \"AllergyorIntolerance.TypeOfPropensity\"); The code provided (http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance#AllergyorIntolerance.TypeOfPropensity) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance",
+  "code" : "AllergyorIntolerance.Criticality"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance\" is not known (encountered paired with code = \"AllergyorIntolerance.Criticality\"); The code provided (http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance#AllergyorIntolerance.Criticality) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance",
+  "code" : "AllergyorIntolerance.Diagnosis"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance\" is not known (encountered paired with code = \"AllergyorIntolerance.Diagnosis\"); The code provided (http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance#AllergyorIntolerance.Diagnosis) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance",
+  "code" : "AllergyorIntolerance.Agent.Code"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance\" is not known (encountered paired with code = \"AllergyorIntolerance.Agent.Code\"); The code provided (http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance#AllergyorIntolerance.Agent.Code) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance",
+  "code" : "AllergyorIntolerance.OnsetDate"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance\" is not known (encountered paired with code = \"AllergyorIntolerance.OnsetDate\"); The code provided (http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance#AllergyorIntolerance.OnsetDate) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance",
+  "code" : "AllergyorIntolerance.Reaction"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance\" is not known (encountered paired with code = \"AllergyorIntolerance.Reaction\"); The code provided (http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance#AllergyorIntolerance.Reaction) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance",
+  "code" : "AllergyorIntolerance.Reaction.Manifestation"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance\" is not known (encountered paired with code = \"AllergyorIntolerance.Reaction.Manifestation\"); The code provided (http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance#AllergyorIntolerance.Reaction.Manifestation) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance",
+  "code" : "AllergyorIntolerance.Reaction.Severity"
+}, "valueSet" :null, "lang":"null", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance\" is not known (encountered paired with code = \"AllergyorIntolerance.Reaction.Severity\"); The code provided (http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance#AllergyorIntolerance.Reaction.Severity) is not  valid in the value set All codes known to the system"
+}
+-------------------------------------------------------------------------------------

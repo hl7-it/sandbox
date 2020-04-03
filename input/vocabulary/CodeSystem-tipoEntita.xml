@@ -34,6 +34,12 @@
 		<definition value="Comune"/>
 		<!-- perché non usare un codice comune se disponibile ? -->
 	</concept>
+		<concept>
+		<code value="ausl"/>
+		<display value="Azienda Sanitaria"/>
+		<definition value="Comune"/>
+		<!-- perché non usare un codice comune se disponibile ? -->
+	</concept>
 	<concept>
 		<code value="self"/>
 		<display value="soggetto stesso"/>

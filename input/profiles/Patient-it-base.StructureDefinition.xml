@@ -145,9 +145,11 @@
 		<element id="Patient.identifier:codiceFiscale">
 			<path value="Patient.identifier"/>
 			<sliceName value="codiceFiscale"/>
+			<!--
 			<patternIdentifier>
 				<system value="http://hl7.it/fhir/sid/codiceFiscale"/>
 			</patternIdentifier>
+-->
 			<mustSupport value="true"/>
 		</element>
 		<element id="Patient.identifier:codiceFiscale.extension:certificazione">
@@ -160,6 +162,11 @@
 				<code value="Extension"/>
 				<profile value="http://hl7.it/fhir/StructureDefinition/certificazioneAnagrafica"/>
 			</type>
+		</element>
+		<element id="Patient.identifier:codiceFiscale.system">
+			<path value="Patient.identifier.system"/>
+			<min value="1"/>
+			<patternUri value="http://hl7.it/fhir/sid/codiceFiscale"/>
 		</element>
 		<element id="Patient.identifier:codiceFiscale.value">
 			<path value="Patient.identifier.value"/>
@@ -228,7 +235,7 @@
 				<key value="it-pat-1"/>
 				<severity value="error"/>
 				<human value="Patient.name.given or Patient.name.family or both SHALL be present"/>
-				<expression value="family.exists() or given.exists()"/>
+				<expression value="Patient.family.exists() or Patient.given.exists()"/>
 				<xpath value="f:given or f:family"/>
 				<source value="Patient"/>
 			</constraint>
@@ -524,6 +531,40 @@
 -->
 		<element id="Patient.generalPractitioner">
 			<path value="Patient.generalPractitioner"/>
+			<slicing>
+				<discriminator>
+					<type value="profile"/>
+					<path value="$this"/>
+				</discriminator>
+				<rules value="open"/>
+			</slicing>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Patient.generalPractitioner:mmgPlsRole">
+			<path value="Patient.generalPractitioner"/>
+			<sliceName value="mmgPlsRole"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.it/fhir//StructureDefinition/PractitionerRole-mmg-it"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Patient.generalPractitioner:mmgPls">
+			<path value="Patient.generalPractitioner"/>
+			<sliceName value="mmgPls"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.it/fhir//StructureDefinition/Practitioner-mmg-it"/>
+			</type>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Patient.generalPractitioner:aziendaAssistenza">
+			<path value="Patient.generalPractitioner"/>
+			<sliceName value="mmgPlsAzienda"/>
+			<type>
+				<code value="Reference"/>
+				<targetProfile value="http://hl7.it/fhir//StructureDefinition/Organization-AziendaSanitaria-it"/>
+			</type>
 			<mustSupport value="true"/>
 		</element>
 	</differential>
