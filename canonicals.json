@@ -1,0 +1,16 @@
+[
+  {
+    "id": "hl7.fhir.it.730",
+    "type": "ImplementationGuide",
+    "url": "http://hl7.it/fhir/dossierPharma/ImplementationGuide/hl7.fhir.it.730",
+    "version": "0.1.0",
+    "name": "HL7ITDossierPharma"
+  },
+  {
+    "id": "Invoice-it-730",
+    "type": "StructureDefinition",
+    "url": "http://hl7.it/fhir/dossierPharma/StructureDefinition/Invoice-it-730",
+    "version": "0.1.0",
+    "name": "Invoice730"
+  }
+]

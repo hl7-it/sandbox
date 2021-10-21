@@ -1,0 +1,34 @@
+﻿HL7ITDossierPharma : Validation Results
+=========================================
+
+err = 0, warn = 1, info = 0
+IG Publisher Version: 1.1.82
+Generated Thu Oct 21 10:47:10 UTC 2021. FHIR version 4.0.1 for hl7.fhir.it.730#0.1.0 (canonical = http://hl7.it/fhir/dossierPharma)
+ Build Errors : 20 / 0 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.it.730 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Invoice-it-730 : 0 / 1 / 1
+</table>
+== n/a ==
+ERROR: /github/workspace/output/StructureDefinition-Invoice-it-730-definitions.html#/html/body/div/div/div/p/a at Line 683, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Invoice-it-730-examples.html#/html/body/div/div/div/p/a at Line 296, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Invoice-it-730-mappings.html#/html/body/div/div/div/p/a at Line 377, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Invoice-it-730.html#/html/body/div/div/div/p/a at Line 731, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Invoice-it-730.profile.history.html#/html/body/div/div/div/p/a at Line 285, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Invoice-it-730.profile.json.html#/html/body/div/div/div/p/a at Line 2291, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Invoice-it-730.profile.ttl.html#/html/body/div/div/div/p/a at Line 2053, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Invoice-it-730.profile.xml.html#/html/body/div/div/div/p/a at Line 2056, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 211, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/design.html#/html/body/div/div/div/div/div/p/a at Line 458, column 2: The link 'StructureDefinition-Patient-it-base.html' for "Patient.identifier" cannot be resolved
+ERROR: /github/workspace/output/design.html#/html/body/div/div/div/p/a at Line 515, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/p/a at Line 245, column 34: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 318, column 9: The link 'copyright.html' for "Copyright" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 429, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/methodology.html#/html/body/div/div/div/p/a at Line 345, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/scenario.html#/html/body/div/div/div/p/a at Line 225, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/spec.html#/html/body/div/div/div/p/a at Line 217, column 28: The link '' for "" cannot be resolved
+ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 200, column 28: The link '' for "" cannot be resolved
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.it.730.json ==
+== fsh-generated/resources/StructureDefinition-Invoice-it-730.json ==
+WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/dossierPharma/StructureDefinition/Invoice-it-730'): The Implementation Guide contains no examples for this profile
