@@ -24,7 +24,7 @@
   <name value="Invoice730"/>
   <title value="Invoice (730)"/>
   <status value="active"/>
-  <date value="2021-10-21T10:47:00+00:00"/>
+  <date value="2021-10-21T10:50:27+00:00"/>
   <description value="This profile defines how to constrain the Invoice resource for the scope of the update of 730"/>
   <jurisdiction>
     <coding>

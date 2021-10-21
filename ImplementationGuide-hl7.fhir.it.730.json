@@ -10,7 +10,7 @@
   "name": "HL7ITDossierPharma",
   "title": "HL7 Italia FHIR Implementation Guide 730",
   "status": "active",
-  "date": "2021-10-21T10:47:00+00:00",
+  "date": "2021-10-21T10:50:27+00:00",
   "description": "HL7 Italia FHIR Implementation Guide 730, specifica come utilizzare lo standard HL7 FHIR per l'alimentazione e la consultazione del 730",
   "jurisdiction": [
     {

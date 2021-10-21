@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "Invoice730"];
   fhir:StructureDefinition.title [ fhir:value "Invoice (730)"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-10-21T10:47:00+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-10-21T10:50:27+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.description [ fhir:value "This profile defines how to constrain the Invoice resource for the scope of the update of 730"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;

@@ -20,7 +20,7 @@
   "name": "Invoice730",
   "title": "Invoice (730)",
   "status": "active",
-  "date": "2021-10-21T10:47:00+00:00",
+  "date": "2021-10-21T10:50:27+00:00",
   "description": "This profile defines how to constrain the Invoice resource for the scope of the update of 730",
   "jurisdiction": [
     {

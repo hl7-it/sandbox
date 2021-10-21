@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "HL7ITDossierPharma"];
   fhir:ImplementationGuide.title [ fhir:value "HL7 Italia FHIR Implementation Guide 730"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-10-21T10:47:00+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-10-21T10:50:27+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.description [ fhir:value "HL7 Italia FHIR Implementation Guide 730, specifica come utilizzare lo standard HL7 FHIR per l'alimentazione e la consultazione del 730"];
   fhir:ImplementationGuide.jurisdiction [
      fhir:index 0;

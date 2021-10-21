@@ -3,7 +3,7 @@
   "name": "HL7ITDossierPharma",
   "package-id": "hl7.fhir.it.730",
   "ig-ver": "0.1.0",
-  "date": "Thu, 21 Oct, 2021 10:47:00 +0000",
+  "date": "Thu, 21 Oct, 2021 10:50:27 +0000",
   "errs": 0,
   "warnings": 1,
   "hints": 0,

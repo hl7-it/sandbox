@@ -3,7 +3,7 @@
 
 err = 0, warn = 1, info = 0
 IG Publisher Version: 1.1.82
-Generated Thu Oct 21 10:47:10 UTC 2021. FHIR version 4.0.1 for hl7.fhir.it.730#0.1.0 (canonical = http://hl7.it/fhir/dossierPharma)
+Generated Thu Oct 21 10:50:36 UTC 2021. FHIR version 4.0.1 for hl7.fhir.it.730#0.1.0 (canonical = http://hl7.it/fhir/dossierPharma)
  Build Errors : 20 / 0 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.it.730 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Invoice-it-730 : 0 / 1 / 1
