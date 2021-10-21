@@ -20,12 +20,7 @@ Thumbs.db
 # backup files #
 ################
 *.bak
-/input/extensions/hl7.org.extensions
-/input/extensions/old
-/input/profiles/altri
-/input/vocabulary/statiEsteri
-/input/examples/altriEsempi
-/input/vocabulary/unitaTeritoriali
-/input/vocabulary/catasto
-/input/vocabulary/statiEsteri
 /fsh/build
+/fsh-generated
+/go-fsh
+/pandoc/convertWord.bat
