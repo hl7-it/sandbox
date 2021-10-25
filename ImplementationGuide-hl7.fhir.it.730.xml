@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.it.730"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>HL7ITDossierPharma</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.it/fhir/dossierPharma/ImplementationGuide/hl7.fhir.it.730</pre><div><p>HL7 Italia FHIR Implementation Guide 730, specifica come utilizzare lo standard HL7 FHIR per l'alimentazione e la consultazione del 730</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>HL7ITSpesaSanitaria</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.it/fhir/spesaSanitaria/ImplementationGuide/hl7.fhir.it.730</pre><div><p>HL7 Italia FHIR Implementation Guide 730, specifica come utilizzare lo standard HL7 FHIR per l'alimentazione e la consultazione del 730</p>
 </div></div>
   </text>
-  <url value="http://hl7.it/fhir/dossierPharma/ImplementationGuide/hl7.fhir.it.730"/>
+  <url value="http://hl7.it/fhir/spesaSanitaria/ImplementationGuide/hl7.fhir.it.730"/>
   <version value="0.1.0"/>
-  <name value="HL7ITDossierPharma"/>
+  <name value="HL7ITSpesaSanitaria"/>
   <title value="HL7 Italia FHIR Implementation Guide 730"/>
   <status value="active"/>
-  <date value="2021-10-21T10:50:27+00:00"/>
+  <date value="2021-10-25T21:40:26+00:00"/>
   <description value="HL7 Italia FHIR Implementation Guide 730, specifica come utilizzare lo standard HL7 FHIR per l&#39;alimentazione e la consultazione del 730"/>
   <jurisdiction>
     <coding>
@@ -151,7 +151,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://hl7.it/fhir/dossierPharma/history.html"/>
+        <valueString value="http://hl7.it/fhir/spesaSanitaria/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -223,10 +223,131 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/Invoice-it-730"/>
+        <reference value="StructureDefinition/Device-it-sts"/>
       </reference>
-      <name value="Invoice (730)"/>
-      <description value="This profile defines how to constrain the Invoice resource for the scope of the update of 730"/>
+      <name value="Device (only serial)"/>
+      <description value="Minimal Device Data: only serial"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Invoice-it-spesaSanitaria"/>
+      </reference>
+      <name value="Invoice Documento Fiscale (STS)"/>
+      <description value="This profile defines how to constrain the Invoice resource for the scope of tracking the health expenses (SISTEMA TESSERA SANITARIA)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/OrganizationIssuer-it-sts"/>
+      </reference>
+      <name value="Organization (issuer)"/>
+      <description value="Organization issuing the invoice"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Patient-it-sts"/>
+      </reference>
+      <name value="Patient (only CF)"/>
+      <description value="Minimal Patient Data: only fiscal code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PaymentReconciliation-it-sts"/>
+      </reference>
+      <name value="PaymentReconciliation"/>
+      <description value="Minimal PaymentReconciliation Data"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/invoicePaymentExt-it-sts"/>
+      </reference>
+      <name value="Dettagli Pagamento"/>
+      <description value="Extension to the Invoice resource allowing to describe the payment details"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/issuerPractictionerExt-it-sts"/>
+      </reference>
+      <name value="Professionista (issuer)"/>
+      <description value="Extension to the Invoice resource allowing to refer a Practiction/PractictionerRole as an issuer"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DocumentoSpesaSanitaria"/>
+      </reference>
+      <name value="Documento Fiscale (STS)"/>
+      <description value="Documento Fiscale da inviarsi al SISTEMA TESSERA SANITARIA. Dati di spesa sanitaria di cui art. 3 comma 3 D.ls 175/2014"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ValueSet-invoiceType-it-spesaSanitaria"/>
+      </reference>
+      <name value="Tipo di documento"/>
+      <description value="Tipologia del documento attestante il pagamento della prestazione o del bene sanitario assume valore: F (fattura) D (documento commerciale)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ValueSet-lineItemType-it-spesaSanitaria"/>
+      </reference>
+      <name value="Tipo di voce di spesa"/>
+      <description value="Tipo di voce di spesa"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ValueSet-priceComponentCode-it-spesaSanitaria"/>
+      </reference>
+      <name value="Tipo di componente"/>
+      <description value="Tipo di componente del prezzo: e.g. IVA "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/documentoFiscale"/>
+      </reference>
+      <name value="Internal Code System"/>
+      <description value="Documento Fiscale (STS) FHIR IG Internal Code System"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

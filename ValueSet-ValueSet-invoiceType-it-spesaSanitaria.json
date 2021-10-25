@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-invoiceType-it-spesaSanitaria",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-documentoFiscale.html\"><code>http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-F\">F</a></td><td>fattura</td><td>fattura</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-D\">D</a></td><td>documento commerciale</td><td>documento commerciale</td></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-invoiceType-it-spesaSanitaria",
+  "version": "0.1.0",
+  "name": "VsInvoiceTypeSTS",
+  "title": "Tipo di documento",
+  "status": "active",
+  "date": "2021-10-25T21:40:26+00:00",
+  "description": "Tipologia del documento attestante il pagamento della prestazione o del bene sanitario assume valore: F (fattura) D (documento commerciale)",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "IT",
+          "display": "Italy"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+        "concept": [
+          {
+            "code": "F",
+            "display": "fattura"
+          },
+          {
+            "code": "D",
+            "display": "documento commerciale"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ValueSet-priceComponentCode-it-spesaSanitaria"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-documentoFiscale.html"><code>http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-aliquota-iva">aliquota-iva</a></td><td>Aliquota IVA</td><td>Aliquota IVA</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-priceComponentCode-it-spesaSanitaria"/>
+  <version value="0.1.0"/>
+  <name value="VsPriceComponentCodeSTS"/>
+  <title value="Tipo di componente"/>
+  <status value="active"/>
+  <date value="2021-10-25T21:40:26+00:00"/>
+  <description value="Tipo di componente del prezzo: e.g. IVA "/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IT"/>
+      <display value="Italy"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale"/>
+      <concept>
+        <code value="aliquota-iva"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

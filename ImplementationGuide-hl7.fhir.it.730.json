@@ -3,14 +3,14 @@
   "id": "hl7.fhir.it.730",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HL7ITDossierPharma</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.it/fhir/dossierPharma/ImplementationGuide/hl7.fhir.it.730</pre><div><p>HL7 Italia FHIR Implementation Guide 730, specifica come utilizzare lo standard HL7 FHIR per l'alimentazione e la consultazione del 730</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HL7ITSpesaSanitaria</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.it/fhir/spesaSanitaria/ImplementationGuide/hl7.fhir.it.730</pre><div><p>HL7 Italia FHIR Implementation Guide 730, specifica come utilizzare lo standard HL7 FHIR per l'alimentazione e la consultazione del 730</p>\n</div></div>"
   },
-  "url": "http://hl7.it/fhir/dossierPharma/ImplementationGuide/hl7.fhir.it.730",
+  "url": "http://hl7.it/fhir/spesaSanitaria/ImplementationGuide/hl7.fhir.it.730",
   "version": "0.1.0",
-  "name": "HL7ITDossierPharma",
+  "name": "HL7ITSpesaSanitaria",
   "title": "HL7 Italia FHIR Implementation Guide 730",
   "status": "active",
-  "date": "2021-10-21T10:50:27+00:00",
+  "date": "2021-10-25T21:40:26+00:00",
   "description": "HL7 Italia FHIR Implementation Guide 730, specifica come utilizzare lo standard HL7 FHIR per l'alimentazione e la consultazione del 730",
   "jurisdiction": [
     {
@@ -234,7 +234,7 @@
           },
           {
             "url": "value",
-            "valueString": "http://hl7.it/fhir/dossierPharma/history.html"
+            "valueString": "http://hl7.it/fhir/spesaSanitaria/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -353,10 +353,164 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/Invoice-it-730"
+          "reference": "StructureDefinition/Device-it-sts"
         },
-        "name": "Invoice (730)",
-        "description": "This profile defines how to constrain the Invoice resource for the scope of the update of 730",
+        "name": "Device (only serial)",
+        "description": "Minimal Device Data: only serial",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Invoice-it-spesaSanitaria"
+        },
+        "name": "Invoice Documento Fiscale (STS)",
+        "description": "This profile defines how to constrain the Invoice resource for the scope of tracking the health expenses (SISTEMA TESSERA SANITARIA)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/OrganizationIssuer-it-sts"
+        },
+        "name": "Organization (issuer)",
+        "description": "Organization issuing the invoice",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Patient-it-sts"
+        },
+        "name": "Patient (only CF)",
+        "description": "Minimal Patient Data: only fiscal code",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/PaymentReconciliation-it-sts"
+        },
+        "name": "PaymentReconciliation",
+        "description": "Minimal PaymentReconciliation Data",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/invoicePaymentExt-it-sts"
+        },
+        "name": "Dettagli Pagamento",
+        "description": "Extension to the Invoice resource allowing to describe the payment details",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/issuerPractictionerExt-it-sts"
+        },
+        "name": "Professionista (issuer)",
+        "description": "Extension to the Invoice resource allowing to refer a Practiction/PractictionerRole as an issuer",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DocumentoSpesaSanitaria"
+        },
+        "name": "Documento Fiscale (STS)",
+        "description": "Documento Fiscale da inviarsi al SISTEMA TESSERA SANITARIA. Dati di spesa sanitaria di cui art. 3 comma 3 D.ls 175/2014",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ValueSet-invoiceType-it-spesaSanitaria"
+        },
+        "name": "Tipo di documento",
+        "description": "Tipologia del documento attestante il pagamento della prestazione o del bene sanitario assume valore: F (fattura) D (documento commerciale)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ValueSet-lineItemType-it-spesaSanitaria"
+        },
+        "name": "Tipo di voce di spesa",
+        "description": "Tipo di voce di spesa",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ValueSet-priceComponentCode-it-spesaSanitaria"
+        },
+        "name": "Tipo di componente",
+        "description": "Tipo di componente del prezzo: e.g. IVA ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/documentoFiscale"
+        },
+        "name": "Internal Code System",
+        "description": "Documento Fiscale (STS) FHIR IG Internal Code System",
         "exampleBoolean": false
       }
     ],

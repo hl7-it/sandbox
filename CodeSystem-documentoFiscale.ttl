@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "documentoFiscale"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">F<a name=\"documentoFiscale-F\"> </a></td><td>fattura</td><td>fattura</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"documentoFiscale-D\"> </a></td><td>documento commerciale</td><td>documento commerciale</td></tr><tr><td style=\"white-space:nowrap\">TK<a name=\"documentoFiscale-TK\"> </a></td><td>Ticket</td><td>Ticket (Quota fissa e/o Differenza con il prezzo di riferimento. Franchigia. Pronto Soccorso e accesso diretto)</td></tr><tr><td style=\"white-space:nowrap\">FC<a name=\"documentoFiscale-FC\"> </a></td><td>Farmaci e Dispositivi medici CE</td><td>Farmaco, anche omeopatico. Dispositivi medici CE</td></tr><tr><td style=\"white-space:nowrap\">FV<a name=\"documentoFiscale-FV\"> </a></td><td>Farmaco per uso veterinario</td><td>Farmaco per uso veterinario</td></tr><tr><td style=\"white-space:nowrap\">AD<a name=\"documentoFiscale-AD\"> </a></td><td>Acquisto o affitto di dispositivo medico CE</td><td>Acquisto o affitto di dispositivo medico CE</td></tr><tr><td style=\"white-space:nowrap\">CT<a name=\"documentoFiscale-CT\"> </a></td><td>Cure Termali</td><td>Cure Termali</td></tr><tr><td style=\"white-space:nowrap\">PI<a name=\"documentoFiscale-PI\"> </a></td><td>Protesica e integrativa</td><td>protesica e integrativa</td></tr><tr><td style=\"white-space:nowrap\">IC<a name=\"documentoFiscale-IC\"> </a></td><td>Chirurgia e medicina estetica</td><td>Prestazioni di chirurgia estetica e di medicina estetica (ambulatoriale o ospedaliera)</td></tr><tr><td style=\"white-space:nowrap\">SP<a name=\"documentoFiscale-SP\"> </a></td><td>Prestazioni sanitarie</td><td>Prestazioni sanitarie</td></tr><tr><td style=\"white-space:nowrap\">SV<a name=\"documentoFiscale-SV\"> </a></td><td>Spese veterinarie</td><td>Spese veterinarie</td></tr><tr><td style=\"white-space:nowrap\">AA<a name=\"documentoFiscale-AA\"> </a></td><td>Altre spese</td><td>Altre spese</td></tr><tr><td style=\"white-space:nowrap\">SR<a name=\"documentoFiscale-SR\"> </a></td><td>Varie prestazioni sanitarie</td><td>prestazioni sanitarie: assistenza specialistica ambulatoriale esclusi interventi di chirurgia estetica; visita medica generica e specialistica o prestazioni diagnostiche estrumentali; prestazione chirurgica ad esclusione della chirurgia estetica;certificazione medica; ricoveri ospedalieri ricollegabili ad interventi chirurgici o adegenza, ad  esclusione della chirurgia estetica, al netto del comfort</td></tr><tr><td style=\"white-space:nowrap\">AS<a name=\"documentoFiscale-AS\"> </a></td><td>Farmacia dei servizi</td><td>Spese sanitarie relative ad ECG, spirometria, Holter pressorio e cardiaco, test per glicemia, colesterolo e trigliceridi o misurazione della pressione sanguigna, prestazione previste dalla farmacia dei servizi e simili sanguigna)</td></tr><tr><td style=\"white-space:nowrap\">aliquota-iva<a name=\"documentoFiscale-aliquota-iva\"> </a></td><td>Aliquota IVA</td><td>Aliquota IVA</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "CsDocumentoFiscaleSTS"];
+  fhir:CodeSystem.title [ fhir:value "Internal Code System"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-10-25T21:40:26+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.description [ fhir:value "Documento Fiscale (STS) FHIR IG Internal Code System"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "IT" ];
+       fhir:Coding.display [ fhir:value "Italy" ]
+     ]
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "15"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "F" ];
+     fhir:CodeSystem.concept.display [ fhir:value "fattura" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "fattura" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "D" ];
+     fhir:CodeSystem.concept.display [ fhir:value "documento commerciale" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "documento commerciale" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "TK" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Ticket" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Ticket (Quota fissa e/o Differenza con il prezzo di riferimento. Franchigia. Pronto Soccorso e accesso diretto)" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "FC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Farmaci e Dispositivi medici CE" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Farmaco, anche omeopatico. Dispositivi medici CE" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "FV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Farmaco per uso veterinario" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Farmaco per uso veterinario" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "AD" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Acquisto o affitto di dispositivo medico CE" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Acquisto o affitto di dispositivo medico CE" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "CT" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Cure Termali" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Cure Termali" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "PI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Protesica e integrativa" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "protesica e integrativa" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "IC" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chirurgia e medicina estetica" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Prestazioni di chirurgia estetica e di medicina estetica (ambulatoriale o ospedaliera)" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "SP" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Prestazioni sanitarie" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Prestazioni sanitarie" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "SV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spese veterinarie" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Spese veterinarie" ]
+  ], [
+     fhir:index 11;
+     fhir:CodeSystem.concept.code [ fhir:value "AA" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Altre spese" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Altre spese" ]
+  ], [
+     fhir:index 12;
+     fhir:CodeSystem.concept.code [ fhir:value "SR" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Varie prestazioni sanitarie" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "prestazioni sanitarie: assistenza specialistica ambulatoriale esclusi interventi di chirurgia estetica; visita medica generica e specialistica o prestazioni diagnostiche estrumentali; prestazione chirurgica ad esclusione della chirurgia estetica;certificazione medica; ricoveri ospedalieri ricollegabili ad interventi chirurgici o adegenza, ad  esclusione della chirurgia estetica, al netto del comfort" ]
+  ], [
+     fhir:index 13;
+     fhir:CodeSystem.concept.code [ fhir:value "AS" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Farmacia dei servizi" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Spese sanitarie relative ad ECG, spirometria, Holter pressorio e cardiaco, test per glicemia, colesterolo e trigliceridi o misurazione della pressione sanguigna, prestazione previste dalla farmacia dei servizi e simili sanguigna)" ]
+  ], [
+     fhir:index 14;
+     fhir:CodeSystem.concept.code [ fhir:value "aliquota-iva" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Aliquota IVA" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Aliquota IVA" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="DocumentoSpesaSanitaria"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria" title="Documento Fiscale da inviarsi al SISTEMA TESSERA SANITARIA. Dati di spesa sanitaria di cui art. 3 comma 3 D.ls 175/2014">DocumentoSpesaSanitaria</a><a name="DocumentoSpesaSanitaria"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Documento Fiscale (STS)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.dataEmissione" title="Data di emissione del documento fiscale relativo alla spesa sostenuta dal cittadino.">dataEmissione</a><a name="DocumentoSpesaSanitaria.dataEmissione"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Data di emissione</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.numDocumento" title="Univoco nell’ambito della data. E’ univoco per giornata (scontrini) o per anno (fattura)">numDocumento</a><a name="DocumentoSpesaSanitaria.numDocumento"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Numero identificativo del documento emesso</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.tipoDocumento" title="Tipologia del documento attestante il pagamento della prestazione o del bene sanitario assume valore: F (fattura) D (documento commerciale)">tipoDocumento</a><a name="DocumentoSpesaSanitaria.tipoDocumento"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Tipologia del documento attestante il pagamento</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.proprietario" title="Struttura o professionista che mette il documento fiscale">proprietario</a><a name="DocumentoSpesaSanitaria.proprietario"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element has or is affected by some invariants (struttura-xor-professionista)">I</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Chi emette il documento<br/><span style="font-weight:bold">struttura-xor-professionista: </span>Struttura or Professionista SHALL be present, not both</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.proprietario.struttura" title="Struttura che emette il documento fiscale">struttura</a><a name="DocumentoSpesaSanitaria.proprietario.struttura"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Struttura che emette il documento</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.proprietario.struttura.codiceRegione" title="Codice regione della struttura che emette il documento fiscale">codiceRegione</a><a name="DocumentoSpesaSanitaria.proprietario.struttura.codiceRegione"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Codice regione</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.proprietario.struttura.codiceAsl" title="Codice della ASL della struttura che emette il documento fiscale">codiceAsl</a><a name="DocumentoSpesaSanitaria.proprietario.struttura.codiceAsl"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Codice asl</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.proprietario.struttura.codiceSSA" title="Codice struttura Codice farmacia/struttura che emette il documento fiscale">codiceSSA</a><a name="DocumentoSpesaSanitaria.proprietario.struttura.codiceSSA"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Codice struttura Codice farmacia/struttura che emette il documento fiscale</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.proprietario.struttura.cfProprietario" title="Codice fiscale cifrato del soggetto di riferimento della struttura o del professionista">cfProprietario</a><a name="DocumentoSpesaSanitaria.proprietario.struttura.cfProprietario"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Codice fiscale del proprietario</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.proprietario.struttura.pIva" title="Partita IVA della farmacia/struttura o medico che emette il documento fiscale">pIva</a><a name="DocumentoSpesaSanitaria.proprietario.struttura.pIva"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Partita IVA</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.proprietario.professionista" title="Professionista che emette il documento fiscale">professionista</a><a name="DocumentoSpesaSanitaria.proprietario.professionista"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Professionista che emette il documento</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.proprietario.professionista.cfProprietario" title="Codice fiscale cifrato del soggetto di riferimento della struttura o del professionista">cfProprietario</a><a name="DocumentoSpesaSanitaria.proprietario.professionista.cfProprietario"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Codice fiscale del proprietario</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.proprietario.professionista.pIva" title="Partita IVA della farmacia/struttura o medico che emette il documento fiscale">pIva</a><a name="DocumentoSpesaSanitaria.proprietario.professionista.pIva"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Partita IVA</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.cfCittadino" title="Codice fiscale del cittadino rilevato dalla Tessera Sanitaria Campo cifrato Deve essere assente se flagOpposizione = 1">cfCittadino</a><a name="DocumentoSpesaSanitaria.cfCittadino"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Codice fiscale del cittadino</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.dispositivo" title="Per dispositivo si intende il progressivo del registratore di cassa utilizzato dagli esercenti di beni sanitari che emettono documento commerciale; per l’emissione di fatture o ricevute fiscali il campo assume il valore consigliato = 1">dispositivo</a><a name="DocumentoSpesaSanitaria.dispositivo"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Numero progressivo del dispositivo che genera il documento</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.flagOpposizione" title="Indica la volontà del cittadino di non permettere l’invio del dato di spesa all’Agenzia delle entrate ai fini della predisposizione della dichiarazione Precompilata assume valore 0 = il cittadino NON si oppone 1 = il cittadino si oppone">flagOpposizione</a><a name="DocumentoSpesaSanitaria.flagOpposizione"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Flag Invio ad Agenzia</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.voceSpesa" title="voceSpesa">voceSpesa</a><a name="DocumentoSpesaSanitaria.voceSpesa"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">voceSpesa<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.voceSpesa.tipoSpesa" title="Tipo Spesa">tipoSpesa</a><a name="DocumentoSpesaSanitaria.voceSpesa.tipoSpesa"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Tipo Spesa</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.voceSpesa.flagTipoSpesa" title="Il campo è valorizzato al fine di evidenziare caratteristiche particolari di alcune tipologie di spesa. Il campo vale:  1 con tipo TK (ticket di pronto soccorso); 2 con tipo SR (visita in intramoenia)">flagTipoSpesa</a><a name="DocumentoSpesaSanitaria.voceSpesa.flagTipoSpesa"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Caratteristiche particolari del tipo Spesa</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.voceSpesa.importo" title="Importo di ogni singola spesa sostenuta dal cittadino / rimborso riconosciuto al cittadino a fronte di una spesa sostenuta. Il campo deve assumere sempre valori positivi, anche in caso di rimborso Valore da 5 + 2 decimali">importo</a><a name="DocumentoSpesaSanitaria.voceSpesa.importo"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Money">Money</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Importo della voce di spesa</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.voceSpesa.aliquotaIVA" title="Aliquota IVA relativa Impostata in all’importo della voce di spesa. alternativa al campo naturaIVA Valore da 2 + 2 decimali">aliquotaIVA</a><a name="DocumentoSpesaSanitaria.voceSpesa.aliquotaIVA"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Aliquota IVA</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.voceSpesa.naturaIVA" title="Codice natura dell'operazione esente IVA. Impostata in alternativa al campo aliquotaIVA. Assume valori da N1 a N6 per tipoDocumento = D (2 caratteri) Assume valori da N1 a N7 o sottovalori per tipoDocumento = F (max 4 caratteri)">naturaIVA</a><a name="DocumentoSpesaSanitaria.voceSpesa.naturaIVA"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Codice natura dell'operazione esente IVA</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.dettagliPagamento" title="Dettagli Pagamento">dettagliPagamento</a><a name="DocumentoSpesaSanitaria.dettagliPagamento"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element is included in summaries">Σ</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dettagli Pagamento<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.dettagliPagamento.dataPagamento" title="Data di pagamento afferente al 'documento fiscale' emesso. Deve essere coincidente o maggiore rispetto alla data di emissione. Può essere minore rispetto alla data di emissione solo se valorizzato a 1 il flag pagamento anticipato ( e comunque non minore del 01/01/2015)">dataPagamento</a><a name="DocumentoSpesaSanitaria.dettagliPagamento.dataPagamento"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Data di pagamento afferente al 'documento fiscale' emesso.</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.dettagliPagamento.flagPagamentoAnticipato" title="Il campo deve essere valorizzato a “1” per indicare il pagamento della spesa sostenuta dal cittadino in data antecedente alla data di emissione del 'documento fiscale' Elemento opzionale">flagPagamentoAnticipato</a><a name="DocumentoSpesaSanitaria.dettagliPagamento.flagPagamentoAnticipato"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Pagamento sostenuto in data antecedente all'emissione</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-DocumentoSpesaSanitaria-definitions.html#DocumentoSpesaSanitaria.dettagliPagamento.pagamentoTracciato" title="Il campo descrive la modalità di pagamento e assume i valori SI/NO SI : secondo le modalità previste dal comma 679 dell’art. 1 della Legge 160 del 27 /12/2019( legge di bilancio 2020) NO: in contanti">pagamentoTracciato</a><a name="DocumentoSpesaSanitaria.dettagliPagamento.pagamentoTracciato"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Modelità di pagamento</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="http://hl7.it/fhir/spesaSanitaria/StructureDefinition/DocumentoSpesaSanitaria"/>
+  <version value="0.1.0"/>
+  <name value="DocumentoSpesaSanitaria"/>
+  <title value="Documento Fiscale (STS)"/>
+  <status value="active"/>
+  <date value="2021-10-25T21:40:26+00:00"/>
+  <description value="Documento Fiscale da inviarsi al SISTEMA TESSERA SANITARIA. Dati di spesa sanitaria di cui art. 3 comma 3 D.ls 175/2014"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IT"/>
+      <display value="Italy"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://hl7.it/fhir/spesaSanitaria/StructureDefinition/DocumentoSpesaSanitaria"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="DocumentoSpesaSanitaria">
+      <path value="DocumentoSpesaSanitaria"/>
+      <short value="Documento Fiscale (STS)"/>
+      <definition value="Documento Fiscale da inviarsi al SISTEMA TESSERA SANITARIA. Dati di spesa sanitaria di cui art. 3 comma 3 D.ls 175/2014"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="DocumentoSpesaSanitaria.dataEmissione">
+      <path value="DocumentoSpesaSanitaria.dataEmissione"/>
+      <short value="Data di emissione"/>
+      <definition value="Data di emissione del documento fiscale relativo alla spesa sostenuta dal cittadino."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.dataEmissione"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.numDocumento">
+      <path value="DocumentoSpesaSanitaria.numDocumento"/>
+      <short value="Numero identificativo del documento emesso"/>
+      <definition value="Univoco nell’ambito della data. E’ univoco per giornata (scontrini) o per anno (fattura)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.numDocumento"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.tipoDocumento">
+      <path value="DocumentoSpesaSanitaria.tipoDocumento"/>
+      <short value="Tipologia del documento attestante il pagamento"/>
+      <definition value="Tipologia del documento attestante il pagamento della prestazione o del bene sanitario assume valore: F (fattura) D (documento commerciale)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.tipoDocumento"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario">
+      <path value="DocumentoSpesaSanitaria.proprietario"/>
+      <short value="Chi emette il documento"/>
+      <definition value="Struttura o professionista che mette il documento fiscale"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.proprietario"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="struttura-xor-professionista"/>
+        <severity value="error"/>
+        <human value="Struttura or Professionista SHALL be present, not both"/>
+        <expression value="struttura.exists() xor professionista.exists()"/>
+        <xpath value="f:struttura xor f:professionista"/>
+        <source value="http://hl7.it/fhir/spesaSanitaria/StructureDefinition/DocumentoSpesaSanitaria"/>
+      </constraint>
+      <isSummary value="true"/>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.struttura">
+      <path value="DocumentoSpesaSanitaria.proprietario.struttura"/>
+      <short value="Struttura che emette il documento"/>
+      <definition value="Struttura che emette il documento fiscale"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.proprietario.struttura"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.struttura.codiceRegione">
+      <path value="DocumentoSpesaSanitaria.proprietario.struttura.codiceRegione"/>
+      <short value="Codice regione"/>
+      <definition value="Codice regione della struttura che emette il documento fiscale"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.proprietario.struttura.codiceRegione"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.struttura.codiceAsl">
+      <path value="DocumentoSpesaSanitaria.proprietario.struttura.codiceAsl"/>
+      <short value="Codice asl"/>
+      <definition value="Codice della ASL della struttura che emette il documento fiscale"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.proprietario.struttura.codiceAsl"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.struttura.codiceSSA">
+      <path value="DocumentoSpesaSanitaria.proprietario.struttura.codiceSSA"/>
+      <short value="Codice struttura Codice farmacia/struttura che emette il documento fiscale"/>
+      <definition value="Codice struttura Codice farmacia/struttura che emette il documento fiscale"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.proprietario.struttura.codiceSSA"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.struttura.cfProprietario">
+      <path value="DocumentoSpesaSanitaria.proprietario.struttura.cfProprietario"/>
+      <short value="Codice fiscale del proprietario"/>
+      <definition value="Codice fiscale cifrato del soggetto di riferimento della struttura o del professionista"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.proprietario.struttura.cfProprietario"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.struttura.pIva">
+      <path value="DocumentoSpesaSanitaria.proprietario.struttura.pIva"/>
+      <short value="Partita IVA"/>
+      <definition value="Partita IVA della farmacia/struttura o medico che emette il documento fiscale"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.proprietario.struttura.pIva"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.professionista">
+      <path value="DocumentoSpesaSanitaria.proprietario.professionista"/>
+      <short value="Professionista che emette il documento"/>
+      <definition value="Professionista che emette il documento fiscale"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.proprietario.professionista"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.professionista.cfProprietario">
+      <path value="DocumentoSpesaSanitaria.proprietario.professionista.cfProprietario"/>
+      <short value="Codice fiscale del proprietario"/>
+      <definition value="Codice fiscale cifrato del soggetto di riferimento della struttura o del professionista"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.proprietario.professionista.cfProprietario"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.professionista.pIva">
+      <path value="DocumentoSpesaSanitaria.proprietario.professionista.pIva"/>
+      <short value="Partita IVA"/>
+      <definition value="Partita IVA della farmacia/struttura o medico che emette il documento fiscale"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.proprietario.professionista.pIva"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.cfCittadino">
+      <path value="DocumentoSpesaSanitaria.cfCittadino"/>
+      <short value="Codice fiscale del cittadino"/>
+      <definition value="Codice fiscale del cittadino rilevato dalla Tessera Sanitaria Campo cifrato Deve essere assente se flagOpposizione = 1"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.cfCittadino"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.dispositivo">
+      <path value="DocumentoSpesaSanitaria.dispositivo"/>
+      <short value="Numero progressivo del dispositivo che genera il documento"/>
+      <definition value="Per dispositivo si intende il progressivo del registratore di cassa utilizzato dagli esercenti di beni sanitari che emettono documento commerciale; per l’emissione di fatture o ricevute fiscali il campo assume il valore consigliato = 1"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.dispositivo"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.flagOpposizione">
+      <path value="DocumentoSpesaSanitaria.flagOpposizione"/>
+      <short value="Flag Invio ad Agenzia"/>
+      <definition value="Indica la volontà del cittadino di non permettere l’invio del dato di spesa all’Agenzia delle entrate ai fini della predisposizione della dichiarazione Precompilata assume valore 0 = il cittadino NON si oppone 1 = il cittadino si oppone"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.flagOpposizione"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.voceSpesa">
+      <path value="DocumentoSpesaSanitaria.voceSpesa"/>
+      <short value="voceSpesa"/>
+      <definition value="voceSpesa"/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.voceSpesa"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="DocumentoSpesaSanitaria.voceSpesa.tipoSpesa">
+      <path value="DocumentoSpesaSanitaria.voceSpesa.tipoSpesa"/>
+      <short value="Tipo Spesa"/>
+      <definition value="Tipo Spesa"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.voceSpesa.tipoSpesa"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.voceSpesa.flagTipoSpesa">
+      <path value="DocumentoSpesaSanitaria.voceSpesa.flagTipoSpesa"/>
+      <short value="Caratteristiche particolari del tipo Spesa"/>
+      <definition value="Il campo è valorizzato al fine di evidenziare caratteristiche particolari di alcune tipologie di spesa. Il campo vale:  1 con tipo TK (ticket di pronto soccorso); 2 con tipo SR (visita in intramoenia)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.voceSpesa.flagTipoSpesa"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.voceSpesa.importo">
+      <path value="DocumentoSpesaSanitaria.voceSpesa.importo"/>
+      <short value="Importo della voce di spesa"/>
+      <definition value="Importo di ogni singola spesa sostenuta dal cittadino / rimborso riconosciuto al cittadino a fronte di una spesa sostenuta. Il campo deve assumere sempre valori positivi, anche in caso di rimborso Valore da 5 + 2 decimali"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.voceSpesa.importo"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Money"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.voceSpesa.aliquotaIVA">
+      <path value="DocumentoSpesaSanitaria.voceSpesa.aliquotaIVA"/>
+      <short value="Aliquota IVA"/>
+      <definition value="Aliquota IVA relativa Impostata in all’importo della voce di spesa. alternativa al campo naturaIVA Valore da 2 + 2 decimali"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.voceSpesa.aliquotaIVA"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.voceSpesa.naturaIVA">
+      <path value="DocumentoSpesaSanitaria.voceSpesa.naturaIVA"/>
+      <short value="Codice natura dell&#39;operazione esente IVA"/>
+      <definition value="Codice natura dell&#39;operazione esente IVA. Impostata in alternativa al campo aliquotaIVA. Assume valori da N1 a N6 per tipoDocumento = D (2 caratteri) Assume valori da N1 a N7 o sottovalori per tipoDocumento = F (max 4 caratteri)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.voceSpesa.naturaIVA"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.dettagliPagamento">
+      <path value="DocumentoSpesaSanitaria.dettagliPagamento"/>
+      <short value="Dettagli Pagamento"/>
+      <definition value="Dettagli Pagamento"/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.dettagliPagamento"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="DocumentoSpesaSanitaria.dettagliPagamento.dataPagamento">
+      <path value="DocumentoSpesaSanitaria.dettagliPagamento.dataPagamento"/>
+      <short value="Data di pagamento afferente al &#39;documento fiscale&#39; emesso."/>
+      <definition value="Data di pagamento afferente al &#39;documento fiscale&#39; emesso. Deve essere coincidente o maggiore rispetto alla data di emissione. Può essere minore rispetto alla data di emissione solo se valorizzato a 1 il flag pagamento anticipato ( e comunque non minore del 01/01/2015)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.dettagliPagamento.dataPagamento"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.dettagliPagamento.flagPagamentoAnticipato">
+      <path value="DocumentoSpesaSanitaria.dettagliPagamento.flagPagamentoAnticipato"/>
+      <short value="Pagamento sostenuto in data antecedente all&#39;emissione"/>
+      <definition value="Il campo deve essere valorizzato a “1” per indicare il pagamento della spesa sostenuta dal cittadino in data antecedente alla data di emissione del &#39;documento fiscale&#39; Elemento opzionale"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.dettagliPagamento.flagPagamentoAnticipato"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.dettagliPagamento.pagamentoTracciato">
+      <path value="DocumentoSpesaSanitaria.dettagliPagamento.pagamentoTracciato"/>
+      <short value="Modelità di pagamento"/>
+      <definition value="Il campo descrive la modalità di pagamento e assume i valori SI/NO SI : secondo le modalità previste dal comma 679 dell’art. 1 della Legge 160 del 27 /12/2019( legge di bilancio 2020) NO: in contanti"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DocumentoSpesaSanitaria.dettagliPagamento.pagamentoTracciato"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="DocumentoSpesaSanitaria">
+      <path value="DocumentoSpesaSanitaria"/>
+      <short value="Documento Fiscale (STS)"/>
+      <definition value="Documento Fiscale da inviarsi al SISTEMA TESSERA SANITARIA. Dati di spesa sanitaria di cui art. 3 comma 3 D.ls 175/2014"/>
+    </element>
+    <element id="DocumentoSpesaSanitaria.dataEmissione">
+      <path value="DocumentoSpesaSanitaria.dataEmissione"/>
+      <short value="Data di emissione"/>
+      <definition value="Data di emissione del documento fiscale relativo alla spesa sostenuta dal cittadino."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.numDocumento">
+      <path value="DocumentoSpesaSanitaria.numDocumento"/>
+      <short value="Numero identificativo del documento emesso"/>
+      <definition value="Univoco nell’ambito della data. E’ univoco per giornata (scontrini) o per anno (fattura)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.tipoDocumento">
+      <path value="DocumentoSpesaSanitaria.tipoDocumento"/>
+      <short value="Tipologia del documento attestante il pagamento"/>
+      <definition value="Tipologia del documento attestante il pagamento della prestazione o del bene sanitario assume valore: F (fattura) D (documento commerciale)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario">
+      <path value="DocumentoSpesaSanitaria.proprietario"/>
+      <short value="Chi emette il documento"/>
+      <definition value="Struttura o professionista che mette il documento fiscale"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <constraint>
+        <key value="struttura-xor-professionista"/>
+        <severity value="error"/>
+        <human value="Struttura or Professionista SHALL be present, not both"/>
+        <expression value="struttura.exists() xor professionista.exists()"/>
+        <xpath value="f:struttura xor f:professionista"/>
+        <source value="http://hl7.it/fhir/spesaSanitaria/StructureDefinition/DocumentoSpesaSanitaria"/>
+      </constraint>
+      <isSummary value="true"/>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.struttura">
+      <path value="DocumentoSpesaSanitaria.proprietario.struttura"/>
+      <short value="Struttura che emette il documento"/>
+      <definition value="Struttura che emette il documento fiscale"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.struttura.codiceRegione">
+      <path value="DocumentoSpesaSanitaria.proprietario.struttura.codiceRegione"/>
+      <short value="Codice regione"/>
+      <definition value="Codice regione della struttura che emette il documento fiscale"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.struttura.codiceAsl">
+      <path value="DocumentoSpesaSanitaria.proprietario.struttura.codiceAsl"/>
+      <short value="Codice asl"/>
+      <definition value="Codice della ASL della struttura che emette il documento fiscale"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.struttura.codiceSSA">
+      <path value="DocumentoSpesaSanitaria.proprietario.struttura.codiceSSA"/>
+      <short value="Codice struttura Codice farmacia/struttura che emette il documento fiscale"/>
+      <definition value="Codice struttura Codice farmacia/struttura che emette il documento fiscale"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.struttura.cfProprietario">
+      <path value="DocumentoSpesaSanitaria.proprietario.struttura.cfProprietario"/>
+      <short value="Codice fiscale del proprietario"/>
+      <definition value="Codice fiscale cifrato del soggetto di riferimento della struttura o del professionista"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.struttura.pIva">
+      <path value="DocumentoSpesaSanitaria.proprietario.struttura.pIva"/>
+      <short value="Partita IVA"/>
+      <definition value="Partita IVA della farmacia/struttura o medico che emette il documento fiscale"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.professionista">
+      <path value="DocumentoSpesaSanitaria.proprietario.professionista"/>
+      <short value="Professionista che emette il documento"/>
+      <definition value="Professionista che emette il documento fiscale"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.professionista.cfProprietario">
+      <path value="DocumentoSpesaSanitaria.proprietario.professionista.cfProprietario"/>
+      <short value="Codice fiscale del proprietario"/>
+      <definition value="Codice fiscale cifrato del soggetto di riferimento della struttura o del professionista"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.proprietario.professionista.pIva">
+      <path value="DocumentoSpesaSanitaria.proprietario.professionista.pIva"/>
+      <short value="Partita IVA"/>
+      <definition value="Partita IVA della farmacia/struttura o medico che emette il documento fiscale"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.cfCittadino">
+      <path value="DocumentoSpesaSanitaria.cfCittadino"/>
+      <short value="Codice fiscale del cittadino"/>
+      <definition value="Codice fiscale del cittadino rilevato dalla Tessera Sanitaria Campo cifrato Deve essere assente se flagOpposizione = 1"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.dispositivo">
+      <path value="DocumentoSpesaSanitaria.dispositivo"/>
+      <short value="Numero progressivo del dispositivo che genera il documento"/>
+      <definition value="Per dispositivo si intende il progressivo del registratore di cassa utilizzato dagli esercenti di beni sanitari che emettono documento commerciale; per l’emissione di fatture o ricevute fiscali il campo assume il valore consigliato = 1"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.flagOpposizione">
+      <path value="DocumentoSpesaSanitaria.flagOpposizione"/>
+      <short value="Flag Invio ad Agenzia"/>
+      <definition value="Indica la volontà del cittadino di non permettere l’invio del dato di spesa all’Agenzia delle entrate ai fini della predisposizione della dichiarazione Precompilata assume valore 0 = il cittadino NON si oppone 1 = il cittadino si oppone"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.voceSpesa">
+      <path value="DocumentoSpesaSanitaria.voceSpesa"/>
+      <short value="voceSpesa"/>
+      <definition value="voceSpesa"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="DocumentoSpesaSanitaria.voceSpesa.tipoSpesa">
+      <path value="DocumentoSpesaSanitaria.voceSpesa.tipoSpesa"/>
+      <short value="Tipo Spesa"/>
+      <definition value="Tipo Spesa"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.voceSpesa.flagTipoSpesa">
+      <path value="DocumentoSpesaSanitaria.voceSpesa.flagTipoSpesa"/>
+      <short value="Caratteristiche particolari del tipo Spesa"/>
+      <definition value="Il campo è valorizzato al fine di evidenziare caratteristiche particolari di alcune tipologie di spesa. Il campo vale:  1 con tipo TK (ticket di pronto soccorso); 2 con tipo SR (visita in intramoenia)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.voceSpesa.importo">
+      <path value="DocumentoSpesaSanitaria.voceSpesa.importo"/>
+      <short value="Importo della voce di spesa"/>
+      <definition value="Importo di ogni singola spesa sostenuta dal cittadino / rimborso riconosciuto al cittadino a fronte di una spesa sostenuta. Il campo deve assumere sempre valori positivi, anche in caso di rimborso Valore da 5 + 2 decimali"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Money"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.voceSpesa.aliquotaIVA">
+      <path value="DocumentoSpesaSanitaria.voceSpesa.aliquotaIVA"/>
+      <short value="Aliquota IVA"/>
+      <definition value="Aliquota IVA relativa Impostata in all’importo della voce di spesa. alternativa al campo naturaIVA Valore da 2 + 2 decimali"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Quantity"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.voceSpesa.naturaIVA">
+      <path value="DocumentoSpesaSanitaria.voceSpesa.naturaIVA"/>
+      <short value="Codice natura dell&#39;operazione esente IVA"/>
+      <definition value="Codice natura dell&#39;operazione esente IVA. Impostata in alternativa al campo aliquotaIVA. Assume valori da N1 a N6 per tipoDocumento = D (2 caratteri) Assume valori da N1 a N7 o sottovalori per tipoDocumento = F (max 4 caratteri)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.dettagliPagamento">
+      <path value="DocumentoSpesaSanitaria.dettagliPagamento"/>
+      <short value="Dettagli Pagamento"/>
+      <definition value="Dettagli Pagamento"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <isSummary value="true"/>
+    </element>
+    <element id="DocumentoSpesaSanitaria.dettagliPagamento.dataPagamento">
+      <path value="DocumentoSpesaSanitaria.dettagliPagamento.dataPagamento"/>
+      <short value="Data di pagamento afferente al &#39;documento fiscale&#39; emesso."/>
+      <definition value="Data di pagamento afferente al &#39;documento fiscale&#39; emesso. Deve essere coincidente o maggiore rispetto alla data di emissione. Può essere minore rispetto alla data di emissione solo se valorizzato a 1 il flag pagamento anticipato ( e comunque non minore del 01/01/2015)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.dettagliPagamento.flagPagamentoAnticipato">
+      <path value="DocumentoSpesaSanitaria.dettagliPagamento.flagPagamentoAnticipato"/>
+      <short value="Pagamento sostenuto in data antecedente all&#39;emissione"/>
+      <definition value="Il campo deve essere valorizzato a “1” per indicare il pagamento della spesa sostenuta dal cittadino in data antecedente alla data di emissione del &#39;documento fiscale&#39; Elemento opzionale"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="DocumentoSpesaSanitaria.dettagliPagamento.pagamentoTracciato">
+      <path value="DocumentoSpesaSanitaria.dettagliPagamento.pagamentoTracciato"/>
+      <short value="Modelità di pagamento"/>
+      <definition value="Il campo descrive la modalità di pagamento e assume i valori SI/NO SI : secondo le modalità previste dal comma 679 dell’art. 1 della Legge 160 del 27 /12/2019( legge di bilancio 2020) NO: in contanti"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

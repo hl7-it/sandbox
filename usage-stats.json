@@ -3,16 +3,55 @@
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "IT",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/invoicePaymentExt-it-sts",
+      "title": "Dettagli Pagamento",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/issuerPractictionerExt-it-sts",
+      "title": "Professionista (issuer)",
+      "types": [
+        "Reference"
+      ]
+    }
+  ],
   "profiles": {
+    "Organization": [
+      {
+        "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/OrganizationIssuer-it-sts",
+        "title": "Organization (issuer)"
+      }
+    ],
     "Invoice": [
       {
-        "url": "http://hl7.it/fhir/dossierPharma/StructureDefinition/Invoice-it-730",
-        "title": "Invoice (730)"
+        "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/Invoice-it-spesaSanitaria",
+        "title": "Invoice Documento Fiscale (STS)"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/Patient-it-sts",
+        "title": "Patient (only CF)"
+      }
+    ],
+    "PaymentReconciliation": [
+      {
+        "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/PaymentReconciliation-it-sts",
+        "title": "PaymentReconciliation"
       }
     ]
   },
   "usage": {
+    "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/invoicePaymentExt-it-sts": [
+      "Invoice"
+    ],
+    "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/issuerPractictionerExt-it-sts": [
+      "Invoice"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -28,10 +67,19 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [

@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-lineItemType-it-spesaSanitaria> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ValueSet-lineItemType-it-spesaSanitaria"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-documentoFiscale.html\"><code>http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-TK\">TK</a></td><td>Ticket</td><td>Ticket (Quota fissa e/o Differenza con il prezzo di riferimento. Franchigia. Pronto Soccorso e accesso diretto)</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-FC\">FC</a></td><td>Farmaci e Dispositivi medici CE</td><td>Farmaco, anche omeopatico. Dispositivi medici CE</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-FV\">FV</a></td><td>Farmaco per uso veterinario</td><td>Farmaco per uso veterinario</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-AD\">AD</a></td><td>Acquisto o affitto di dispositivo medico CE</td><td>Acquisto o affitto di dispositivo medico CE</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-CT\">CT</a></td><td>Cure Termali</td><td>Cure Termali</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-PI\">PI</a></td><td>Protesica e integrativa</td><td>protesica e integrativa</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-IC\">IC</a></td><td>Chirurgia e medicina estetica</td><td>Prestazioni di chirurgia estetica e di medicina estetica (ambulatoriale o ospedaliera)</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-SP\">SP</a></td><td>Prestazioni sanitarie</td><td>Prestazioni sanitarie</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-SV\">SV</a></td><td>Spese veterinarie</td><td>Spese veterinarie</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-AA\">AA</a></td><td>Altre spese</td><td>Altre spese</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-SR\">SR</a></td><td>Varie prestazioni sanitarie</td><td>prestazioni sanitarie: assistenza specialistica ambulatoriale esclusi interventi di chirurgia estetica; visita medica generica e specialistica o prestazioni diagnostiche estrumentali; prestazione chirurgica ad esclusione della chirurgia estetica;certificazione medica; ricoveri ospedalieri ricollegabili ad interventi chirurgici o adegenza, ad  esclusione della chirurgia estetica, al netto del comfort</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-AS\">AS</a></td><td>Farmacia dei servizi</td><td>Spese sanitarie relative ad ECG, spirometria, Holter pressorio e cardiaco, test per glicemia, colesterolo e trigliceridi o misurazione della pressione sanguigna, prestazione previste dalla farmacia dei servizi e simili sanguigna)</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-lineItemType-it-spesaSanitaria"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "VsLineItemTypeSTS"];
+  fhir:ValueSet.title [ fhir:value "Tipo di voce di spesa"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-10-25T21:40:26+00:00"^^xsd:dateTime];
+  fhir:ValueSet.description [ fhir:value "Tipo di voce di spesa"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "IT" ];
+       fhir:Coding.display [ fhir:value "Italy" ]
+     ]
+  ];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TK" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "FC" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "FV" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "AD" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "CT" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PI" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "IC" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "SP" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "SV" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "AA" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "SR" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "AS" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-lineItemType-it-spesaSanitaria.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
