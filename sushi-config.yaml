@@ -11,9 +11,9 @@
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.it.730
-canonical: http://hl7.it/fhir/dossierPharma
+canonical: http://hl7.it/fhir/spesaSanitaria
 version: 0.1.0
-name: HL7ITDossierPharma
+name: HL7ITSpesaSanitaria
 title: HL7 Italia FHIR Implementation Guide 730
 status: active
 publisher: HL7 Italia
