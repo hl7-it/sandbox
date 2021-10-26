@@ -7,7 +7,7 @@ Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-Particip
 Profile: InvoiceSpesaSanitaria
 Parent: Invoice
 Id: Invoice-it-spesaSanitaria
-Title: "Invoice Documento Fiscale (STS)"
+Title: "Invoice - Documento Fiscale (STS)"
 Description: "This profile defines how to constrain the Invoice resource for the scope of tracking the health expenses (SISTEMA TESSERA SANITARIA)"
 //-------------------------------------------------------------------------------------------
 * extension contains 
@@ -66,13 +66,40 @@ Description: "This profile defines how to constrain the Invoice resource for the
 * lineItem 1.. MS
   * chargeItem[x] MS
   * chargeItemCodeableConcept from VsLineItemTypeSTS (extensible)
+  
+
+  
+  
   * priceComponent 1.. MS
     * type 1.. MS
     * code 1.. MS
-  * priceComponent.factor MS
-  * ^short = "Aliquota"
-  * priceComponent.code 
-  * priceComponent.amount 1..1 MS
+	// * amount only $Money-it-base
+	
+  * priceComponent.amount only $Money-it-base
+  
+  * priceComponent ^slicing.discriminator.type = #value 
+  * priceComponent ^slicing.discriminator.path = "code"
+  * priceComponent ^slicing.rules = #open
+  * priceComponent ^slicing.description = "Slice per priceComponent.code"
+  
+  * priceComponent contains 
+	aliquotaIVA 0..1 MS
+	and esenzioneIVA 0..1 MS
+  
+  * priceComponent[aliquotaIVA].factor 1.. MS
+  * ^short = "Aliquota IVA"
+  * priceComponent[aliquotaIVA].code 1..1 MS
+  * priceComponent[aliquotaIVA].code from VsPriceComponentCodeSTS
+  * priceComponent[aliquotaIVA].amount 1..1 MS
+    
+  * priceComponent[esenzioneIVA].code 1..1 MS
+  * priceComponent[esenzioneIVA].code from VsCodiciEsclusioneIvaSTS
+  * priceComponent[esenzioneIVA].amount 1..1 MS
+    * value 1.. MS
+  * priceComponent[esenzioneIVA].amount.value = 0.00
+  // * priceComponent[esenzioneIVA].amount.currency = #EUR
+  
+  
 * totalNet 1..1 MS
 * totalGross 1..1 MS
 * note
@@ -119,7 +146,7 @@ Description: "Minimal Device Data: only serial"
 Profile: PatientMinimal
 Parent: Patient
 Id:   Patient-it-sts
-Title:  "Patient (only CF)"
+Title:  "Patient (only identifier)"
 Description: "Minimal Patient Data: only fiscal code"
 //-------------------------------------------------------------------------------------------
 * identifier 1.. MS
@@ -135,17 +162,23 @@ Description: "Minimal Patient Data: only fiscal code"
 * identifier.value ^definition = "Identifictivo del paziente"
 * identifier contains
     codiceFiscale 0..* MS 
-	/* ---
-	and   anpr 0..* and
-    idRegionale 0..* and
-    codiceENI 0..* and
-    codiceSTP 0..*
-	--- */
+	// and anpr 0..*
+    and idRegionale 0..*
+    and codiceENI 0..*
+    and codiceSTP 0..*
+	
 * identifier[codiceFiscale]
 * identifier[codiceFiscale].system 1.. MS
 * identifier[codiceFiscale].system = "http://hl7.it/sid/codiceFiscale" (exactly)
 * identifier[codiceFiscale].value 1.. MS
 * identifier[codiceFiscale].value obeys pat-id-cf-1
+* identifier[idRegionale].system 1.. MS
+* identifier[idRegionale].system from $uri-idRegionali (required)
+* identifier[codiceENI] ^short = "Codice ENI"
+* identifier[codiceENI].system 1.. MS
+* identifier[codiceENI].system from $uri-idEni (required)
+* identifier[codiceSTP].system 1.. MS
+* identifier[codiceSTP].system from $uri-idStp (required)
 
 //-------------------------------------------------------------------------------------------
 Profile: OrganizationIssuer
