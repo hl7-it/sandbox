@@ -1,13 +1,14 @@
 {
- "name": "HL7ITFhir730",
+ "name": "HL7ITFhirSpesaSanitaria",
  "version" : "0.1.0",  
- "canonical" : "http://hl7.it/fhir/730",
- "url" : "http://hl7.it/fhir/730",
- "title" : "HL7 Italia FHIR Implementation Guide: 730",
- "description": "HL7 Italia FHIR Implementation Guide: 730",
+ "canonical" : "http://hl7.it/fhir/spesa-sanitaria",
+ "url" : "http://hl7.it/fhir/spesa-sanitaria",
+ "title" : "HL7 Italia FHIR Implementation Guide: Spesa Sanitaria",
+ "description": "HL7 Italia FHIR Implementation Guide: Spesa Sanitaria",
  "keywords": [
    "HL7 Italia",
-   "HL7 IT 730"
+   "Spesa Sanitaria",
+   "730", "Documento Fiscale"
   ],
  "language": "it",
  "author": "Giorgio Cangioli",
