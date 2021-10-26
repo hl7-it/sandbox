@@ -5,19 +5,28 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale> a fhir:CodeSystem;
+<http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale> a fhir:CodeSystem;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "documentoFiscale"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">F<a name=\"documentoFiscale-F\"> </a></td><td>fattura</td><td>fattura</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"documentoFiscale-D\"> </a></td><td>documento commerciale</td><td>documento commerciale</td></tr><tr><td style=\"white-space:nowrap\">TK<a name=\"documentoFiscale-TK\"> </a></td><td>Ticket</td><td>Ticket (Quota fissa e/o Differenza con il prezzo di riferimento. Franchigia. Pronto Soccorso e accesso diretto)</td></tr><tr><td style=\"white-space:nowrap\">FC<a name=\"documentoFiscale-FC\"> </a></td><td>Farmaci e Dispositivi medici CE</td><td>Farmaco, anche omeopatico. Dispositivi medici CE</td></tr><tr><td style=\"white-space:nowrap\">FV<a name=\"documentoFiscale-FV\"> </a></td><td>Farmaco per uso veterinario</td><td>Farmaco per uso veterinario</td></tr><tr><td style=\"white-space:nowrap\">AD<a name=\"documentoFiscale-AD\"> </a></td><td>Acquisto o affitto di dispositivo medico CE</td><td>Acquisto o affitto di dispositivo medico CE</td></tr><tr><td style=\"white-space:nowrap\">CT<a name=\"documentoFiscale-CT\"> </a></td><td>Cure Termali</td><td>Cure Termali</td></tr><tr><td style=\"white-space:nowrap\">PI<a name=\"documentoFiscale-PI\"> </a></td><td>Protesica e integrativa</td><td>protesica e integrativa</td></tr><tr><td style=\"white-space:nowrap\">IC<a name=\"documentoFiscale-IC\"> </a></td><td>Chirurgia e medicina estetica</td><td>Prestazioni di chirurgia estetica e di medicina estetica (ambulatoriale o ospedaliera)</td></tr><tr><td style=\"white-space:nowrap\">SP<a name=\"documentoFiscale-SP\"> </a></td><td>Prestazioni sanitarie</td><td>Prestazioni sanitarie</td></tr><tr><td style=\"white-space:nowrap\">SV<a name=\"documentoFiscale-SV\"> </a></td><td>Spese veterinarie</td><td>Spese veterinarie</td></tr><tr><td style=\"white-space:nowrap\">AA<a name=\"documentoFiscale-AA\"> </a></td><td>Altre spese</td><td>Altre spese</td></tr><tr><td style=\"white-space:nowrap\">SR<a name=\"documentoFiscale-SR\"> </a></td><td>Varie prestazioni sanitarie</td><td>prestazioni sanitarie: assistenza specialistica ambulatoriale esclusi interventi di chirurgia estetica; visita medica generica e specialistica o prestazioni diagnostiche estrumentali; prestazione chirurgica ad esclusione della chirurgia estetica;certificazione medica; ricoveri ospedalieri ricollegabili ad interventi chirurgici o adegenza, ad  esclusione della chirurgia estetica, al netto del comfort</td></tr><tr><td style=\"white-space:nowrap\">AS<a name=\"documentoFiscale-AS\"> </a></td><td>Farmacia dei servizi</td><td>Spese sanitarie relative ad ECG, spirometria, Holter pressorio e cardiaco, test per glicemia, colesterolo e trigliceridi o misurazione della pressione sanguigna, prestazione previste dalla farmacia dei servizi e simili sanguigna)</td></tr><tr><td style=\"white-space:nowrap\">aliquota-iva<a name=\"documentoFiscale-aliquota-iva\"> </a></td><td>Aliquota IVA</td><td>Aliquota IVA</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">F<a name=\"documentoFiscale-F\"> </a></td><td>fattura</td><td>fattura</td></tr><tr><td style=\"white-space:nowrap\">D<a name=\"documentoFiscale-D\"> </a></td><td>documento commerciale</td><td>documento commerciale</td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"documentoFiscale-N\"> </a></td><td>Nota di Credito</td><td>Nota di Credito</td></tr><tr><td style=\"white-space:nowrap\">TK<a name=\"documentoFiscale-TK\"> </a></td><td>Ticket</td><td>Ticket (Quota fissa e/o Differenza con il prezzo di riferimento. Franchigia. Pronto Soccorso e accesso diretto)</td></tr><tr><td style=\"white-space:nowrap\">FC<a name=\"documentoFiscale-FC\"> </a></td><td>Farmaci e Dispositivi medici CE</td><td>Farmaco, anche omeopatico. Dispositivi medici CE</td></tr><tr><td style=\"white-space:nowrap\">FV<a name=\"documentoFiscale-FV\"> </a></td><td>Farmaco per uso veterinario</td><td>Farmaco per uso veterinario</td></tr><tr><td style=\"white-space:nowrap\">AD<a name=\"documentoFiscale-AD\"> </a></td><td>Acquisto o affitto di dispositivo medico CE</td><td>Acquisto o affitto di dispositivo medico CE</td></tr><tr><td style=\"white-space:nowrap\">CT<a name=\"documentoFiscale-CT\"> </a></td><td>Cure Termali</td><td>Cure Termali</td></tr><tr><td style=\"white-space:nowrap\">PI<a name=\"documentoFiscale-PI\"> </a></td><td>Protesica e integrativa</td><td>protesica e integrativa</td></tr><tr><td style=\"white-space:nowrap\">IC<a name=\"documentoFiscale-IC\"> </a></td><td>Chirurgia e medicina estetica</td><td>Prestazioni di chirurgia estetica e di medicina estetica (ambulatoriale o ospedaliera)</td></tr><tr><td style=\"white-space:nowrap\">SP<a name=\"documentoFiscale-SP\"> </a></td><td>Prestazioni sanitarie</td><td>Prestazioni sanitarie</td></tr><tr><td style=\"white-space:nowrap\">SV<a name=\"documentoFiscale-SV\"> </a></td><td>Spese veterinarie</td><td>Spese veterinarie</td></tr><tr><td style=\"white-space:nowrap\">AA<a name=\"documentoFiscale-AA\"> </a></td><td>Altre spese</td><td>Altre spese</td></tr><tr><td style=\"white-space:nowrap\">SR<a name=\"documentoFiscale-SR\"> </a></td><td>Varie prestazioni sanitarie</td><td>prestazioni sanitarie: assistenza specialistica ambulatoriale esclusi interventi di chirurgia estetica; visita medica generica e specialistica o prestazioni diagnostiche estrumentali; prestazione chirurgica ad esclusione della chirurgia estetica;certificazione medica; ricoveri ospedalieri ricollegabili ad interventi chirurgici o adegenza, ad  esclusione della chirurgia estetica, al netto del comfort</td></tr><tr><td style=\"white-space:nowrap\">AS<a name=\"documentoFiscale-AS\"> </a></td><td>Farmacia dei servizi</td><td>Spese sanitarie relative ad ECG, spirometria, Holter pressorio e cardiaco, test per glicemia, colesterolo e trigliceridi o misurazione della pressione sanguigna, prestazione previste dalla farmacia dei servizi e simili sanguigna)</td></tr><tr><td style=\"white-space:nowrap\">aliquota-iva<a name=\"documentoFiscale-aliquota-iva\"> </a></td><td>Aliquota IVA</td><td>Aliquota IVA</td></tr><tr><td style=\"white-space:nowrap\">N1<a name=\"documentoFiscale-N1\"> </a></td><td>Escluse ex art. 15</td><td>Escluse ex art. 15</td></tr><tr><td style=\"white-space:nowrap\">N2.1<a name=\"documentoFiscale-N2.461\"> </a></td><td>Non soggette ad IVA ai sensi degli artt. da 7 a 7-septies del DPR 633/72</td><td>Non soggette ad IVA ai sensi degli artt. da 7 a 7-septies del DPR 633/72</td></tr><tr><td style=\"white-space:nowrap\">N2.2<a name=\"documentoFiscale-N2.462\"> </a></td><td>Non soggette – altri casi</td><td>Non soggette – altri casi</td></tr><tr><td style=\"white-space:nowrap\">N3.1<a name=\"documentoFiscale-N3.461\"> </a></td><td>Non imponibili – esportazioni</td><td>Non imponibili – esportazioni</td></tr><tr><td style=\"white-space:nowrap\">N3.2<a name=\"documentoFiscale-N3.462\"> </a></td><td>Non imponibili – cessioni intracomunitarie</td><td>Non imponibili – cessioni intracomunitarie</td></tr><tr><td style=\"white-space:nowrap\">N3.3<a name=\"documentoFiscale-N3.463\"> </a></td><td>Non imponibili – cessioni verso San Marino</td><td>Non imponibili – cessioni verso San Marino</td></tr><tr><td style=\"white-space:nowrap\">N3.4<a name=\"documentoFiscale-N3.464\"> </a></td><td>Non imponibili – operazioni assimilate alle cessioni all’esportazione</td><td>Non imponibili – operazioni assimilate alle cessioni all’esportazione</td></tr><tr><td style=\"white-space:nowrap\">N3.5<a name=\"documentoFiscale-N3.465\"> </a></td><td>Non imponibili – a seguito di dichiarazioni d’intento</td><td>Non imponibili – a seguito di dichiarazioni d’intento</td></tr><tr><td style=\"white-space:nowrap\">N3.6<a name=\"documentoFiscale-N3.466\"> </a></td><td>Non imponibili – altre operazioni che non concorrono alla formazione del plafond</td><td>Non imponibili – altre operazioni che non concorrono alla formazione del plafond</td></tr><tr><td style=\"white-space:nowrap\">N4<a name=\"documentoFiscale-N4\"> </a></td><td>Esenti</td><td>Esenti</td></tr><tr><td style=\"white-space:nowrap\">N5<a name=\"documentoFiscale-N5\"> </a></td><td>Regime del margine / IVA non esposta in fattura</td><td>Regime del margine / IVA non esposta in fattura</td></tr><tr><td style=\"white-space:nowrap\">N6.1<a name=\"documentoFiscale-N6.461\"> </a></td><td>Inversione contabile – cessione di rottami e altri materiali di recupero</td><td>Inversione contabile – cessione di rottami e altri materiali di recupero</td></tr><tr><td style=\"white-space:nowrap\">N6.2<a name=\"documentoFiscale-N6.462\"> </a></td><td>Inversione contabile – cessione di oro e argento puro</td><td>Inversione contabile – cessione di oro e argento puro</td></tr><tr><td style=\"white-space:nowrap\">N6.3<a name=\"documentoFiscale-N6.463\"> </a></td><td>Inversione contabile – subappalto nel settore edile</td><td>Inversione contabile – subappalto nel settore edile</td></tr><tr><td style=\"white-space:nowrap\">N6.4<a name=\"documentoFiscale-N6.464\"> </a></td><td>Inversione contabile – cessione di fabbricati</td><td>Inversione contabile – cessione di fabbricati</td></tr><tr><td style=\"white-space:nowrap\">N6.5<a name=\"documentoFiscale-N6.465\"> </a></td><td>Inversione contabile – cessione di telefoni cellulari</td><td>Inversione contabile – cessione di telefoni cellulari</td></tr><tr><td style=\"white-space:nowrap\">N6.6<a name=\"documentoFiscale-N6.466\"> </a></td><td>Inversione contabile – cessione di prodotti elettronici</td><td>Inversione contabile – cessione di prodotti elettronici</td></tr><tr><td style=\"white-space:nowrap\">N6.7<a name=\"documentoFiscale-N6.467\"> </a></td><td>Inversione contabile – prestazioni comparto edile e settori connessi</td><td>Inversione contabile – prestazioni comparto edile e settori connessi</td></tr><tr><td style=\"white-space:nowrap\">N6.8<a name=\"documentoFiscale-N6.468\"> </a></td><td>Inversione contabile – operazioni settore energetico</td><td>Inversione contabile – operazioni settore energetico</td></tr><tr><td style=\"white-space:nowrap\">N6.9<a name=\"documentoFiscale-N6.469\"> </a></td><td>Inversione contabile – altri casi</td><td>Inversione contabile – altri casi</td></tr><tr><td style=\"white-space:nowrap\">N7<a name=\"documentoFiscale-N7\"> </a></td><td>IVA assolta in altro stato UE</td><td>IVA assolta in altro stato UE (vendite a distanza ex art. 40 c. 3 e 4 e art. 41 c. 1 lett. b,  DL 331/93; prestazione di servizi di telecomunicazioni, tele-radiodiffusione ed elettronici ex art. 7-sexies lett. f, g, art. 74- sexies DPR 633/72).</td></tr></table></div>"
   ];
-  fhir:CodeSystem.url [ fhir:value "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale"];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale"];
   fhir:CodeSystem.version [ fhir:value "0.1.0"];
   fhir:CodeSystem.name [ fhir:value "CsDocumentoFiscaleSTS"];
   fhir:CodeSystem.title [ fhir:value "Internal Code System"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-10-25T21:40:26+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-10-26T14:59:11+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Italia" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://hl7.it/" ]
+     ]
+  ];
   fhir:CodeSystem.description [ fhir:value "Documento Fiscale (STS) FHIR IG Internal Code System"];
   fhir:CodeSystem.jurisdiction [
      fhir:index 0;
@@ -29,7 +38,7 @@
      ]
   ];
   fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "15"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.count [ fhir:value "37"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "F" ];
@@ -42,74 +51,184 @@
      fhir:CodeSystem.concept.definition [ fhir:value "documento commerciale" ]
   ], [
      fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "N" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nota di Credito" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Nota di Credito" ]
+  ], [
+     fhir:index 3;
      fhir:CodeSystem.concept.code [ fhir:value "TK" ];
      fhir:CodeSystem.concept.display [ fhir:value "Ticket" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Ticket (Quota fissa e/o Differenza con il prezzo di riferimento. Franchigia. Pronto Soccorso e accesso diretto)" ]
   ], [
-     fhir:index 3;
+     fhir:index 4;
      fhir:CodeSystem.concept.code [ fhir:value "FC" ];
      fhir:CodeSystem.concept.display [ fhir:value "Farmaci e Dispositivi medici CE" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Farmaco, anche omeopatico. Dispositivi medici CE" ]
   ], [
-     fhir:index 4;
+     fhir:index 5;
      fhir:CodeSystem.concept.code [ fhir:value "FV" ];
      fhir:CodeSystem.concept.display [ fhir:value "Farmaco per uso veterinario" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Farmaco per uso veterinario" ]
   ], [
-     fhir:index 5;
+     fhir:index 6;
      fhir:CodeSystem.concept.code [ fhir:value "AD" ];
      fhir:CodeSystem.concept.display [ fhir:value "Acquisto o affitto di dispositivo medico CE" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Acquisto o affitto di dispositivo medico CE" ]
   ], [
-     fhir:index 6;
+     fhir:index 7;
      fhir:CodeSystem.concept.code [ fhir:value "CT" ];
      fhir:CodeSystem.concept.display [ fhir:value "Cure Termali" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Cure Termali" ]
   ], [
-     fhir:index 7;
+     fhir:index 8;
      fhir:CodeSystem.concept.code [ fhir:value "PI" ];
      fhir:CodeSystem.concept.display [ fhir:value "Protesica e integrativa" ];
      fhir:CodeSystem.concept.definition [ fhir:value "protesica e integrativa" ]
   ], [
-     fhir:index 8;
+     fhir:index 9;
      fhir:CodeSystem.concept.code [ fhir:value "IC" ];
      fhir:CodeSystem.concept.display [ fhir:value "Chirurgia e medicina estetica" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Prestazioni di chirurgia estetica e di medicina estetica (ambulatoriale o ospedaliera)" ]
   ], [
-     fhir:index 9;
+     fhir:index 10;
      fhir:CodeSystem.concept.code [ fhir:value "SP" ];
      fhir:CodeSystem.concept.display [ fhir:value "Prestazioni sanitarie" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Prestazioni sanitarie" ]
   ], [
-     fhir:index 10;
+     fhir:index 11;
      fhir:CodeSystem.concept.code [ fhir:value "SV" ];
      fhir:CodeSystem.concept.display [ fhir:value "Spese veterinarie" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Spese veterinarie" ]
   ], [
-     fhir:index 11;
+     fhir:index 12;
      fhir:CodeSystem.concept.code [ fhir:value "AA" ];
      fhir:CodeSystem.concept.display [ fhir:value "Altre spese" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Altre spese" ]
   ], [
-     fhir:index 12;
+     fhir:index 13;
      fhir:CodeSystem.concept.code [ fhir:value "SR" ];
      fhir:CodeSystem.concept.display [ fhir:value "Varie prestazioni sanitarie" ];
      fhir:CodeSystem.concept.definition [ fhir:value "prestazioni sanitarie: assistenza specialistica ambulatoriale esclusi interventi di chirurgia estetica; visita medica generica e specialistica o prestazioni diagnostiche estrumentali; prestazione chirurgica ad esclusione della chirurgia estetica;certificazione medica; ricoveri ospedalieri ricollegabili ad interventi chirurgici o adegenza, ad  esclusione della chirurgia estetica, al netto del comfort" ]
   ], [
-     fhir:index 13;
+     fhir:index 14;
      fhir:CodeSystem.concept.code [ fhir:value "AS" ];
      fhir:CodeSystem.concept.display [ fhir:value "Farmacia dei servizi" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Spese sanitarie relative ad ECG, spirometria, Holter pressorio e cardiaco, test per glicemia, colesterolo e trigliceridi o misurazione della pressione sanguigna, prestazione previste dalla farmacia dei servizi e simili sanguigna)" ]
   ], [
-     fhir:index 14;
+     fhir:index 15;
      fhir:CodeSystem.concept.code [ fhir:value "aliquota-iva" ];
      fhir:CodeSystem.concept.display [ fhir:value "Aliquota IVA" ];
      fhir:CodeSystem.concept.definition [ fhir:value "Aliquota IVA" ]
+  ], [
+     fhir:index 16;
+     fhir:CodeSystem.concept.code [ fhir:value "N1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Escluse ex art. 15" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Escluse ex art. 15" ]
+  ], [
+     fhir:index 17;
+     fhir:CodeSystem.concept.code [ fhir:value "N2.1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non soggette ad IVA ai sensi degli artt. da 7 a 7-septies del DPR 633/72" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Non soggette ad IVA ai sensi degli artt. da 7 a 7-septies del DPR 633/72" ]
+  ], [
+     fhir:index 18;
+     fhir:CodeSystem.concept.code [ fhir:value "N2.2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non soggette – altri casi" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Non soggette – altri casi" ]
+  ], [
+     fhir:index 19;
+     fhir:CodeSystem.concept.code [ fhir:value "N3.1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non imponibili – esportazioni" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Non imponibili – esportazioni" ]
+  ], [
+     fhir:index 20;
+     fhir:CodeSystem.concept.code [ fhir:value "N3.2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non imponibili – cessioni intracomunitarie" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Non imponibili – cessioni intracomunitarie" ]
+  ], [
+     fhir:index 21;
+     fhir:CodeSystem.concept.code [ fhir:value "N3.3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non imponibili – cessioni verso San Marino" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Non imponibili – cessioni verso San Marino" ]
+  ], [
+     fhir:index 22;
+     fhir:CodeSystem.concept.code [ fhir:value "N3.4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non imponibili – operazioni assimilate alle cessioni all’esportazione" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Non imponibili – operazioni assimilate alle cessioni all’esportazione" ]
+  ], [
+     fhir:index 23;
+     fhir:CodeSystem.concept.code [ fhir:value "N3.5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non imponibili – a seguito di dichiarazioni d’intento" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Non imponibili – a seguito di dichiarazioni d’intento" ]
+  ], [
+     fhir:index 24;
+     fhir:CodeSystem.concept.code [ fhir:value "N3.6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Non imponibili – altre operazioni che non concorrono alla formazione del plafond" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Non imponibili – altre operazioni che non concorrono alla formazione del plafond" ]
+  ], [
+     fhir:index 25;
+     fhir:CodeSystem.concept.code [ fhir:value "N4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Esenti" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Esenti" ]
+  ], [
+     fhir:index 26;
+     fhir:CodeSystem.concept.code [ fhir:value "N5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Regime del margine / IVA non esposta in fattura" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Regime del margine / IVA non esposta in fattura" ]
+  ], [
+     fhir:index 27;
+     fhir:CodeSystem.concept.code [ fhir:value "N6.1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inversione contabile – cessione di rottami e altri materiali di recupero" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Inversione contabile – cessione di rottami e altri materiali di recupero" ]
+  ], [
+     fhir:index 28;
+     fhir:CodeSystem.concept.code [ fhir:value "N6.2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inversione contabile – cessione di oro e argento puro" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Inversione contabile – cessione di oro e argento puro" ]
+  ], [
+     fhir:index 29;
+     fhir:CodeSystem.concept.code [ fhir:value "N6.3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inversione contabile – subappalto nel settore edile" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Inversione contabile – subappalto nel settore edile" ]
+  ], [
+     fhir:index 30;
+     fhir:CodeSystem.concept.code [ fhir:value "N6.4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inversione contabile – cessione di fabbricati" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Inversione contabile – cessione di fabbricati" ]
+  ], [
+     fhir:index 31;
+     fhir:CodeSystem.concept.code [ fhir:value "N6.5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inversione contabile – cessione di telefoni cellulari" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Inversione contabile – cessione di telefoni cellulari" ]
+  ], [
+     fhir:index 32;
+     fhir:CodeSystem.concept.code [ fhir:value "N6.6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inversione contabile – cessione di prodotti elettronici" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Inversione contabile – cessione di prodotti elettronici" ]
+  ], [
+     fhir:index 33;
+     fhir:CodeSystem.concept.code [ fhir:value "N6.7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inversione contabile – prestazioni comparto edile e settori connessi" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Inversione contabile – prestazioni comparto edile e settori connessi" ]
+  ], [
+     fhir:index 34;
+     fhir:CodeSystem.concept.code [ fhir:value "N6.8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inversione contabile – operazioni settore energetico" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Inversione contabile – operazioni settore energetico" ]
+  ], [
+     fhir:index 35;
+     fhir:CodeSystem.concept.code [ fhir:value "N6.9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Inversione contabile – altri casi" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "Inversione contabile – altri casi" ]
+  ], [
+     fhir:index 36;
+     fhir:CodeSystem.concept.code [ fhir:value "N7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "IVA assolta in altro stato UE" ];
+     fhir:CodeSystem.concept.definition [ fhir:value "IVA assolta in altro stato UE (vendite a distanza ex art. 40 c. 3 e 4 e art. 41 c. 1 lett. b,  DL 331/93; prestazione di servizi di telecomunicazioni, tele-radiodiffusione ed elettronici ex art. 7-sexies lett. f, g, art. 74- sexies DPR 633/72)." ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale.ttl> a owl:Ontology;
+<http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

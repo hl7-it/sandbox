@@ -3,14 +3,21 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="documentoFiscale"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">F<a name="documentoFiscale-F"> </a></td><td>fattura</td><td>fattura</td></tr><tr><td style="white-space:nowrap">D<a name="documentoFiscale-D"> </a></td><td>documento commerciale</td><td>documento commerciale</td></tr><tr><td style="white-space:nowrap">TK<a name="documentoFiscale-TK"> </a></td><td>Ticket</td><td>Ticket (Quota fissa e/o Differenza con il prezzo di riferimento. Franchigia. Pronto Soccorso e accesso diretto)</td></tr><tr><td style="white-space:nowrap">FC<a name="documentoFiscale-FC"> </a></td><td>Farmaci e Dispositivi medici CE</td><td>Farmaco, anche omeopatico. Dispositivi medici CE</td></tr><tr><td style="white-space:nowrap">FV<a name="documentoFiscale-FV"> </a></td><td>Farmaco per uso veterinario</td><td>Farmaco per uso veterinario</td></tr><tr><td style="white-space:nowrap">AD<a name="documentoFiscale-AD"> </a></td><td>Acquisto o affitto di dispositivo medico CE</td><td>Acquisto o affitto di dispositivo medico CE</td></tr><tr><td style="white-space:nowrap">CT<a name="documentoFiscale-CT"> </a></td><td>Cure Termali</td><td>Cure Termali</td></tr><tr><td style="white-space:nowrap">PI<a name="documentoFiscale-PI"> </a></td><td>Protesica e integrativa</td><td>protesica e integrativa</td></tr><tr><td style="white-space:nowrap">IC<a name="documentoFiscale-IC"> </a></td><td>Chirurgia e medicina estetica</td><td>Prestazioni di chirurgia estetica e di medicina estetica (ambulatoriale o ospedaliera)</td></tr><tr><td style="white-space:nowrap">SP<a name="documentoFiscale-SP"> </a></td><td>Prestazioni sanitarie</td><td>Prestazioni sanitarie</td></tr><tr><td style="white-space:nowrap">SV<a name="documentoFiscale-SV"> </a></td><td>Spese veterinarie</td><td>Spese veterinarie</td></tr><tr><td style="white-space:nowrap">AA<a name="documentoFiscale-AA"> </a></td><td>Altre spese</td><td>Altre spese</td></tr><tr><td style="white-space:nowrap">SR<a name="documentoFiscale-SR"> </a></td><td>Varie prestazioni sanitarie</td><td>prestazioni sanitarie: assistenza specialistica ambulatoriale esclusi interventi di chirurgia estetica; visita medica generica e specialistica o prestazioni diagnostiche estrumentali; prestazione chirurgica ad esclusione della chirurgia estetica;certificazione medica; ricoveri ospedalieri ricollegabili ad interventi chirurgici o adegenza, ad  esclusione della chirurgia estetica, al netto del comfort</td></tr><tr><td style="white-space:nowrap">AS<a name="documentoFiscale-AS"> </a></td><td>Farmacia dei servizi</td><td>Spese sanitarie relative ad ECG, spirometria, Holter pressorio e cardiaco, test per glicemia, colesterolo e trigliceridi o misurazione della pressione sanguigna, prestazione previste dalla farmacia dei servizi e simili sanguigna)</td></tr><tr><td style="white-space:nowrap">aliquota-iva<a name="documentoFiscale-aliquota-iva"> </a></td><td>Aliquota IVA</td><td>Aliquota IVA</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">F<a name="documentoFiscale-F"> </a></td><td>fattura</td><td>fattura</td></tr><tr><td style="white-space:nowrap">D<a name="documentoFiscale-D"> </a></td><td>documento commerciale</td><td>documento commerciale</td></tr><tr><td style="white-space:nowrap">N<a name="documentoFiscale-N"> </a></td><td>Nota di Credito</td><td>Nota di Credito</td></tr><tr><td style="white-space:nowrap">TK<a name="documentoFiscale-TK"> </a></td><td>Ticket</td><td>Ticket (Quota fissa e/o Differenza con il prezzo di riferimento. Franchigia. Pronto Soccorso e accesso diretto)</td></tr><tr><td style="white-space:nowrap">FC<a name="documentoFiscale-FC"> </a></td><td>Farmaci e Dispositivi medici CE</td><td>Farmaco, anche omeopatico. Dispositivi medici CE</td></tr><tr><td style="white-space:nowrap">FV<a name="documentoFiscale-FV"> </a></td><td>Farmaco per uso veterinario</td><td>Farmaco per uso veterinario</td></tr><tr><td style="white-space:nowrap">AD<a name="documentoFiscale-AD"> </a></td><td>Acquisto o affitto di dispositivo medico CE</td><td>Acquisto o affitto di dispositivo medico CE</td></tr><tr><td style="white-space:nowrap">CT<a name="documentoFiscale-CT"> </a></td><td>Cure Termali</td><td>Cure Termali</td></tr><tr><td style="white-space:nowrap">PI<a name="documentoFiscale-PI"> </a></td><td>Protesica e integrativa</td><td>protesica e integrativa</td></tr><tr><td style="white-space:nowrap">IC<a name="documentoFiscale-IC"> </a></td><td>Chirurgia e medicina estetica</td><td>Prestazioni di chirurgia estetica e di medicina estetica (ambulatoriale o ospedaliera)</td></tr><tr><td style="white-space:nowrap">SP<a name="documentoFiscale-SP"> </a></td><td>Prestazioni sanitarie</td><td>Prestazioni sanitarie</td></tr><tr><td style="white-space:nowrap">SV<a name="documentoFiscale-SV"> </a></td><td>Spese veterinarie</td><td>Spese veterinarie</td></tr><tr><td style="white-space:nowrap">AA<a name="documentoFiscale-AA"> </a></td><td>Altre spese</td><td>Altre spese</td></tr><tr><td style="white-space:nowrap">SR<a name="documentoFiscale-SR"> </a></td><td>Varie prestazioni sanitarie</td><td>prestazioni sanitarie: assistenza specialistica ambulatoriale esclusi interventi di chirurgia estetica; visita medica generica e specialistica o prestazioni diagnostiche estrumentali; prestazione chirurgica ad esclusione della chirurgia estetica;certificazione medica; ricoveri ospedalieri ricollegabili ad interventi chirurgici o adegenza, ad  esclusione della chirurgia estetica, al netto del comfort</td></tr><tr><td style="white-space:nowrap">AS<a name="documentoFiscale-AS"> </a></td><td>Farmacia dei servizi</td><td>Spese sanitarie relative ad ECG, spirometria, Holter pressorio e cardiaco, test per glicemia, colesterolo e trigliceridi o misurazione della pressione sanguigna, prestazione previste dalla farmacia dei servizi e simili sanguigna)</td></tr><tr><td style="white-space:nowrap">aliquota-iva<a name="documentoFiscale-aliquota-iva"> </a></td><td>Aliquota IVA</td><td>Aliquota IVA</td></tr><tr><td style="white-space:nowrap">N1<a name="documentoFiscale-N1"> </a></td><td>Escluse ex art. 15</td><td>Escluse ex art. 15</td></tr><tr><td style="white-space:nowrap">N2.1<a name="documentoFiscale-N2.461"> </a></td><td>Non soggette ad IVA ai sensi degli artt. da 7 a 7-septies del DPR 633/72</td><td>Non soggette ad IVA ai sensi degli artt. da 7 a 7-septies del DPR 633/72</td></tr><tr><td style="white-space:nowrap">N2.2<a name="documentoFiscale-N2.462"> </a></td><td>Non soggette – altri casi</td><td>Non soggette – altri casi</td></tr><tr><td style="white-space:nowrap">N3.1<a name="documentoFiscale-N3.461"> </a></td><td>Non imponibili – esportazioni</td><td>Non imponibili – esportazioni</td></tr><tr><td style="white-space:nowrap">N3.2<a name="documentoFiscale-N3.462"> </a></td><td>Non imponibili – cessioni intracomunitarie</td><td>Non imponibili – cessioni intracomunitarie</td></tr><tr><td style="white-space:nowrap">N3.3<a name="documentoFiscale-N3.463"> </a></td><td>Non imponibili – cessioni verso San Marino</td><td>Non imponibili – cessioni verso San Marino</td></tr><tr><td style="white-space:nowrap">N3.4<a name="documentoFiscale-N3.464"> </a></td><td>Non imponibili – operazioni assimilate alle cessioni all’esportazione</td><td>Non imponibili – operazioni assimilate alle cessioni all’esportazione</td></tr><tr><td style="white-space:nowrap">N3.5<a name="documentoFiscale-N3.465"> </a></td><td>Non imponibili – a seguito di dichiarazioni d’intento</td><td>Non imponibili – a seguito di dichiarazioni d’intento</td></tr><tr><td style="white-space:nowrap">N3.6<a name="documentoFiscale-N3.466"> </a></td><td>Non imponibili – altre operazioni che non concorrono alla formazione del plafond</td><td>Non imponibili – altre operazioni che non concorrono alla formazione del plafond</td></tr><tr><td style="white-space:nowrap">N4<a name="documentoFiscale-N4"> </a></td><td>Esenti</td><td>Esenti</td></tr><tr><td style="white-space:nowrap">N5<a name="documentoFiscale-N5"> </a></td><td>Regime del margine / IVA non esposta in fattura</td><td>Regime del margine / IVA non esposta in fattura</td></tr><tr><td style="white-space:nowrap">N6.1<a name="documentoFiscale-N6.461"> </a></td><td>Inversione contabile – cessione di rottami e altri materiali di recupero</td><td>Inversione contabile – cessione di rottami e altri materiali di recupero</td></tr><tr><td style="white-space:nowrap">N6.2<a name="documentoFiscale-N6.462"> </a></td><td>Inversione contabile – cessione di oro e argento puro</td><td>Inversione contabile – cessione di oro e argento puro</td></tr><tr><td style="white-space:nowrap">N6.3<a name="documentoFiscale-N6.463"> </a></td><td>Inversione contabile – subappalto nel settore edile</td><td>Inversione contabile – subappalto nel settore edile</td></tr><tr><td style="white-space:nowrap">N6.4<a name="documentoFiscale-N6.464"> </a></td><td>Inversione contabile – cessione di fabbricati</td><td>Inversione contabile – cessione di fabbricati</td></tr><tr><td style="white-space:nowrap">N6.5<a name="documentoFiscale-N6.465"> </a></td><td>Inversione contabile – cessione di telefoni cellulari</td><td>Inversione contabile – cessione di telefoni cellulari</td></tr><tr><td style="white-space:nowrap">N6.6<a name="documentoFiscale-N6.466"> </a></td><td>Inversione contabile – cessione di prodotti elettronici</td><td>Inversione contabile – cessione di prodotti elettronici</td></tr><tr><td style="white-space:nowrap">N6.7<a name="documentoFiscale-N6.467"> </a></td><td>Inversione contabile – prestazioni comparto edile e settori connessi</td><td>Inversione contabile – prestazioni comparto edile e settori connessi</td></tr><tr><td style="white-space:nowrap">N6.8<a name="documentoFiscale-N6.468"> </a></td><td>Inversione contabile – operazioni settore energetico</td><td>Inversione contabile – operazioni settore energetico</td></tr><tr><td style="white-space:nowrap">N6.9<a name="documentoFiscale-N6.469"> </a></td><td>Inversione contabile – altri casi</td><td>Inversione contabile – altri casi</td></tr><tr><td style="white-space:nowrap">N7<a name="documentoFiscale-N7"> </a></td><td>IVA assolta in altro stato UE</td><td>IVA assolta in altro stato UE (vendite a distanza ex art. 40 c. 3 e 4 e art. 41 c. 1 lett. b,  DL 331/93; prestazione di servizi di telecomunicazioni, tele-radiodiffusione ed elettronici ex art. 7-sexies lett. f, g, art. 74- sexies DPR 633/72).</td></tr></table></div>
   </text>
-  <url value="http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale"/>
+  <url value="http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale"/>
   <version value="0.1.0"/>
   <name value="CsDocumentoFiscaleSTS"/>
   <title value="Internal Code System"/>
   <status value="active"/>
-  <date value="2021-10-25T21:40:26+00:00"/>
+  <date value="2021-10-26T14:59:11+00:00"/>
+  <contact>
+    <name value="HL7 Italia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hl7.it/"/>
+    </telecom>
+  </contact>
   <description value="Documento Fiscale (STS) FHIR IG Internal Code System"/>
   <jurisdiction>
     <coding>
@@ -20,7 +27,7 @@
     </coding>
   </jurisdiction>
   <content value="complete"/>
-  <count value="15"/>
+  <count value="37"/>
   <concept>
     <code value="F"/>
     <display value="fattura"/>
@@ -30,6 +37,11 @@
     <code value="D"/>
     <display value="documento commerciale"/>
     <definition value="documento commerciale"/>
+  </concept>
+  <concept>
+    <code value="N"/>
+    <display value="Nota di Credito"/>
+    <definition value="Nota di Credito"/>
   </concept>
   <concept>
     <code value="TK"/>
@@ -95,5 +107,110 @@
     <code value="aliquota-iva"/>
     <display value="Aliquota IVA"/>
     <definition value="Aliquota IVA"/>
+  </concept>
+  <concept>
+    <code value="N1"/>
+    <display value="Escluse ex art. 15"/>
+    <definition value="Escluse ex art. 15"/>
+  </concept>
+  <concept>
+    <code value="N2.1"/>
+    <display value="Non soggette ad IVA ai sensi degli artt. da 7 a 7-septies del DPR 633/72"/>
+    <definition value="Non soggette ad IVA ai sensi degli artt. da 7 a 7-septies del DPR 633/72"/>
+  </concept>
+  <concept>
+    <code value="N2.2"/>
+    <display value="Non soggette – altri casi"/>
+    <definition value="Non soggette – altri casi"/>
+  </concept>
+  <concept>
+    <code value="N3.1"/>
+    <display value="Non imponibili – esportazioni"/>
+    <definition value="Non imponibili – esportazioni"/>
+  </concept>
+  <concept>
+    <code value="N3.2"/>
+    <display value="Non imponibili – cessioni intracomunitarie"/>
+    <definition value="Non imponibili – cessioni intracomunitarie"/>
+  </concept>
+  <concept>
+    <code value="N3.3"/>
+    <display value="Non imponibili – cessioni verso San Marino"/>
+    <definition value="Non imponibili – cessioni verso San Marino"/>
+  </concept>
+  <concept>
+    <code value="N3.4"/>
+    <display value="Non imponibili – operazioni assimilate alle cessioni all’esportazione"/>
+    <definition value="Non imponibili – operazioni assimilate alle cessioni all’esportazione"/>
+  </concept>
+  <concept>
+    <code value="N3.5"/>
+    <display value="Non imponibili – a seguito di dichiarazioni d’intento"/>
+    <definition value="Non imponibili – a seguito di dichiarazioni d’intento"/>
+  </concept>
+  <concept>
+    <code value="N3.6"/>
+    <display value="Non imponibili – altre operazioni che non concorrono alla formazione del plafond"/>
+    <definition value="Non imponibili – altre operazioni che non concorrono alla formazione del plafond"/>
+  </concept>
+  <concept>
+    <code value="N4"/>
+    <display value="Esenti"/>
+    <definition value="Esenti"/>
+  </concept>
+  <concept>
+    <code value="N5"/>
+    <display value="Regime del margine / IVA non esposta in fattura"/>
+    <definition value="Regime del margine / IVA non esposta in fattura"/>
+  </concept>
+  <concept>
+    <code value="N6.1"/>
+    <display value="Inversione contabile – cessione di rottami e altri materiali di recupero"/>
+    <definition value="Inversione contabile – cessione di rottami e altri materiali di recupero"/>
+  </concept>
+  <concept>
+    <code value="N6.2"/>
+    <display value="Inversione contabile – cessione di oro e argento puro"/>
+    <definition value="Inversione contabile – cessione di oro e argento puro"/>
+  </concept>
+  <concept>
+    <code value="N6.3"/>
+    <display value="Inversione contabile – subappalto nel settore edile"/>
+    <definition value="Inversione contabile – subappalto nel settore edile"/>
+  </concept>
+  <concept>
+    <code value="N6.4"/>
+    <display value="Inversione contabile – cessione di fabbricati"/>
+    <definition value="Inversione contabile – cessione di fabbricati"/>
+  </concept>
+  <concept>
+    <code value="N6.5"/>
+    <display value="Inversione contabile – cessione di telefoni cellulari"/>
+    <definition value="Inversione contabile – cessione di telefoni cellulari"/>
+  </concept>
+  <concept>
+    <code value="N6.6"/>
+    <display value="Inversione contabile – cessione di prodotti elettronici"/>
+    <definition value="Inversione contabile – cessione di prodotti elettronici"/>
+  </concept>
+  <concept>
+    <code value="N6.7"/>
+    <display value="Inversione contabile – prestazioni comparto edile e settori connessi"/>
+    <definition value="Inversione contabile – prestazioni comparto edile e settori connessi"/>
+  </concept>
+  <concept>
+    <code value="N6.8"/>
+    <display value="Inversione contabile – operazioni settore energetico"/>
+    <definition value="Inversione contabile – operazioni settore energetico"/>
+  </concept>
+  <concept>
+    <code value="N6.9"/>
+    <display value="Inversione contabile – altri casi"/>
+    <definition value="Inversione contabile – altri casi"/>
+  </concept>
+  <concept>
+    <code value="N7"/>
+    <display value="IVA assolta in altro stato UE"/>
+    <definition value="IVA assolta in altro stato UE (vendite a distanza ex art. 40 c. 3 e 4 e art. 41 c. 1 lett. b,  DL 331/93; prestazione di servizi di telecomunicazioni, tele-radiodiffusione ed elettronici ex art. 7-sexies lett. f, g, art. 74- sexies DPR 633/72)."/>
   </concept>
 </CodeSystem>

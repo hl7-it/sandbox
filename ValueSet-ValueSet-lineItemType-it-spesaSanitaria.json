@@ -3,14 +3,25 @@
   "id": "ValueSet-lineItemType-it-spesaSanitaria",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-documentoFiscale.html\"><code>http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-TK\">TK</a></td><td>Ticket</td><td>Ticket (Quota fissa e/o Differenza con il prezzo di riferimento. Franchigia. Pronto Soccorso e accesso diretto)</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-FC\">FC</a></td><td>Farmaci e Dispositivi medici CE</td><td>Farmaco, anche omeopatico. Dispositivi medici CE</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-FV\">FV</a></td><td>Farmaco per uso veterinario</td><td>Farmaco per uso veterinario</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-AD\">AD</a></td><td>Acquisto o affitto di dispositivo medico CE</td><td>Acquisto o affitto di dispositivo medico CE</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-CT\">CT</a></td><td>Cure Termali</td><td>Cure Termali</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-PI\">PI</a></td><td>Protesica e integrativa</td><td>protesica e integrativa</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-IC\">IC</a></td><td>Chirurgia e medicina estetica</td><td>Prestazioni di chirurgia estetica e di medicina estetica (ambulatoriale o ospedaliera)</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-SP\">SP</a></td><td>Prestazioni sanitarie</td><td>Prestazioni sanitarie</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-SV\">SV</a></td><td>Spese veterinarie</td><td>Spese veterinarie</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-AA\">AA</a></td><td>Altre spese</td><td>Altre spese</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-SR\">SR</a></td><td>Varie prestazioni sanitarie</td><td>prestazioni sanitarie: assistenza specialistica ambulatoriale esclusi interventi di chirurgia estetica; visita medica generica e specialistica o prestazioni diagnostiche estrumentali; prestazione chirurgica ad esclusione della chirurgia estetica;certificazione medica; ricoveri ospedalieri ricollegabili ad interventi chirurgici o adegenza, ad  esclusione della chirurgia estetica, al netto del comfort</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-AS\">AS</a></td><td>Farmacia dei servizi</td><td>Spese sanitarie relative ad ECG, spirometria, Holter pressorio e cardiaco, test per glicemia, colesterolo e trigliceridi o misurazione della pressione sanguigna, prestazione previste dalla farmacia dei servizi e simili sanguigna)</td></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-documentoFiscale.html\"><code>http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-TK\">TK</a></td><td>Ticket</td><td>Ticket (Quota fissa e/o Differenza con il prezzo di riferimento. Franchigia. Pronto Soccorso e accesso diretto)</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-FC\">FC</a></td><td>Farmaci e Dispositivi medici CE</td><td>Farmaco, anche omeopatico. Dispositivi medici CE</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-FV\">FV</a></td><td>Farmaco per uso veterinario</td><td>Farmaco per uso veterinario</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-AD\">AD</a></td><td>Acquisto o affitto di dispositivo medico CE</td><td>Acquisto o affitto di dispositivo medico CE</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-CT\">CT</a></td><td>Cure Termali</td><td>Cure Termali</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-PI\">PI</a></td><td>Protesica e integrativa</td><td>protesica e integrativa</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-IC\">IC</a></td><td>Chirurgia e medicina estetica</td><td>Prestazioni di chirurgia estetica e di medicina estetica (ambulatoriale o ospedaliera)</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-SP\">SP</a></td><td>Prestazioni sanitarie</td><td>Prestazioni sanitarie</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-SV\">SV</a></td><td>Spese veterinarie</td><td>Spese veterinarie</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-AA\">AA</a></td><td>Altre spese</td><td>Altre spese</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-SR\">SR</a></td><td>Varie prestazioni sanitarie</td><td>prestazioni sanitarie: assistenza specialistica ambulatoriale esclusi interventi di chirurgia estetica; visita medica generica e specialistica o prestazioni diagnostiche estrumentali; prestazione chirurgica ad esclusione della chirurgia estetica;certificazione medica; ricoveri ospedalieri ricollegabili ad interventi chirurgici o adegenza, ad  esclusione della chirurgia estetica, al netto del comfort</td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-AS\">AS</a></td><td>Farmacia dei servizi</td><td>Spese sanitarie relative ad ECG, spirometria, Holter pressorio e cardiaco, test per glicemia, colesterolo e trigliceridi o misurazione della pressione sanguigna, prestazione previste dalla farmacia dei servizi e simili sanguigna)</td></tr></table></li></ul></div>"
   },
-  "url": "http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-lineItemType-it-spesaSanitaria",
+  "url": "http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-lineItemType-it-spesaSanitaria",
   "version": "0.1.0",
   "name": "VsLineItemTypeSTS",
   "title": "Tipo di voce di spesa",
   "status": "active",
-  "date": "2021-10-25T21:40:26+00:00",
+  "date": "2021-10-26T14:59:11+00:00",
+  "contact": [
+    {
+      "name": "HL7 Italia",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://hl7.it/"
+        }
+      ]
+    }
+  ],
   "description": "Tipo di voce di spesa",
   "jurisdiction": [
     {
@@ -26,7 +37,7 @@
   "compose": {
     "include": [
       {
-        "system": "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+        "system": "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
         "concept": [
           {
             "code": "TK"

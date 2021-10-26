@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="hl7.fhir.it.730"/>
+  <id value="hl7.fhir.it.spesa-sanitaria"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>HL7ITSpesaSanitaria</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.it/fhir/spesaSanitaria/ImplementationGuide/hl7.fhir.it.730</pre><div><p>HL7 Italia FHIR Implementation Guide 730, specifica come utilizzare lo standard HL7 FHIR per l'alimentazione e la consultazione del 730</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>HL7ITFhirSpesaSanitaria</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.it/fhir/spesa-sanitaria/ImplementationGuide/hl7.fhir.it.spesa-sanitaria</pre><div><p>HL7 Italia FHIR Implementation Guide Spesa Sanitaria,, specifica come utilizzare lo standard HL7 FHIR per la gestione della spesa sanitaria all'interno del SISTEMA TESSERA SANITARIA</p>
 </div></div>
   </text>
-  <url value="http://hl7.it/fhir/spesaSanitaria/ImplementationGuide/hl7.fhir.it.730"/>
+  <url value="http://hl7.it/fhir/spesa-sanitaria/ImplementationGuide/hl7.fhir.it.spesa-sanitaria"/>
   <version value="0.1.0"/>
-  <name value="HL7ITSpesaSanitaria"/>
-  <title value="HL7 Italia FHIR Implementation Guide 730"/>
+  <name value="HL7ITFhirSpesaSanitaria"/>
+  <title value="HL7 Italia FHIR Implementation Guide Spesa Sanitaria (STS)"/>
   <status value="active"/>
-  <date value="2021-10-25T21:40:26+00:00"/>
-  <description value="HL7 Italia FHIR Implementation Guide 730, specifica come utilizzare lo standard HL7 FHIR per l&#39;alimentazione e la consultazione del 730"/>
+  <date value="2021-10-26T14:59:11+00:00"/>
+  <contact>
+    <name value="HL7 Italia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hl7.it/"/>
+    </telecom>
+  </contact>
+  <description value="HL7 Italia FHIR Implementation Guide Spesa Sanitaria,, specifica come utilizzare lo standard HL7 FHIR per la gestione della spesa sanitaria all&#39;interno del SISTEMA TESSERA SANITARIA"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -20,18 +27,13 @@
       <display value="Italy"/>
     </coding>
   </jurisdiction>
-  <packageId value="hl7.fhir.it.730"/>
+  <packageId value="hl7.fhir.it.spesa-sanitaria"/>
   <license value="CC-BY-SA-4.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7_fhir_it_base">
     <uri value="http://hl7.it/fhir/ImplementationGuide/hl7.fhir.it.base"/>
     <packageId value="hl7.fhir.it.base"/>
-    <version value="dev"/>
-  </dependsOn>
-  <dependsOn id="hl7_fhir_it_terminology">
-    <uri value="http://terminology.hl7.it/ImplementationGuide/hl7.fhir.it.terminology"/>
-    <packageId value="hl7.fhir.it.terminology"/>
-    <version value="dev"/>
+    <version value="current"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -151,7 +153,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://hl7.it/fhir/spesaSanitaria/history.html"/>
+        <valueString value="http://hl7.it/fhir/spesa-sanitaria/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -236,7 +238,7 @@
       <reference>
         <reference value="StructureDefinition/Invoice-it-spesaSanitaria"/>
       </reference>
-      <name value="Invoice Documento Fiscale (STS)"/>
+      <name value="Invoice - Documento Fiscale (STS)"/>
       <description value="This profile defines how to constrain the Invoice resource for the scope of tracking the health expenses (SISTEMA TESSERA SANITARIA)"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -258,7 +260,7 @@
       <reference>
         <reference value="StructureDefinition/Patient-it-sts"/>
       </reference>
-      <name value="Patient (only CF)"/>
+      <name value="Patient (only identifier)"/>
       <description value="Minimal Patient Data: only fiscal code"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -304,6 +306,28 @@
       </reference>
       <name value="Documento Fiscale (STS)"/>
       <description value="Documento Fiscale da inviarsi al SISTEMA TESSERA SANITARIA. Dati di spesa sanitaria di cui art. 3 comma 3 D.ls 175/2014"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ValueSet-aliquotaIva-it-spesaSanitaria"/>
+      </reference>
+      <name value="Aliquote Iva"/>
+      <description value="Aliquote IVA "/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ValueSet-esclusioneIva-it-spesaSanitaria"/>
+      </reference>
+      <name value="Codici esclusione IVA"/>
+      <description value="Codici esclusione IVA"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

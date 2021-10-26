@@ -16,12 +16,19 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="http://hl7.it/fhir/spesaSanitaria/StructureDefinition/PaymentReconciliation-it-sts"/>
+  <url value="http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/PaymentReconciliation-it-sts"/>
   <version value="0.1.0"/>
   <name value="PaymentReconciliationSts"/>
   <title value="PaymentReconciliation"/>
   <status value="active"/>
-  <date value="2021-10-25T21:40:26+00:00"/>
+  <date value="2021-10-26T14:59:11+00:00"/>
+  <contact>
+    <name value="HL7 Italia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hl7.it/"/>
+    </telecom>
+  </contact>
   <description value="Minimal PaymentReconciliation Data"/>
   <jurisdiction>
     <coding>

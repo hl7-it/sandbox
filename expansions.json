@@ -1,25 +1,32 @@
 {
   "resourceType" : "Bundle",
-  "id" : "d3eb4907-d551-492f-aed7-681b2fe38050",
+  "id" : "ce3a6389-3bdd-4f40-8ee4-9a3aa2c72f07",
   "meta" : {
-    "lastUpdated" : "2021-10-25T21:40:26.167+00:00"
+    "lastUpdated" : "2021-10-26T14:59:11.190+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-priceComponentCode-it-spesaSanitaria",
+    "fullUrl" : "http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-priceComponentCode-it-spesaSanitaria",
     "resource" : {
       "resourceType" : "ValueSet",
       "id" : "ValueSet-priceComponentCode-it-spesaSanitaria",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-documentoFiscale.html\">Internal Code System v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-documentoFiscale.html\"><code>http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesaSanitaria-CodeSystem-documentoFiscale-aliquota-iva\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-aliquota-iva\">aliquota-iva</a></td><td>Aliquota IVA</td><td>Aliquota IVA</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-documentoFiscale.html\">Internal Code System v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-documentoFiscale.html\"><code>http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-aliquota-iva\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-aliquota-iva\">aliquota-iva</a></td><td>Aliquota IVA</td><td>Aliquota IVA</td></tr></table></div>"
       },
-      "url" : "http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-priceComponentCode-it-spesaSanitaria",
+      "url" : "http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-priceComponentCode-it-spesaSanitaria",
       "version" : "0.1.0",
       "name" : "VsPriceComponentCodeSTS",
       "title" : "Tipo di componente",
       "status" : "active",
-      "date" : "2021-10-25T21:40:26+00:00",
+      "date" : "2021-10-26T14:59:11+00:00",
+      "contact" : [{
+        "name" : "HL7 Italia",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://hl7.it/"
+        }]
+      }],
       "description" : "Tipo di componente del prezzo: e.g. IVA ",
       "jurisdiction" : [{
         "coding" : [{
@@ -29,8 +36,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:62f53785-c362-43a4-b969-3196cb7dc517",
-        "timestamp" : "2021-10-25T21:40:38+00:00",
+        "identifier" : "urn:uuid:95022cb6-2d43-4b22-9ac1-342cf1406096",
+        "timestamp" : "2021-10-26T14:59:26+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -38,10 +45,10 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale|0.1.0"
+          "valueUri" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale|0.1.0"
         }],
         "contains" : [{
-          "system" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
           "code" : "aliquota-iva",
           "display" : "Aliquota IVA"
         }]
@@ -49,20 +56,227 @@
     }
   },
   {
-    "fullUrl" : "http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-lineItemType-it-spesaSanitaria",
+    "fullUrl" : "http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-priceComponentCode-it-spesaSanitaria",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "ValueSet-priceComponentCode-it-spesaSanitaria",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-documentoFiscale.html\">Internal Code System v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-documentoFiscale.html\"><code>http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-aliquota-iva\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-aliquota-iva\">aliquota-iva</a></td><td>Aliquota IVA</td><td>Aliquota IVA</td></tr></table></div>"
+      },
+      "url" : "http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-priceComponentCode-it-spesaSanitaria",
+      "version" : "0.1.0",
+      "name" : "VsPriceComponentCodeSTS",
+      "title" : "Tipo di componente",
+      "status" : "active",
+      "date" : "2021-10-26T14:59:11+00:00",
+      "contact" : [{
+        "name" : "HL7 Italia",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://hl7.it/"
+        }]
+      }],
+      "description" : "Tipo di componente del prezzo: e.g. IVA ",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "IT",
+          "display" : "Italy"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:95022cb6-2d43-4b22-9ac1-342cf1406096",
+        "timestamp" : "2021-10-26T14:59:26+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "aliquota-iva",
+          "display" : "Aliquota IVA"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-esclusioneIva-it-spesaSanitaria",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "ValueSet-esclusioneIva-it-spesaSanitaria",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 21 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-documentoFiscale.html\">Internal Code System v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-documentoFiscale.html\"><code>http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N1\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N1\">N1</a></td><td>Escluse ex art. 15</td><td>Escluse ex art. 15</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N2.1\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N2.461\">N2.1</a></td><td>Non soggette ad IVA ai sensi degli artt. da 7 a 7-septies del DPR 633/72</td><td>Non soggette ad IVA ai sensi degli artt. da 7 a 7-septies del DPR 633/72</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N2.2\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N2.462\">N2.2</a></td><td>Non soggette – altri casi</td><td>Non soggette – altri casi</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N3.1\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N3.461\">N3.1</a></td><td>Non imponibili – esportazioni</td><td>Non imponibili – esportazioni</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N3.2\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N3.462\">N3.2</a></td><td>Non imponibili – cessioni intracomunitarie</td><td>Non imponibili – cessioni intracomunitarie</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N3.3\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N3.463\">N3.3</a></td><td>Non imponibili – cessioni verso San Marino</td><td>Non imponibili – cessioni verso San Marino</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N3.4\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N3.464\">N3.4</a></td><td>Non imponibili – operazioni assimilate alle cessioni all’esportazione</td><td>Non imponibili – operazioni assimilate alle cessioni all’esportazione</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N3.5\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N3.465\">N3.5</a></td><td>Non imponibili – a seguito di dichiarazioni d’intento</td><td>Non imponibili – a seguito di dichiarazioni d’intento</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N3.6\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N3.466\">N3.6</a></td><td>Non imponibili – altre operazioni che non concorrono alla formazione del plafond</td><td>Non imponibili – altre operazioni che non concorrono alla formazione del plafond</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N4\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N4\">N4</a></td><td>Esenti</td><td>Esenti</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N5\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N5\">N5</a></td><td>Regime del margine / IVA non esposta in fattura</td><td>Regime del margine / IVA non esposta in fattura</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N6.1\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N6.461\">N6.1</a></td><td>Inversione contabile – cessione di rottami e altri materiali di recupero</td><td>Inversione contabile – cessione di rottami e altri materiali di recupero</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N6.2\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N6.462\">N6.2</a></td><td>Inversione contabile – cessione di oro e argento puro</td><td>Inversione contabile – cessione di oro e argento puro</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N6.3\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N6.463\">N6.3</a></td><td>Inversione contabile – subappalto nel settore edile</td><td>Inversione contabile – subappalto nel settore edile</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N6.4\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N6.464\">N6.4</a></td><td>Inversione contabile – cessione di fabbricati</td><td>Inversione contabile – cessione di fabbricati</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N6.5\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N6.465\">N6.5</a></td><td>Inversione contabile – cessione di telefoni cellulari</td><td>Inversione contabile – cessione di telefoni cellulari</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N6.6\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N6.466\">N6.6</a></td><td>Inversione contabile – cessione di prodotti elettronici</td><td>Inversione contabile – cessione di prodotti elettronici</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N6.7\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N6.467\">N6.7</a></td><td>Inversione contabile – prestazioni comparto edile e settori connessi</td><td>Inversione contabile – prestazioni comparto edile e settori connessi</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N6.8\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N6.468\">N6.8</a></td><td>Inversione contabile – operazioni settore energetico</td><td>Inversione contabile – operazioni settore energetico</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N6.9\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N6.469\">N6.9</a></td><td>Inversione contabile – altri casi</td><td>Inversione contabile – altri casi</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-N7\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-N7\">N7</a></td><td>IVA assolta in altro stato UE</td><td>IVA assolta in altro stato UE (vendite a distanza ex art. 40 c. 3 e 4 e art. 41 c. 1 lett. b,  DL 331/93; prestazione di servizi di telecomunicazioni, tele-radiodiffusione ed elettronici ex art. 7-sexies lett. f, g, art. 74- sexies DPR 633/72).</td></tr></table></div>"
+      },
+      "url" : "http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-esclusioneIva-it-spesaSanitaria",
+      "version" : "0.1.0",
+      "name" : "VsCodiciEsclusioneIvaSTS",
+      "title" : "Codici esclusione IVA",
+      "status" : "active",
+      "date" : "2021-10-26T14:59:11+00:00",
+      "contact" : [{
+        "name" : "HL7 Italia",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://hl7.it/"
+        }]
+      }],
+      "description" : "Codici esclusione IVA",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "IT",
+          "display" : "Italy"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:fecbb351-fe54-4ea7-94ad-fe65efcc934f",
+        "timestamp" : "2021-10-26T14:59:27+00:00",
+        "total" : 21,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N1",
+          "display" : "Escluse ex art. 15"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N2.1",
+          "display" : "Non soggette ad IVA ai sensi degli artt. da 7 a 7-septies del DPR 633/72"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N2.2",
+          "display" : "Non soggette – altri casi"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N3.1",
+          "display" : "Non imponibili – esportazioni"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N3.2",
+          "display" : "Non imponibili – cessioni intracomunitarie"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N3.3",
+          "display" : "Non imponibili – cessioni verso San Marino"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N3.4",
+          "display" : "Non imponibili – operazioni assimilate alle cessioni all’esportazione"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N3.5",
+          "display" : "Non imponibili – a seguito di dichiarazioni d’intento"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N3.6",
+          "display" : "Non imponibili – altre operazioni che non concorrono alla formazione del plafond"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N4",
+          "display" : "Esenti"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N5",
+          "display" : "Regime del margine / IVA non esposta in fattura"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N6.1",
+          "display" : "Inversione contabile – cessione di rottami e altri materiali di recupero"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N6.2",
+          "display" : "Inversione contabile – cessione di oro e argento puro"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N6.3",
+          "display" : "Inversione contabile – subappalto nel settore edile"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N6.4",
+          "display" : "Inversione contabile – cessione di fabbricati"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N6.5",
+          "display" : "Inversione contabile – cessione di telefoni cellulari"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N6.6",
+          "display" : "Inversione contabile – cessione di prodotti elettronici"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N6.7",
+          "display" : "Inversione contabile – prestazioni comparto edile e settori connessi"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N6.8",
+          "display" : "Inversione contabile – operazioni settore energetico"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N6.9",
+          "display" : "Inversione contabile – altri casi"
+        },
+        {
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+          "code" : "N7",
+          "display" : "IVA assolta in altro stato UE"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-lineItemType-it-spesaSanitaria",
     "resource" : {
       "resourceType" : "ValueSet",
       "id" : "ValueSet-lineItemType-it-spesaSanitaria",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 12 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-documentoFiscale.html\">Internal Code System v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-documentoFiscale.html\"><code>http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesaSanitaria-CodeSystem-documentoFiscale-TK\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-TK\">TK</a></td><td>Ticket</td><td>Ticket (Quota fissa e/o Differenza con il prezzo di riferimento. Franchigia. Pronto Soccorso e accesso diretto)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesaSanitaria-CodeSystem-documentoFiscale-FC\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-FC\">FC</a></td><td>Farmaci e Dispositivi medici CE</td><td>Farmaco, anche omeopatico. Dispositivi medici CE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesaSanitaria-CodeSystem-documentoFiscale-FV\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-FV\">FV</a></td><td>Farmaco per uso veterinario</td><td>Farmaco per uso veterinario</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesaSanitaria-CodeSystem-documentoFiscale-AD\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-AD\">AD</a></td><td>Acquisto o affitto di dispositivo medico CE</td><td>Acquisto o affitto di dispositivo medico CE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesaSanitaria-CodeSystem-documentoFiscale-CT\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-CT\">CT</a></td><td>Cure Termali</td><td>Cure Termali</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesaSanitaria-CodeSystem-documentoFiscale-PI\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-PI\">PI</a></td><td>Protesica e integrativa</td><td>protesica e integrativa</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesaSanitaria-CodeSystem-documentoFiscale-IC\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-IC\">IC</a></td><td>Chirurgia e medicina estetica</td><td>Prestazioni di chirurgia estetica e di medicina estetica (ambulatoriale o ospedaliera)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesaSanitaria-CodeSystem-documentoFiscale-SP\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-SP\">SP</a></td><td>Prestazioni sanitarie</td><td>Prestazioni sanitarie</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesaSanitaria-CodeSystem-documentoFiscale-SV\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-SV\">SV</a></td><td>Spese veterinarie</td><td>Spese veterinarie</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesaSanitaria-CodeSystem-documentoFiscale-AA\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-AA\">AA</a></td><td>Altre spese</td><td>Altre spese</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesaSanitaria-CodeSystem-documentoFiscale-SR\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-SR\">SR</a></td><td>Varie prestazioni sanitarie</td><td>prestazioni sanitarie: assistenza specialistica ambulatoriale esclusi interventi di chirurgia estetica; visita medica generica e specialistica o prestazioni diagnostiche estrumentali; prestazione chirurgica ad esclusione della chirurgia estetica;certificazione medica; ricoveri ospedalieri ricollegabili ad interventi chirurgici o adegenza, ad  esclusione della chirurgia estetica, al netto del comfort</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesaSanitaria-CodeSystem-documentoFiscale-AS\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-AS\">AS</a></td><td>Farmacia dei servizi</td><td>Spese sanitarie relative ad ECG, spirometria, Holter pressorio e cardiaco, test per glicemia, colesterolo e trigliceridi o misurazione della pressione sanguigna, prestazione previste dalla farmacia dei servizi e simili sanguigna)</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 12 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-documentoFiscale.html\">Internal Code System v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-documentoFiscale.html\"><code>http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-TK\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-TK\">TK</a></td><td>Ticket</td><td>Ticket (Quota fissa e/o Differenza con il prezzo di riferimento. Franchigia. Pronto Soccorso e accesso diretto)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-FC\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-FC\">FC</a></td><td>Farmaci e Dispositivi medici CE</td><td>Farmaco, anche omeopatico. Dispositivi medici CE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-FV\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-FV\">FV</a></td><td>Farmaco per uso veterinario</td><td>Farmaco per uso veterinario</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-AD\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-AD\">AD</a></td><td>Acquisto o affitto di dispositivo medico CE</td><td>Acquisto o affitto di dispositivo medico CE</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-CT\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-CT\">CT</a></td><td>Cure Termali</td><td>Cure Termali</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-PI\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-PI\">PI</a></td><td>Protesica e integrativa</td><td>protesica e integrativa</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-IC\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-IC\">IC</a></td><td>Chirurgia e medicina estetica</td><td>Prestazioni di chirurgia estetica e di medicina estetica (ambulatoriale o ospedaliera)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-SP\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-SP\">SP</a></td><td>Prestazioni sanitarie</td><td>Prestazioni sanitarie</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-SV\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-SV\">SV</a></td><td>Spese veterinarie</td><td>Spese veterinarie</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-AA\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-AA\">AA</a></td><td>Altre spese</td><td>Altre spese</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-SR\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-SR\">SR</a></td><td>Varie prestazioni sanitarie</td><td>prestazioni sanitarie: assistenza specialistica ambulatoriale esclusi interventi di chirurgia estetica; visita medica generica e specialistica o prestazioni diagnostiche estrumentali; prestazione chirurgica ad esclusione della chirurgia estetica;certificazione medica; ricoveri ospedalieri ricollegabili ad interventi chirurgici o adegenza, ad  esclusione della chirurgia estetica, al netto del comfort</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-AS\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-AS\">AS</a></td><td>Farmacia dei servizi</td><td>Spese sanitarie relative ad ECG, spirometria, Holter pressorio e cardiaco, test per glicemia, colesterolo e trigliceridi o misurazione della pressione sanguigna, prestazione previste dalla farmacia dei servizi e simili sanguigna)</td></tr></table></div>"
       },
-      "url" : "http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-lineItemType-it-spesaSanitaria",
+      "url" : "http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-lineItemType-it-spesaSanitaria",
       "version" : "0.1.0",
       "name" : "VsLineItemTypeSTS",
       "title" : "Tipo di voce di spesa",
       "status" : "active",
-      "date" : "2021-10-25T21:40:26+00:00",
+      "date" : "2021-10-26T14:59:11+00:00",
+      "contact" : [{
+        "name" : "HL7 Italia",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://hl7.it/"
+        }]
+      }],
       "description" : "Tipo di voce di spesa",
       "jurisdiction" : [{
         "coding" : [{
@@ -72,8 +286,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2c0a8cd8-a299-4625-806d-5dc9fba6dbb1",
-        "timestamp" : "2021-10-25T21:40:39+00:00",
+        "identifier" : "urn:uuid:16c8d348-58d8-4037-a49f-49b1356369a1",
+        "timestamp" : "2021-10-26T14:59:27+00:00",
         "total" : 12,
         "parameter" : [{
           "name" : "excludeNested",
@@ -81,65 +295,65 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale|0.1.0"
+          "valueUri" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale|0.1.0"
         }],
         "contains" : [{
-          "system" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
           "code" : "TK",
           "display" : "Ticket"
         },
         {
-          "system" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
           "code" : "FC",
           "display" : "Farmaci e Dispositivi medici CE"
         },
         {
-          "system" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
           "code" : "FV",
           "display" : "Farmaco per uso veterinario"
         },
         {
-          "system" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
           "code" : "AD",
           "display" : "Acquisto o affitto di dispositivo medico CE"
         },
         {
-          "system" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
           "code" : "CT",
           "display" : "Cure Termali"
         },
         {
-          "system" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
           "code" : "PI",
           "display" : "Protesica e integrativa"
         },
         {
-          "system" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
           "code" : "IC",
           "display" : "Chirurgia e medicina estetica"
         },
         {
-          "system" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
           "code" : "SP",
           "display" : "Prestazioni sanitarie"
         },
         {
-          "system" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
           "code" : "SV",
           "display" : "Spese veterinarie"
         },
         {
-          "system" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
           "code" : "AA",
           "display" : "Altre spese"
         },
         {
-          "system" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
           "code" : "SR",
           "display" : "Varie prestazioni sanitarie"
         },
         {
-          "system" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
           "code" : "AS",
           "display" : "Farmacia dei servizi"
         }]
@@ -147,20 +361,27 @@
     }
   },
   {
-    "fullUrl" : "http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-invoiceType-it-spesaSanitaria",
+    "fullUrl" : "http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-invoiceType-it-spesaSanitaria",
     "resource" : {
       "resourceType" : "ValueSet",
       "id" : "ValueSet-invoiceType-it-spesaSanitaria",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-documentoFiscale.html\">Internal Code System v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-documentoFiscale.html\"><code>http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesaSanitaria-CodeSystem-documentoFiscale-F\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-F\">F</a></td><td>fattura</td><td>fattura</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesaSanitaria-CodeSystem-documentoFiscale-D\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-D\">D</a></td><td>documento commerciale</td><td>documento commerciale</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-documentoFiscale.html\">Internal Code System v0.1.0 (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-documentoFiscale.html\"><code>http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-F\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-F\">F</a></td><td>fattura</td><td>fattura</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.it-fhir-spesa-sanitaria-CodeSystem-documentoFiscale-D\"> </a><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-D\">D</a></td><td>documento commerciale</td><td>documento commerciale</td></tr></table></div>"
       },
-      "url" : "http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-invoiceType-it-spesaSanitaria",
+      "url" : "http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-invoiceType-it-spesaSanitaria",
       "version" : "0.1.0",
       "name" : "VsInvoiceTypeSTS",
       "title" : "Tipo di documento",
       "status" : "active",
-      "date" : "2021-10-25T21:40:26+00:00",
+      "date" : "2021-10-26T14:59:11+00:00",
+      "contact" : [{
+        "name" : "HL7 Italia",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://hl7.it/"
+        }]
+      }],
       "description" : "Tipologia del documento attestante il pagamento della prestazione o del bene sanitario assume valore: F (fattura) D (documento commerciale)",
       "jurisdiction" : [{
         "coding" : [{
@@ -170,8 +391,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:79513a6b-d433-40da-bbf7-1cc8cb78ce49",
-        "timestamp" : "2021-10-25T21:40:39+00:00",
+        "identifier" : "urn:uuid:512ee07d-d02e-4eb7-8d1a-7ec5dc58368a",
+        "timestamp" : "2021-10-26T14:59:27+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -179,15 +400,15 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale|0.1.0"
+          "valueUri" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale|0.1.0"
         }],
         "contains" : [{
-          "system" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
           "code" : "F",
           "display" : "fattura"
         },
         {
-          "system" : "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+          "system" : "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
           "code" : "D",
           "display" : "documento commerciale"
         }]

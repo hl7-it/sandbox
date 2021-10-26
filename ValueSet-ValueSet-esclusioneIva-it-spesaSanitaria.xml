@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ValueSet-esclusioneIva-it-spesaSanitaria"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-documentoFiscale.html"><code>http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N1">N1</a></td><td>Escluse ex art. 15</td><td>Escluse ex art. 15</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N2.461">N2.1</a></td><td>Non soggette ad IVA ai sensi degli artt. da 7 a 7-septies del DPR 633/72</td><td>Non soggette ad IVA ai sensi degli artt. da 7 a 7-septies del DPR 633/72</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N2.462">N2.2</a></td><td>Non soggette – altri casi</td><td>Non soggette – altri casi</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N3.461">N3.1</a></td><td>Non imponibili – esportazioni</td><td>Non imponibili – esportazioni</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N3.462">N3.2</a></td><td>Non imponibili – cessioni intracomunitarie</td><td>Non imponibili – cessioni intracomunitarie</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N3.463">N3.3</a></td><td>Non imponibili – cessioni verso San Marino</td><td>Non imponibili – cessioni verso San Marino</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N3.464">N3.4</a></td><td>Non imponibili – operazioni assimilate alle cessioni all’esportazione</td><td>Non imponibili – operazioni assimilate alle cessioni all’esportazione</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N3.465">N3.5</a></td><td>Non imponibili – a seguito di dichiarazioni d’intento</td><td>Non imponibili – a seguito di dichiarazioni d’intento</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N3.466">N3.6</a></td><td>Non imponibili – altre operazioni che non concorrono alla formazione del plafond</td><td>Non imponibili – altre operazioni che non concorrono alla formazione del plafond</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N4">N4</a></td><td>Esenti</td><td>Esenti</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N5">N5</a></td><td>Regime del margine / IVA non esposta in fattura</td><td>Regime del margine / IVA non esposta in fattura</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N6.461">N6.1</a></td><td>Inversione contabile – cessione di rottami e altri materiali di recupero</td><td>Inversione contabile – cessione di rottami e altri materiali di recupero</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N6.462">N6.2</a></td><td>Inversione contabile – cessione di oro e argento puro</td><td>Inversione contabile – cessione di oro e argento puro</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N6.463">N6.3</a></td><td>Inversione contabile – subappalto nel settore edile</td><td>Inversione contabile – subappalto nel settore edile</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N6.464">N6.4</a></td><td>Inversione contabile – cessione di fabbricati</td><td>Inversione contabile – cessione di fabbricati</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N6.465">N6.5</a></td><td>Inversione contabile – cessione di telefoni cellulari</td><td>Inversione contabile – cessione di telefoni cellulari</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N6.466">N6.6</a></td><td>Inversione contabile – cessione di prodotti elettronici</td><td>Inversione contabile – cessione di prodotti elettronici</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N6.467">N6.7</a></td><td>Inversione contabile – prestazioni comparto edile e settori connessi</td><td>Inversione contabile – prestazioni comparto edile e settori connessi</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N6.468">N6.8</a></td><td>Inversione contabile – operazioni settore energetico</td><td>Inversione contabile – operazioni settore energetico</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N6.469">N6.9</a></td><td>Inversione contabile – altri casi</td><td>Inversione contabile – altri casi</td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-N7">N7</a></td><td>IVA assolta in altro stato UE</td><td>IVA assolta in altro stato UE (vendite a distanza ex art. 40 c. 3 e 4 e art. 41 c. 1 lett. b,  DL 331/93; prestazione di servizi di telecomunicazioni, tele-radiodiffusione ed elettronici ex art. 7-sexies lett. f, g, art. 74- sexies DPR 633/72).</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-esclusioneIva-it-spesaSanitaria"/>
+  <version value="0.1.0"/>
+  <name value="VsCodiciEsclusioneIvaSTS"/>
+  <title value="Codici esclusione IVA"/>
+  <status value="active"/>
+  <date value="2021-10-26T14:59:11+00:00"/>
+  <contact>
+    <name value="HL7 Italia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hl7.it/"/>
+    </telecom>
+  </contact>
+  <description value="Codici esclusione IVA"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IT"/>
+      <display value="Italy"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale"/>
+      <concept>
+        <code value="N1"/>
+      </concept>
+      <concept>
+        <code value="N2.1"/>
+      </concept>
+      <concept>
+        <code value="N2.2"/>
+      </concept>
+      <concept>
+        <code value="N3.1"/>
+      </concept>
+      <concept>
+        <code value="N3.2"/>
+      </concept>
+      <concept>
+        <code value="N3.3"/>
+      </concept>
+      <concept>
+        <code value="N3.4"/>
+      </concept>
+      <concept>
+        <code value="N3.5"/>
+      </concept>
+      <concept>
+        <code value="N3.6"/>
+      </concept>
+      <concept>
+        <code value="N4"/>
+      </concept>
+      <concept>
+        <code value="N5"/>
+      </concept>
+      <concept>
+        <code value="N6.1"/>
+      </concept>
+      <concept>
+        <code value="N6.2"/>
+      </concept>
+      <concept>
+        <code value="N6.3"/>
+      </concept>
+      <concept>
+        <code value="N6.4"/>
+      </concept>
+      <concept>
+        <code value="N6.5"/>
+      </concept>
+      <concept>
+        <code value="N6.6"/>
+      </concept>
+      <concept>
+        <code value="N6.7"/>
+      </concept>
+      <concept>
+        <code value="N6.8"/>
+      </concept>
+      <concept>
+        <code value="N6.9"/>
+      </concept>
+      <concept>
+        <code value="N7"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

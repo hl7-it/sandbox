@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ValueSet-aliquotaIva-it-spesaSanitaria",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-documentoFiscale.html\"><code>http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-documentoFiscale.html#documentoFiscale-aliquota-iva\">aliquota-iva</a></td><td>Aliquota IVA</td><td>Aliquota IVA</td></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-aliquotaIva-it-spesaSanitaria",
+  "version": "0.1.0",
+  "name": "VsAliquotaIvaSTS",
+  "title": "Aliquote Iva",
+  "status": "active",
+  "date": "2021-10-26T14:59:11+00:00",
+  "contact": [
+    {
+      "name": "HL7 Italia",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://hl7.it/"
+        }
+      ]
+    }
+  ],
+  "description": "Aliquote IVA ",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "IT",
+          "display": "Italy"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
+        "concept": [
+          {
+            "code": "aliquota-iva"
+          }
+        ]
+      }
+    ]
+  }
+}

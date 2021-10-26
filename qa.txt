@@ -1,12 +1,12 @@
-﻿HL7ITSpesaSanitaria : Validation Results
+﻿HL7ITFhirSpesaSanitaria : Validation Results
 =========================================
 
-err = 1, warn = 9, info = 0
+err = 1, warn = 10, info = 0
 IG Publisher Version: 1.1.83
-Generated Mon Oct 25 21:40:54 UTC 2021. FHIR version 4.0.1 for hl7.fhir.it.730#0.1.0 (canonical = http://hl7.it/fhir/spesaSanitaria)
- Build Errors : 94 / 0 / 0
+Generated Tue Oct 26 14:59:41 UTC 2021. FHIR version 4.0.1 for hl7.fhir.it.spesa-sanitaria#0.1.0 (canonical = http://hl7.it/fhir/spesa-sanitaria)
+ Build Errors : 3 / 0 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-documentoFiscale : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.it.730 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.it.spesa-sanitaria : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Device-it-sts : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DocumentoSpesaSanitaria : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Invoice-it-spesaSanitaria : 0 / 1 / 1
@@ -15,125 +15,39 @@ Generated Mon Oct 25 21:40:54 UTC 2021. FHIR version 4.0.1 for hl7.fhir.it.730#0
  /github/workspace/fsh-generated/resources/StructureDefinition-PaymentReconciliation-it-sts : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-invoicePaymentExt-it-sts : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-issuerPractictionerExt-it-sts : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-ValueSet-aliquotaIva-it-spesaSanitaria : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-ValueSet-esclusioneIva-it-spesaSanitaria : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-ValueSet-invoiceType-it-spesaSanitaria : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-ValueSet-lineItemType-it-spesaSanitaria : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-ValueSet-priceComponentCode-it-spesaSanitaria : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: /github/workspace/output/CodeSystem-documentoFiscale.change.history.html#/html/body/div/div/div/p/a at Line 264, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-documentoFiscale.html#/html/body/div/div/div/p/a at Line 275, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-documentoFiscale.json.html#/html/body/div/div/div/p/a at Line 356, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-documentoFiscale.ttl.html#/html/body/div/div/div/p/a at Line 366, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-documentoFiscale.xml.html#/html/body/div/div/div/p/a at Line 354, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Device-it-sts-definitions.html#/html/body/div/div/div/p/a at Line 1256, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Device-it-sts-examples.html#/html/body/div/div/div/p/a at Line 296, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Device-it-sts-mappings.html#/html/body/div/div/div/p/a at Line 507, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Device-it-sts.html#/html/body/div/div/div/p/a at Line 936, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Device-it-sts.profile.history.html#/html/body/div/div/div/p/a at Line 285, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Device-it-sts.profile.json.html#/html/body/div/div/div/p/a at Line 4808, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Device-it-sts.profile.ttl.html#/html/body/div/div/div/p/a at Line 4125, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Device-it-sts.profile.xml.html#/html/body/div/div/div/p/a at Line 4277, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DocumentoSpesaSanitaria-definitions.html#/html/body/div/div/div/p/a at Line 433, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DocumentoSpesaSanitaria-examples.html#/html/body/div/div/div/p/a at Line 296, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DocumentoSpesaSanitaria-mappings.html#/html/body/div/div/div/p/a at Line 298, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DocumentoSpesaSanitaria.html#/html/body/div/div/div/p/a at Line 685, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DocumentoSpesaSanitaria.profile.history.html#/html/body/div/div/div/p/a at Line 285, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DocumentoSpesaSanitaria.profile.json.html#/html/body/div/div/div/p/a at Line 1209, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DocumentoSpesaSanitaria.profile.ttl.html#/html/body/div/div/div/p/a at Line 1035, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-DocumentoSpesaSanitaria.profile.xml.html#/html/body/div/div/div/p/a at Line 1132, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Invoice-it-spesaSanitaria-definitions.html#/html/body/div/div/div/p/a at Line 1247, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Invoice-it-spesaSanitaria-examples.html#/html/body/div/div/div/p/a at Line 296, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Invoice-it-spesaSanitaria-mappings.html#/html/body/div/div/div/p/a at Line 463, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Invoice-it-spesaSanitaria.html#/html/body/div/div/div/p/a at Line 1180, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Invoice-it-spesaSanitaria.profile.history.html#/html/body/div/div/div/p/a at Line 285, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Invoice-it-spesaSanitaria.profile.json.html#/html/body/div/div/div/p/a at Line 5215, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Invoice-it-spesaSanitaria.profile.ttl.html#/html/body/div/div/div/p/a at Line 4520, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Invoice-it-spesaSanitaria.profile.xml.html#/html/body/div/div/div/p/a at Line 4623, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OrganizationIssuer-it-sts-definitions.html#/html/body/div/div/div/p/a at Line 1256, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OrganizationIssuer-it-sts-examples.html#/html/body/div/div/div/p/a at Line 296, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OrganizationIssuer-it-sts-mappings.html#/html/body/div/div/div/p/a at Line 507, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OrganizationIssuer-it-sts.html#/html/body/div/div/div/p/a at Line 940, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OrganizationIssuer-it-sts.profile.history.html#/html/body/div/div/div/p/a at Line 285, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OrganizationIssuer-it-sts.profile.json.html#/html/body/div/div/div/p/a at Line 4820, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OrganizationIssuer-it-sts.profile.ttl.html#/html/body/div/div/div/p/a at Line 4135, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OrganizationIssuer-it-sts.profile.xml.html#/html/body/div/div/div/p/a at Line 4289, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Patient-it-sts-definitions.html#/html/body/div/div/div/p/a at Line 968, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Patient-it-sts-examples.html#/html/body/div/div/div/p/a at Line 296, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Patient-it-sts-mappings.html#/html/body/div/div/div/p/a at Line 440, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Patient-it-sts.html#/html/body/div/div/div/p/a at Line 869, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Patient-it-sts.profile.history.html#/html/body/div/div/div/p/a at Line 285, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Patient-it-sts.profile.json.html#/html/body/div/div/div/p/a at Line 3463, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Patient-it-sts.profile.ttl.html#/html/body/div/div/div/p/a at Line 3020, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-Patient-it-sts.profile.xml.html#/html/body/div/div/div/p/a at Line 3160, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-PaymentReconciliation-it-sts-definitions.html#/html/body/div/div/div/p/a at Line 716, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-PaymentReconciliation-it-sts-examples.html#/html/body/div/div/div/p/a at Line 296, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-PaymentReconciliation-it-sts-mappings.html#/html/body/div/div/div/p/a at Line 338, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-PaymentReconciliation-it-sts.html#/html/body/div/div/div/p/a at Line 709, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-PaymentReconciliation-it-sts.profile.history.html#/html/body/div/div/div/p/a at Line 285, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-PaymentReconciliation-it-sts.profile.json.html#/html/body/div/div/div/p/a at Line 2092, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-PaymentReconciliation-it-sts.profile.ttl.html#/html/body/div/div/div/p/a at Line 1906, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-PaymentReconciliation-it-sts.profile.xml.html#/html/body/div/div/div/p/a at Line 1885, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-invoicePaymentExt-it-sts-definitions.html#/html/body/div/div/div/p/a at Line 332, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-invoicePaymentExt-it-sts-mappings.html#/html/body/div/div/div/p/a at Line 302, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-invoicePaymentExt-it-sts.html#/html/body/div/div/div/p/a at Line 516, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-invoicePaymentExt-it-sts.profile.history.html#/html/body/div/div/div/p/a at Line 285, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-invoicePaymentExt-it-sts.profile.json.html#/html/body/div/div/div/p/a at Line 579, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-invoicePaymentExt-it-sts.profile.ttl.html#/html/body/div/div/div/p/a at Line 560, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-invoicePaymentExt-it-sts.profile.xml.html#/html/body/div/div/div/p/a at Line 540, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-issuerPractictionerExt-it-sts-definitions.html#/html/body/div/div/div/p/a at Line 332, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-issuerPractictionerExt-it-sts-mappings.html#/html/body/div/div/div/p/a at Line 302, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-issuerPractictionerExt-it-sts.html#/html/body/div/div/div/p/a at Line 532, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-issuerPractictionerExt-it-sts.profile.history.html#/html/body/div/div/div/p/a at Line 285, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-issuerPractictionerExt-it-sts.profile.json.html#/html/body/div/div/div/p/a at Line 579, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-issuerPractictionerExt-it-sts.profile.ttl.html#/html/body/div/div/div/p/a at Line 560, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-issuerPractictionerExt-it-sts.profile.xml.html#/html/body/div/div/div/p/a at Line 540, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ValueSet-invoiceType-it-spesaSanitaria.change.history.html#/html/body/div/div/div/p/a at Line 264, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ValueSet-invoiceType-it-spesaSanitaria.html#/html/body/div/div/div/p/a at Line 311, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ValueSet-invoiceType-it-spesaSanitaria.json.html#/html/body/div/div/div/p/a at Line 294, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ValueSet-invoiceType-it-spesaSanitaria.ttl.html#/html/body/div/div/div/p/a at Line 300, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ValueSet-invoiceType-it-spesaSanitaria.xml.html#/html/body/div/div/div/p/a at Line 289, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ValueSet-lineItemType-it-spesaSanitaria.change.history.html#/html/body/div/div/div/p/a at Line 264, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ValueSet-lineItemType-it-spesaSanitaria.html#/html/body/div/div/div/p/a at Line 311, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ValueSet-lineItemType-it-spesaSanitaria.json.html#/html/body/div/div/div/p/a at Line 322, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ValueSet-lineItemType-it-spesaSanitaria.ttl.html#/html/body/div/div/div/p/a at Line 318, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ValueSet-lineItemType-it-spesaSanitaria.xml.html#/html/body/div/div/div/p/a at Line 316, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ValueSet-priceComponentCode-it-spesaSanitaria.change.history.html#/html/body/div/div/div/p/a at Line 264, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ValueSet-priceComponentCode-it-spesaSanitaria.html#/html/body/div/div/div/p/a at Line 309, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ValueSet-priceComponentCode-it-spesaSanitaria.json.html#/html/body/div/div/div/p/a at Line 289, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ValueSet-priceComponentCode-it-spesaSanitaria.ttl.html#/html/body/div/div/div/p/a at Line 296, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-ValueSet-priceComponentCode-it-spesaSanitaria.xml.html#/html/body/div/div/div/p/a at Line 283, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 396, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 211, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/design.html#/html/body/div/div/div/div/div/p/a at Line 458, column 2: The link 'StructureDefinition-Patient-it-base.html' for "Patient.identifier" cannot be resolved
-ERROR: /github/workspace/output/design.html#/html/body/div/div/div/p/a at Line 515, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/p/a at Line 245, column 34: The link 'copyright.html' for "Copyright" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 318, column 9: The link 'copyright.html' for "Copyright" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 429, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/methodology.html#/html/body/div/div/div/p/a at Line 345, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/scenario.html#/html/body/div/div/div/p/a at Line 225, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/spec.html#/html/body/div/div/div/p/a at Line 217, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 200, column 28: The link '' for "" cannot be resolved
 == fsh-generated/resources/CodeSystem-documentoFiscale.json ==
-== fsh-generated/resources/ImplementationGuide-hl7.fhir.it.730.json ==
-WARNING: ImplementationGuide/hl7.fhir.it.730: ImplementationGuide.definition.resource[10].description: value should not start or finish with whitespace
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.it.spesa-sanitaria.json ==
+WARNING: ImplementationGuide/hl7.fhir.it.spesa-sanitaria: ImplementationGuide.definition.resource[8].description: value should not start or finish with whitespace
+WARNING: ImplementationGuide/hl7.fhir.it.spesa-sanitaria: ImplementationGuide.definition.resource[12].description: value should not start or finish with whitespace
 == fsh-generated/resources/StructureDefinition-Device-it-sts.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/spesaSanitaria/StructureDefinition/Device-it-sts'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/Device-it-sts'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-DocumentoSpesaSanitaria.json ==
 ERROR: StructureDefinition/DocumentoSpesaSanitaria: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
 WARNING: StructureDefinition/DocumentoSpesaSanitaria: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == fsh-generated/resources/StructureDefinition-Invoice-it-spesaSanitaria.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/spesaSanitaria/StructureDefinition/Invoice-it-spesaSanitaria'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/Invoice-it-spesaSanitaria'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-OrganizationIssuer-it-sts.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/spesaSanitaria/StructureDefinition/OrganizationIssuer-it-sts'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/OrganizationIssuer-it-sts'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-Patient-it-sts.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/spesaSanitaria/StructureDefinition/Patient-it-sts'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/Patient-it-sts'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-PaymentReconciliation-it-sts.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/spesaSanitaria/StructureDefinition/PaymentReconciliation-it-sts'): The Implementation Guide contains no examples for this profile
+WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/PaymentReconciliation-it-sts'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-invoicePaymentExt-it-sts.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/spesaSanitaria/StructureDefinition/invoicePaymentExt-it-sts'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/invoicePaymentExt-it-sts'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-issuerPractictionerExt-it-sts.json ==
-WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/spesaSanitaria/StructureDefinition/issuerPractictionerExt-it-sts'): The Implementation Guide contains no examples for this extension
+WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/issuerPractictionerExt-it-sts'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/ValueSet-ValueSet-aliquotaIva-it-spesaSanitaria.json ==
+== fsh-generated/resources/ValueSet-ValueSet-esclusioneIva-it-spesaSanitaria.json ==
 == fsh-generated/resources/ValueSet-ValueSet-invoiceType-it-spesaSanitaria.json ==
 == fsh-generated/resources/ValueSet-ValueSet-lineItemType-it-spesaSanitaria.json ==
 == fsh-generated/resources/ValueSet-ValueSet-priceComponentCode-it-spesaSanitaria.json ==

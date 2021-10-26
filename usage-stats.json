@@ -1,18 +1,18 @@
 {
-  "package": "hl7.fhir.it.730",
+  "package": "hl7.fhir.it.spesa-sanitaria",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "IT",
   "extensions": [
     {
-      "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/invoicePaymentExt-it-sts",
+      "url": "http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/invoicePaymentExt-it-sts",
       "title": "Dettagli Pagamento",
       "types": [
         "Reference"
       ]
     },
     {
-      "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/issuerPractictionerExt-it-sts",
+      "url": "http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/issuerPractictionerExt-it-sts",
       "title": "Professionista (issuer)",
       "types": [
         "Reference"
@@ -22,34 +22,34 @@
   "profiles": {
     "Organization": [
       {
-        "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/OrganizationIssuer-it-sts",
+        "url": "http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/OrganizationIssuer-it-sts",
         "title": "Organization (issuer)"
       }
     ],
     "Invoice": [
       {
-        "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/Invoice-it-spesaSanitaria",
-        "title": "Invoice Documento Fiscale (STS)"
+        "url": "http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/Invoice-it-spesaSanitaria",
+        "title": "Invoice - Documento Fiscale (STS)"
       }
     ],
     "Patient": [
       {
-        "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/Patient-it-sts",
-        "title": "Patient (only CF)"
+        "url": "http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/Patient-it-sts",
+        "title": "Patient (only identifier)"
       }
     ],
     "PaymentReconciliation": [
       {
-        "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/PaymentReconciliation-it-sts",
+        "url": "http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/PaymentReconciliation-it-sts",
         "title": "PaymentReconciliation"
       }
     ]
   },
   "usage": {
-    "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/invoicePaymentExt-it-sts": [
+    "http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/invoicePaymentExt-it-sts": [
       "Invoice"
     ],
-    "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/issuerPractictionerExt-it-sts": [
+    "http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/issuerPractictionerExt-it-sts": [
       "Invoice"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [

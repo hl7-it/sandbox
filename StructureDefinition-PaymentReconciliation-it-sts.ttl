@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.it/fhir/spesaSanitaria/StructureDefinition/PaymentReconciliation-it-sts> a fhir:StructureDefinition;
+<http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/PaymentReconciliation-it-sts> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "PaymentReconciliation-it-sts"];
   fhir:DomainResource.text [
@@ -21,12 +21,21 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/PaymentReconciliation-it-sts"];
+  fhir:StructureDefinition.url [ fhir:value "http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/PaymentReconciliation-it-sts"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "PaymentReconciliationSts"];
   fhir:StructureDefinition.title [ fhir:value "PaymentReconciliation"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-10-25T21:40:26+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-10-26T14:59:11+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Italia" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://hl7.it/" ]
+     ]
+  ];
   fhir:StructureDefinition.description [ fhir:value "Minimal PaymentReconciliation Data"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
@@ -1918,7 +1927,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.it/fhir/spesaSanitaria/StructureDefinition/PaymentReconciliation-it-sts.ttl> a owl:Ontology;
+<http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/PaymentReconciliation-it-sts.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

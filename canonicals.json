@@ -2,91 +2,105 @@
   {
     "id": "documentoFiscale",
     "type": "CodeSystem",
-    "url": "http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale",
+    "url": "http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale",
     "version": "0.1.0",
     "name": "CsDocumentoFiscaleSTS"
   },
   {
-    "id": "hl7.fhir.it.730",
+    "id": "hl7.fhir.it.spesa-sanitaria",
     "type": "ImplementationGuide",
-    "url": "http://hl7.it/fhir/spesaSanitaria/ImplementationGuide/hl7.fhir.it.730",
+    "url": "http://hl7.it/fhir/spesa-sanitaria/ImplementationGuide/hl7.fhir.it.spesa-sanitaria",
     "version": "0.1.0",
-    "name": "HL7ITSpesaSanitaria"
+    "name": "HL7ITFhirSpesaSanitaria"
   },
   {
     "id": "Device-it-sts",
     "type": "StructureDefinition",
-    "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/Device-it-sts",
+    "url": "http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/Device-it-sts",
     "version": "0.1.0",
     "name": "DeviceMinimal"
   },
   {
     "id": "DocumentoSpesaSanitaria",
     "type": "StructureDefinition",
-    "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/DocumentoSpesaSanitaria",
+    "url": "http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/DocumentoSpesaSanitaria",
     "version": "0.1.0",
     "name": "DocumentoSpesaSanitaria"
   },
   {
     "id": "Invoice-it-spesaSanitaria",
     "type": "StructureDefinition",
-    "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/Invoice-it-spesaSanitaria",
+    "url": "http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/Invoice-it-spesaSanitaria",
     "version": "0.1.0",
     "name": "InvoiceSpesaSanitaria"
   },
   {
     "id": "OrganizationIssuer-it-sts",
     "type": "StructureDefinition",
-    "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/OrganizationIssuer-it-sts",
+    "url": "http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/OrganizationIssuer-it-sts",
     "version": "0.1.0",
     "name": "OrganizationIssuer"
   },
   {
     "id": "Patient-it-sts",
     "type": "StructureDefinition",
-    "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/Patient-it-sts",
+    "url": "http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/Patient-it-sts",
     "version": "0.1.0",
     "name": "PatientMinimal"
   },
   {
     "id": "PaymentReconciliation-it-sts",
     "type": "StructureDefinition",
-    "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/PaymentReconciliation-it-sts",
+    "url": "http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/PaymentReconciliation-it-sts",
     "version": "0.1.0",
     "name": "PaymentReconciliationSts"
   },
   {
     "id": "invoicePaymentExt-it-sts",
     "type": "StructureDefinition",
-    "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/invoicePaymentExt-it-sts",
+    "url": "http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/invoicePaymentExt-it-sts",
     "version": "0.1.0",
     "name": "ExtInvoicePayment"
   },
   {
     "id": "issuerPractictionerExt-it-sts",
     "type": "StructureDefinition",
-    "url": "http://hl7.it/fhir/spesaSanitaria/StructureDefinition/issuerPractictionerExt-it-sts",
+    "url": "http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/issuerPractictionerExt-it-sts",
     "version": "0.1.0",
     "name": "ExtProfessionistaIssuer"
   },
   {
+    "id": "ValueSet-aliquotaIva-it-spesaSanitaria",
+    "type": "ValueSet",
+    "url": "http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-aliquotaIva-it-spesaSanitaria",
+    "version": "0.1.0",
+    "name": "VsAliquotaIvaSTS"
+  },
+  {
+    "id": "ValueSet-esclusioneIva-it-spesaSanitaria",
+    "type": "ValueSet",
+    "url": "http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-esclusioneIva-it-spesaSanitaria",
+    "version": "0.1.0",
+    "name": "VsCodiciEsclusioneIvaSTS"
+  },
+  {
     "id": "ValueSet-invoiceType-it-spesaSanitaria",
     "type": "ValueSet",
-    "url": "http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-invoiceType-it-spesaSanitaria",
+    "url": "http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-invoiceType-it-spesaSanitaria",
     "version": "0.1.0",
     "name": "VsInvoiceTypeSTS"
   },
   {
     "id": "ValueSet-lineItemType-it-spesaSanitaria",
     "type": "ValueSet",
-    "url": "http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-lineItemType-it-spesaSanitaria",
+    "url": "http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-lineItemType-it-spesaSanitaria",
     "version": "0.1.0",
     "name": "VsLineItemTypeSTS"
   },
   {
     "id": "ValueSet-priceComponentCode-it-spesaSanitaria",
     "type": "ValueSet",
-    "url": "http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-priceComponentCode-it-spesaSanitaria",
+    "url": "http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-priceComponentCode-it-spesaSanitaria",
     "version": "0.1.0",
     "name": "VsPriceComponentCodeSTS"
   }

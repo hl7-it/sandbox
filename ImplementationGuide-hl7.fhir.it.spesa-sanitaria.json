@@ -1,17 +1,28 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "hl7.fhir.it.730",
+  "id": "hl7.fhir.it.spesa-sanitaria",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HL7ITSpesaSanitaria</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.it/fhir/spesaSanitaria/ImplementationGuide/hl7.fhir.it.730</pre><div><p>HL7 Italia FHIR Implementation Guide 730, specifica come utilizzare lo standard HL7 FHIR per l'alimentazione e la consultazione del 730</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HL7ITFhirSpesaSanitaria</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.it/fhir/spesa-sanitaria/ImplementationGuide/hl7.fhir.it.spesa-sanitaria</pre><div><p>HL7 Italia FHIR Implementation Guide Spesa Sanitaria,, specifica come utilizzare lo standard HL7 FHIR per la gestione della spesa sanitaria all'interno del SISTEMA TESSERA SANITARIA</p>\n</div></div>"
   },
-  "url": "http://hl7.it/fhir/spesaSanitaria/ImplementationGuide/hl7.fhir.it.730",
+  "url": "http://hl7.it/fhir/spesa-sanitaria/ImplementationGuide/hl7.fhir.it.spesa-sanitaria",
   "version": "0.1.0",
-  "name": "HL7ITSpesaSanitaria",
-  "title": "HL7 Italia FHIR Implementation Guide 730",
+  "name": "HL7ITFhirSpesaSanitaria",
+  "title": "HL7 Italia FHIR Implementation Guide Spesa Sanitaria (STS)",
   "status": "active",
-  "date": "2021-10-25T21:40:26+00:00",
-  "description": "HL7 Italia FHIR Implementation Guide 730, specifica come utilizzare lo standard HL7 FHIR per l'alimentazione e la consultazione del 730",
+  "date": "2021-10-26T14:59:11+00:00",
+  "contact": [
+    {
+      "name": "HL7 Italia",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://hl7.it/"
+        }
+      ]
+    }
+  ],
+  "description": "HL7 Italia FHIR Implementation Guide Spesa Sanitaria,, specifica come utilizzare lo standard HL7 FHIR per la gestione della spesa sanitaria all'interno del SISTEMA TESSERA SANITARIA",
   "jurisdiction": [
     {
       "coding": [
@@ -23,7 +34,7 @@
       ]
     }
   ],
-  "packageId": "hl7.fhir.it.730",
+  "packageId": "hl7.fhir.it.spesa-sanitaria",
   "license": "CC-BY-SA-4.0",
   "fhirVersion": [
     "4.0.1"
@@ -33,13 +44,7 @@
       "id": "hl7_fhir_it_base",
       "uri": "http://hl7.it/fhir/ImplementationGuide/hl7.fhir.it.base",
       "packageId": "hl7.fhir.it.base",
-      "version": "dev"
-    },
-    {
-      "id": "hl7_fhir_it_terminology",
-      "uri": "http://terminology.hl7.it/ImplementationGuide/hl7.fhir.it.terminology",
-      "packageId": "hl7.fhir.it.terminology",
-      "version": "dev"
+      "version": "current"
     }
   ],
   "definition": {
@@ -234,7 +239,7 @@
           },
           {
             "url": "value",
-            "valueString": "http://hl7.it/fhir/spesaSanitaria/history.html"
+            "valueString": "http://hl7.it/fhir/spesa-sanitaria/history.html"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -369,7 +374,7 @@
         "reference": {
           "reference": "StructureDefinition/Invoice-it-spesaSanitaria"
         },
-        "name": "Invoice Documento Fiscale (STS)",
+        "name": "Invoice - Documento Fiscale (STS)",
         "description": "This profile defines how to constrain the Invoice resource for the scope of tracking the health expenses (SISTEMA TESSERA SANITARIA)",
         "exampleBoolean": false
       },
@@ -397,7 +402,7 @@
         "reference": {
           "reference": "StructureDefinition/Patient-it-sts"
         },
-        "name": "Patient (only CF)",
+        "name": "Patient (only identifier)",
         "description": "Minimal Patient Data: only fiscal code",
         "exampleBoolean": false
       },
@@ -455,6 +460,34 @@
         },
         "name": "Documento Fiscale (STS)",
         "description": "Documento Fiscale da inviarsi al SISTEMA TESSERA SANITARIA. Dati di spesa sanitaria di cui art. 3 comma 3 D.ls 175/2014",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ValueSet-aliquotaIva-it-spesaSanitaria"
+        },
+        "name": "Aliquote Iva",
+        "description": "Aliquote IVA ",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ValueSet-esclusioneIva-it-spesaSanitaria"
+        },
+        "name": "Codici esclusione IVA",
+        "description": "Codici esclusione IVA",
         "exampleBoolean": false
       },
       {

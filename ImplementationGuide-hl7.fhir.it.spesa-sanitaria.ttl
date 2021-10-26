@@ -5,20 +5,29 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.it/fhir/spesaSanitaria/ImplementationGuide/hl7.fhir.it.730> a fhir:ImplementationGuide;
+<http://hl7.it/fhir/spesa-sanitaria/ImplementationGuide/hl7.fhir.it.spesa-sanitaria> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "hl7.fhir.it.730"];
+  fhir:Resource.id [ fhir:value "hl7.fhir.it.spesa-sanitaria"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HL7ITSpesaSanitaria</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.it/fhir/spesaSanitaria/ImplementationGuide/hl7.fhir.it.730</pre><div><p>HL7 Italia FHIR Implementation Guide 730, specifica come utilizzare lo standard HL7 FHIR per l'alimentazione e la consultazione del 730</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HL7ITFhirSpesaSanitaria</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.it/fhir/spesa-sanitaria/ImplementationGuide/hl7.fhir.it.spesa-sanitaria</pre><div><p>HL7 Italia FHIR Implementation Guide Spesa Sanitaria,, specifica come utilizzare lo standard HL7 FHIR per la gestione della spesa sanitaria all'interno del SISTEMA TESSERA SANITARIA</p>\n</div></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "http://hl7.it/fhir/spesaSanitaria/ImplementationGuide/hl7.fhir.it.730"];
+  fhir:ImplementationGuide.url [ fhir:value "http://hl7.it/fhir/spesa-sanitaria/ImplementationGuide/hl7.fhir.it.spesa-sanitaria"];
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
-  fhir:ImplementationGuide.name [ fhir:value "HL7ITSpesaSanitaria"];
-  fhir:ImplementationGuide.title [ fhir:value "HL7 Italia FHIR Implementation Guide 730"];
+  fhir:ImplementationGuide.name [ fhir:value "HL7ITFhirSpesaSanitaria"];
+  fhir:ImplementationGuide.title [ fhir:value "HL7 Italia FHIR Implementation Guide Spesa Sanitaria (STS)"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-10-25T21:40:26+00:00"^^xsd:dateTime];
-  fhir:ImplementationGuide.description [ fhir:value "HL7 Italia FHIR Implementation Guide 730, specifica come utilizzare lo standard HL7 FHIR per l'alimentazione e la consultazione del 730"];
+  fhir:ImplementationGuide.date [ fhir:value "2021-10-26T14:59:11+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Italia" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://hl7.it/" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "HL7 Italia FHIR Implementation Guide Spesa Sanitaria,, specifica come utilizzare lo standard HL7 FHIR per la gestione della spesa sanitaria all'interno del SISTEMA TESSERA SANITARIA"];
   fhir:ImplementationGuide.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -28,7 +37,7 @@
        fhir:Coding.display [ fhir:value "Italy" ]
      ]
   ];
-  fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.it.730"];
+  fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.it.spesa-sanitaria"];
   fhir:ImplementationGuide.license [ fhir:value "CC-BY-SA-4.0"];
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1";
@@ -42,16 +51,7 @@
        fhir:link <http://hl7.it/fhir/ImplementationGuide/hl7.fhir.it.base>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.it.base" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "dev" ]
-  ], [
-     fhir:index 1;
-     fhir:Element.id [ fhir:value "hl7_fhir_it_terminology" ];
-     fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "http://terminology.hl7.it/ImplementationGuide/hl7.fhir.it.terminology";
-       fhir:link <http://terminology.hl7.it/ImplementationGuide/hl7.fhir.it.terminology>
-     ];
-     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.it.terminology" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "dev" ]
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -231,7 +231,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "http://hl7.it/fhir/spesaSanitaria/history.html" ]
+         fhir:Extension.valueString [ fhir:value "http://hl7.it/fhir/spesa-sanitaria/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -339,7 +339,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.it/fhir/spesaSanitaria/StructureDefinition/Device-it-sts>;
+         fhir:link <http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/Device-it-sts>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Device-it-sts" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Device (only serial)" ];
@@ -353,10 +353,10 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.it/fhir/spesaSanitaria/StructureDefinition/Invoice-it-spesaSanitaria>;
+         fhir:link <http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/Invoice-it-spesaSanitaria>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Invoice-it-spesaSanitaria" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Invoice Documento Fiscale (STS)" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Invoice - Documento Fiscale (STS)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile defines how to constrain the Invoice resource for the scope of tracking the health expenses (SISTEMA TESSERA SANITARIA)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -367,7 +367,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.it/fhir/spesaSanitaria/StructureDefinition/OrganizationIssuer-it-sts>;
+         fhir:link <http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/OrganizationIssuer-it-sts>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/OrganizationIssuer-it-sts" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization (issuer)" ];
@@ -381,10 +381,10 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.it/fhir/spesaSanitaria/StructureDefinition/Patient-it-sts>;
+         fhir:link <http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/Patient-it-sts>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Patient-it-sts" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient (only CF)" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient (only identifier)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Minimal Patient Data: only fiscal code" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -395,7 +395,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.it/fhir/spesaSanitaria/StructureDefinition/PaymentReconciliation-it-sts>;
+         fhir:link <http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/PaymentReconciliation-it-sts>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/PaymentReconciliation-it-sts" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PaymentReconciliation" ];
@@ -409,7 +409,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.it/fhir/spesaSanitaria/StructureDefinition/invoicePaymentExt-it-sts>;
+         fhir:link <http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/invoicePaymentExt-it-sts>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/invoicePaymentExt-it-sts" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Dettagli Pagamento" ];
@@ -423,7 +423,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.it/fhir/spesaSanitaria/StructureDefinition/issuerPractictionerExt-it-sts>;
+         fhir:link <http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/issuerPractictionerExt-it-sts>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/issuerPractictionerExt-it-sts" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Professionista (issuer)" ];
@@ -437,7 +437,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.it/fhir/spesaSanitaria/StructureDefinition/DocumentoSpesaSanitaria>;
+         fhir:link <http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/DocumentoSpesaSanitaria>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DocumentoSpesaSanitaria" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Documento Fiscale (STS)" ];
@@ -451,11 +451,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-invoiceType-it-spesaSanitaria>;
-         fhir:Reference.reference [ fhir:value "ValueSet/ValueSet-invoiceType-it-spesaSanitaria" ]
+         fhir:link <http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-aliquotaIva-it-spesaSanitaria>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ValueSet-aliquotaIva-it-spesaSanitaria" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo di documento" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tipologia del documento attestante il pagamento della prestazione o del bene sanitario assume valore: F (fattura) D (documento commerciale)" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Aliquote Iva" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Aliquote IVA " ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 9;
@@ -465,11 +465,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-lineItemType-it-spesaSanitaria>;
-         fhir:Reference.reference [ fhir:value "ValueSet/ValueSet-lineItemType-it-spesaSanitaria" ]
+         fhir:link <http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-esclusioneIva-it-spesaSanitaria>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ValueSet-esclusioneIva-it-spesaSanitaria" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo di voce di spesa" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tipo di voce di spesa" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Codici esclusione IVA" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codici esclusione IVA" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 10;
@@ -479,21 +479,49 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.it/fhir/spesaSanitaria/ValueSet/ValueSet-priceComponentCode-it-spesaSanitaria>;
-         fhir:Reference.reference [ fhir:value "ValueSet/ValueSet-priceComponentCode-it-spesaSanitaria" ]
+         fhir:link <http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-invoiceType-it-spesaSanitaria>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ValueSet-invoiceType-it-spesaSanitaria" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo di componente" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tipo di componente del prezzo: e.g. IVA " ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo di documento" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tipologia del documento attestante il pagamento della prestazione o del bene sanitario assume valore: F (fattura) D (documento commerciale)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-lineItemType-it-spesaSanitaria>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ValueSet-lineItemType-it-spesaSanitaria" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo di voce di spesa" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tipo di voce di spesa" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-priceComponentCode-it-spesaSanitaria>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ValueSet-priceComponentCode-it-spesaSanitaria" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tipo di componente" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tipo di componente del prezzo: e.g. IVA " ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.it/fhir/spesaSanitaria/CodeSystem/documentoFiscale>;
+         fhir:link <http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale>;
          fhir:Reference.reference [ fhir:value "CodeSystem/documentoFiscale" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Internal Code System" ];
@@ -606,7 +634,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.it/fhir/spesaSanitaria/ImplementationGuide/hl7.fhir.it.730.ttl> a owl:Ontology;
+<http://hl7.it/fhir/spesa-sanitaria/ImplementationGuide/hl7.fhir.it.spesa-sanitaria.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

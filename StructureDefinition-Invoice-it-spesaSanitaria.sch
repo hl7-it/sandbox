@@ -12,8 +12,8 @@
   <sch:pattern>
     <sch:title>f:Invoice</sch:title>
     <sch:rule context="f:Invoice">
-      <sch:assert test="count(f:extension[@url = 'http://hl7.it/fhir/spesaSanitaria/StructureDefinition/issuerPractictionerExt-it-sts']) &lt;= 1">extension with URL = 'http://hl7.it/fhir/spesaSanitaria/StructureDefinition/issuerPractictionerExt-it-sts': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://hl7.it/fhir/spesaSanitaria/StructureDefinition/invoicePaymentExt-it-sts']) &lt;= 1">extension with URL = 'http://hl7.it/fhir/spesaSanitaria/StructureDefinition/invoicePaymentExt-it-sts': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/issuerPractictionerExt-it-sts']) &lt;= 1">extension with URL = 'http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/issuerPractictionerExt-it-sts': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/invoicePaymentExt-it-sts']) &lt;= 1">extension with URL = 'http://hl7.it/fhir/spesa-sanitaria/StructureDefinition/invoicePaymentExt-it-sts': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:date) &gt;= 1">date: minimum cardinality of 'date' is 1</sch:assert>
@@ -455,12 +455,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:Invoice/f:lineItem</sch:title>
-    <sch:rule context="f:Invoice/f:lineItem">
-      <sch:assert test="count(f:priceComponent) &gt;= 1">priceComponent: minimum cardinality of 'priceComponent' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>Invoice.lineItem</sch:title>
     <sch:rule context="f:Invoice/f:lineItem">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -497,6 +491,8 @@
     <sch:title>f:Invoice/f:lineItem/f:priceComponent</sch:title>
     <sch:rule context="f:Invoice/f:lineItem/f:priceComponent">
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:factor) &gt;= 1">factor: minimum cardinality of 'factor' is 1</sch:assert>
+      <sch:assert test="count(f:amount) &gt;= 1">amount: minimum cardinality of 'amount' is 1</sch:assert>
       <sch:assert test="count(f:amount) &gt;= 1">amount: minimum cardinality of 'amount' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -504,11 +500,17 @@
     <sch:title>Invoice.lineItem.priceComponent</sch:title>
     <sch:rule context="f:Invoice/f:lineItem/f:priceComponent">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>Invoice.lineItem.priceComponent.extension</sch:title>
     <sch:rule context="f:Invoice/f:lineItem/f:priceComponent/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
@@ -518,11 +520,17 @@
     <sch:rule context="f:Invoice/f:lineItem/f:priceComponent/f:modifierExtension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>Invoice.lineItem.priceComponent.type</sch:title>
     <sch:rule context="f:Invoice/f:lineItem/f:priceComponent/f:type">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -530,17 +538,51 @@
     <sch:title>Invoice.lineItem.priceComponent.code</sch:title>
     <sch:rule context="f:Invoice/f:lineItem/f:priceComponent/f:code">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>Invoice.lineItem.priceComponent.factor</sch:title>
     <sch:rule context="f:Invoice/f:lineItem/f:priceComponent/f:factor">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>Invoice.lineItem.priceComponent.amount</sch:title>
     <sch:rule context="f:Invoice/f:lineItem/f:priceComponent/f:amount">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Invoice/f:lineItem/f:priceComponent/f:amount</sch:title>
+    <sch:rule context="f:Invoice/f:lineItem/f:priceComponent/f:amount">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:value) &gt;= 1">value: minimum cardinality of 'value' is 1</sch:assert>
+      <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
+      <sch:assert test="count(f:currency) &lt;= 1">currency: maximum cardinality of 'currency' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Invoice.lineItem.priceComponent.amount.extension</sch:title>
+    <sch:rule context="f:Invoice/f:lineItem/f:priceComponent/f:amount/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Invoice.lineItem.priceComponent.amount.value</sch:title>
+    <sch:rule context="f:Invoice/f:lineItem/f:priceComponent/f:amount/f:value">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Invoice.lineItem.priceComponent.amount.currency</sch:title>
+    <sch:rule context="f:Invoice/f:lineItem/f:priceComponent/f:amount/f:currency">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>

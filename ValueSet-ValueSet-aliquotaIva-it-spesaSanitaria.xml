@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ValueSet-aliquotaIva-it-spesaSanitaria"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-documentoFiscale.html"><code>http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-documentoFiscale.html#documentoFiscale-aliquota-iva">aliquota-iva</a></td><td>Aliquota IVA</td><td>Aliquota IVA</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.it/fhir/spesa-sanitaria/ValueSet/ValueSet-aliquotaIva-it-spesaSanitaria"/>
+  <version value="0.1.0"/>
+  <name value="VsAliquotaIvaSTS"/>
+  <title value="Aliquote Iva"/>
+  <status value="active"/>
+  <date value="2021-10-26T14:59:11+00:00"/>
+  <contact>
+    <name value="HL7 Italia"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hl7.it/"/>
+    </telecom>
+  </contact>
+  <description value="Aliquote IVA "/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IT"/>
+      <display value="Italy"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.it/fhir/spesa-sanitaria/CodeSystem/documentoFiscale"/>
+      <concept>
+        <code value="aliquota-iva"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
