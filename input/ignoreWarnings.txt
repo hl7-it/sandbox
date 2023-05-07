@@ -1,5 +1,5 @@
 == Suppressed Messages ==      
-# No schematrons available for Logical Models
+# No schematrons available for Logical Models.
 The link 'StructureDefinition-AziendaSanitaria.sch' for "Schematron" cannot be resolved
 The link 'StructureDefinition-ContattoPersona.sch' for "Schematron" cannot be resolved
 The link 'StructureDefinition-DocumentoIdentificazione.sch' for "Schematron" cannot be resolved
